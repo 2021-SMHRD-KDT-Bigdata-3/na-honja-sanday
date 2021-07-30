@@ -35,5 +35,20 @@ public class HomeController {
 		
 		return "home";
 	}
-	
+	@RequestMapping(value = "/index.do")
+	public String home() {
+		return "index";
+	}
+	@RequestMapping(value = "/About.do")
+	public String About() {
+		return "About";
+	}
+	@RequestMapping(value = "/Contact.do")
+	public String Contact() {
+		return "Contact2";
+	}
+	@RequestMapping(value = "/Home.do")
+	public String Home() {
+		return "Home";
+	}
 }
