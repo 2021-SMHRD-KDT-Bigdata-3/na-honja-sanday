@@ -21,6 +21,9 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
 
@@ -246,7 +249,7 @@
     		<div class="row">
     			<div class="col-md-6 half ftco-animate">
     				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
-    				<form action="#" class="appointment">
+    				<form action="${cpath}/About.do" class="appointment">
     					<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">
