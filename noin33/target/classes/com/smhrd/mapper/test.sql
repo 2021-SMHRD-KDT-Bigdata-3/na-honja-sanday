@@ -40,18 +40,5 @@ send_date datetime default now(),
 primary key(idx))
 
 select * from senior;
+select * from welfare_worker;
 
-
-
-
-
-
-
-create table test_tbl(
-name varchar(50),
-birth varchar(50)
-)
-
-insert into test_tbl(name,birth) values('jth','980105')
-
-select * from test_tbl;

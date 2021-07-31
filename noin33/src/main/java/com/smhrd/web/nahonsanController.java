@@ -23,21 +23,23 @@ public class nahonsanController {
 	nahonsanMapper naMapper;
 	
 	
-	
-	@RequestMapping("/loginTEST.do")
-	public String loginTEST(testVO test) {
-		naMapper.login(test);
-		
-		return "loginsuccesstest";
+	@RequestMapping("/firstpage")
+	public String first() {
+		return "firstpage";
 	}
 	
+	
+	/*
+	 * @RequestMapping("/loginTEST.do") public String loginTEST(testVO test) {
+	 * testVO vo = naMapper.login(test);
+	 * 
+	 * if(vo==null) { System.out.println("로그인 실패"); return "logintest"; } else {
+	 * return "loginsuccesstest"; }
+	 * 
+	 * }
+	 */
+	
 
-
-
-
-
-
-   
    private static final Logger logger = LoggerFactory.getLogger(nahonsanController.class);
    
  
