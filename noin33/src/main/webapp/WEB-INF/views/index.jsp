@@ -1,139 +1,640 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
-<c:set var="cpath" value="${pageContext.request.contextPath}"/>     
-
+<c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
-<html style="font-size: 16px;">
+<html lang="en">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="Spa &amp;Massage, Skincare for everyday">
-    <meta name="description" content="">
-    <meta name="page_type" content="np-template-header-footer-from-plugin">
-    <title>Home</title>
-    <link rel="stylesheet" href="resources/css/nicepage.css" media="screen">
-<link rel="stylesheet" href="resources/css/Home.css" media="screen">
-    <script class="u-script" type="text/javascript" src="resources/js/jquery.js" defer=""></script>
-    <script class="u-script" type="text/javascript" src="resources/js/nicepage.js" defer=""></script>
-    <meta name="generator" content="Nicepage 3.21.3, nicepage.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
-    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/animate.css">
     
-    <script type="application/ld+json">{
-		"@context": "http://schema.org",
-		"@type": "Organization",
-		"name": "",
-		"logo": "images/default-logo.png"
-}</script>
-    <meta name="theme-color" content="#478ac9">
-    <meta property="og:title" content="Home">
-    <meta property="og:type" content="website">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
+    
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
   </head>
-  <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-align-center u-clearfix u-header" id="sec-6a02" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
-        <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-          <img src="${cpath}/resources/images/default-logo.png" class="u-logo-image u-logo-image-1">
-        </a>
-        <a href="https://nicepage.com/k/shopping-cart-html-templates" class="u-align-right u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1">로그인</a>
-      </div></header>
-    <section class="pointer-event u-carousel u-slide u-block-bc3f-1" src="" id="carousel_7b8f" data-interval="5000" data-u-ride="carousel">
-      <ol class="u-absolute-hcenter u-carousel-indicators u-hidden u-block-bc3f-2">
-        <li data-u-target="#carousel_7b8f" class="u-active u-grey-30" data-u-slide-to="0"></li>
-      </ol>
-      <div class="u-carousel-inner" role="listbox">
-        <div class="u-active u-carousel-item u-clearfix u-image u-section-1-1 banner" data-image-width="275" data-image-height="183">
-          <div class="u-clearfix u-sheet u-sheet-1">
-            <div class="u-align-left u-border-4 u-border-grey-dark-1 u-container-style u-group u-opacity u-opacity-50 u-group-1">
-             <div class="u-container-layout u-valign-middle u-container-layout-1">
-                <h1 class="u-text u-text-1">Skincare for everyday<br>
-                </h1>
-                <p class="u-large-text u-text u-text-body-color u-text-variant u-text-2">We offer expert estheticians, a professional skin care line, and facials for every skin type.&nbsp;<br>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-prev u-hidden u-text-grey-30 u-block-bc3f-3" href="#carousel_7b8f" role="button" data-u-slide="prev">
-        <span aria-hidden="true">
-          <svg viewBox="0 0 477.175 477.175"><path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
-                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path></svg>
-        </span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="u-absolute-vcenter u-carousel-control u-carousel-control-next u-hidden u-text-grey-30 u-block-bc3f-4" href="#carousel_7b8f" role="button" data-u-slide="next">
-        <span aria-hidden="true">
-          <svg viewBox="0 0 477.175 477.175"><path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
-                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path></svg>
-        </span>
-        <span class="sr-only">Next</span>
-      </a>
-    </section>
-    <section class="u-align-center u-clearfix u-section-2" id="sec-296a">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-rectangle u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 496 496" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d25d"></use></svg><svg class="u-svg-content" viewBox="0 0 496 496" id="svg-d25d"><path d="m256 104h176v104h-176zm0 0" fill="#f0bc5e"></path><path d="m472 16h-80v16h80c4.414062 0 8 3.585938 8 8v432c0 4.414062-3.585938 8-8 8h-304c-4.414062 0-8-3.585938-8-8v-264h16v256h288v-416h-71.625v16h55.625v384h-256v-240h16c17.648438 0 32-14.351562 32-32s-14.351562-32-32-32h-16v-80h56v-16h-72v96h-16v-104c0-4.414062 3.585938-8 8-8h80v-16h-80c-13.230469 0-24 10.769531-24 24v104h-27.246094c-9.738281 0-19.347656 2.550781-27.792968 7.382812l-43.089844 24.617188h-45.871094v144h53.574219l33.890625 22.59375c9.230468 6.160156 19.976562 9.40625 31.0625 9.40625h25.472656v120c0 13.230469 10.769531 24 24 24h304c13.230469 0 24-10.769531 24-24v-432c0-13.230469-10.769531-24-24-24zm-344.566406 192h16.566406v128h-25.472656c-7.917969 0-15.589844-2.320312-22.183594-6.71875l-37.917969-25.28125h-42.425781v-112h34.128906l46.773438-26.726562c6.035156-3.449219 12.898437-5.273438 19.851562-5.273438h91.246094c8.824219 0 16 7.175781 16 16s-7.175781 16-16 16h-96v8c0 22.054688-17.945312 40-40 40v16c28.167969 0 51.535156-20.894531 55.433594-48zm0 0"></path><path d="m232 432h176v-23.855469c0-17.769531-11.929688-33.578125-29.015625-38.472656l-27-7.710937-.007813-4.058594c14.503907-10.125 24.023438-26.910156 24.023438-45.902344v-16c0-30.871094-25.128906-56-56-56s-56 25.128906-56 56v16c0 18.976562 9.511719 35.753906 24 45.886719v4.082031l-26.992188 7.703125c-17.078124 4.886719-29.007812 20.703125-29.007812 38.472656zm48-120v-16c0-22.054688 17.945312-40 40-40s40 17.945312 40 40v16c0 22.054688-17.945312 40-40 40s-40-17.945312-40-40zm55.71875 53.710938-15.71875 20.953124-15.71875-20.953124c4.992188 1.464843 10.261719 2.289062 15.71875 2.289062s10.726562-.824219 15.71875-2.289062zm-87.71875 42.433593c0-10.65625 7.160156-20.152343 17.40625-23.082031l27.496094-7.855469 27.097656 36.128907 27.097656-36.128907 27.496094 7.855469c10.246094 2.929688 17.40625 12.425781 17.40625 23.082031v7.855469h-144zm0 0"></path><path d="m208 96h16v16h-16zm0 0"></path><path d="m240 96h192v16h-192zm0 0"></path><path d="m256 128h176v16h-176zm0 0"></path><path d="m256 160h176v16h-176zm0 0"></path><path d="m416 192h16v16h-16zm0 0"></path><path d="m256 192h144v16h-144zm0 0"></path><path d="m376 80h-112c-13.230469 0-24-10.769531-24-24v-32c0-13.230469 10.769531-24 24-24h112c13.230469 0 24 10.769531 24 24v32c0 13.230469-10.769531 24-24 24zm0 0" fill="#f0bc5e"></path><path d="m272 32h16v16h-16zm0 0"></path><path d="m352 32h16v16h-16zm0 0"></path></svg></span>
-                <h3 class="u-align-center u-text u-text-1">관리신청</h3>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-rectangle u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 128 128" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-79f6"></use></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 128 128" id="svg-79f6"><path d="m102.7 39.2c0.8 0 1.5 0.3 2.1 0.9l7.8 7.8c4.8 4.8 7.7 11.5 7.4 18.3-0.6 12.6-11 22.6-23.7 22.6h-29c-0.1 0-0.1-0.1-0.1-0.2 1.1-3 4.1-5.2 7.5-5.2h10.5c0.9 0 1.8-0.4 2.3-1.1 0.8-1.1 0.7-2.6-0.3-3.5l-24.9-24.8c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.5 0.9-2.1 1.3-0.8 2.1-0.8 1.5 0.3 2.1 0.8l16.9 16.9c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.3-1.4-0.8-1.9l-6.7-6.7c-0.6-0.6-0.9-1.3-0.9-2.1s0.3-1.5 0.9-2.1 1.3-0.8 2.1-0.8 1.5 0.3 2.1 0.8l4 4c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.3-1.4-0.8-1.9l-2.7-2.7c-0.5-0.5-0.8-1.2-0.8-2s0.3-1.5 0.9-2.1 1.3-0.9 2.1-0.9 1.5 0.3 2.1 0.9l2.7 2.7c0.5 0.5 1.2 0.8 1.9 0.8s1.4-0.3 1.9-0.8 0.8-1.2 0.8-1.9-0.2-1.3-0.7-1.8c-0.8-0.9-1.2-2.1-0.8-3.3 0.5-1.3 1.6-1.9 2.8-1.9m0-8c-2.9 0-5.7 1.1-7.8 3.2-0.7 0.7-1.2 1.4-1.7 2.1 0 0-0.1 0.1-0.1 0-0.4 0-0.8-0.1-1.1-0.1-2.9 0-5.7 1.1-7.8 3.2-1 1-1.8 2.2-2.3 3.4 0 0 0 0.1-0.1 0.1-2.6 0.2-5.1 1.3-6.9 3.2l-0.2 0.2-2.5-2.5c-2-2-4.9-3.2-7.8-3.2s-5.7 1.1-7.8 3.2-3.2 4.9-3.2 7.8c0 3 1.2 5.7 3.2 7.8l15.8 15.8c0.1 0.1 0 0.2-0.1 0.2-5.8 0.8-10.8 4.8-12.8 10.5-1.9 5.2 2 10.7 7.5 10.7h29.1c8.5 0 16.4-3.3 22.4-9.3 6.1-6.1 9.4-14.3 9.3-23-0.1-8.4-3.8-16.4-9.8-22.4l-7.8-7.8c-1.8-2-4.6-3.1-7.5-3.1z"></path><path d="m82.1 118c0 1.1-0.9 2-2 2h-70.2c-1.1 0-2-0.9-2-2v-108c0-1.1 0.9-2 2-2h70.1c1.1 0 2 0.9 2 2v16.9c0 2.2 1.8 4 4 4s4-1.8 4-4v-16.9c0-5.5-4.5-10-9.9-10h-70.2c-5.4 0-9.9 4.5-9.9 10v108c0 5.5 4.5 10 9.9 10h70.1c5.5 0 9.9-4.5 9.9-10v-10.6c0-2.2-1.8-4-4-4s-4 1.8-4 4v10.6z"></path></svg></span>
-                <h3 class="u-align-center u-text u-text-2">위험분석</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="u-clearfix u-section-3" id="carousel_8bae">
-      <div class="u-clearfix u-sheet u-sheet-1">
-        <h2 class="u-subtitle u-text u-text-default u-text-1">복지사 소개</h2>
-        <div class="u-expanded-width u-list u-list-1">
-          <div class="u-repeater u-repeater-1">
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
-                <div alt="" class="u-image u-image-circle u-image-1" src="" data-image-width="500" data-image-height="500"></div>
-                <h5 class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-2">Jack Alvarez</h5>
-                <p class="u-align-center-lg u-align-center-md u-align-center-sm u-align-center-xs u-text u-text-3">Sales Manager</p>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
-                <div alt="" class="u-image u-image-circle u-image-2" src="" data-image-width="500" data-image-height="500"></div>
-                <h5 class="u-text u-text-4">Nat Reynolds</h5>
-                <p class="u-text u-text-5">Accountant-auditor</p>
-              </div>
-            </div>
-            <div class="u-align-center u-container-style u-list-item u-repeater-item">
-              <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
-                <div alt="" class="u-image u-image-circle u-image-3" src="" data-image-width="500" data-image-height="500"></div>
-                <h5 class="u-text u-text-6">Betty Nilson</h5>
-                <p class="u-text u-text-7">Chief Accountant</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <body>
+
+  	<div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-md-end">
+						<div class="social-media">
+			    		<p class="mb-0 d-flex">
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+			    		</p>
+		        </div>
+					</div>
+				</div>
+			</div>
+		</div>
     
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html">Counselor</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="counselor.html" class="nav-link">Counselor</a></li>
+	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
     
-    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-779c"><div class="u-clearfix u-sheet u-sheet-1">
-        <p class="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click again or double click to start editing the text.</p>
-      </div></footer>
-    <section class="u-backlink u-clearfix u-grey-80">
-      <a class="u-link" href="https://nicepage.com/website-templates" target="_blank">
-        <span>Website Templates</span>
-      </a>
-      <p class="u-text">
-        <span>created with</span>
-      </p>
-      <a class="u-link" href="https://nicepage.com/" target="_blank">
-        <span>Website Builder Software</span>
-      </a>. 
-    </section><span style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px" class="u-back-to-top u-icon u-icon-circle u-opacity u-opacity-85 u-palette-1-base u-spacing-15" data-href="#">
-        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use></svg>
-        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13" xmlns="http://www.w3.org/2000/svg" id="svg-1d98"><path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path></svg>
-    </span>
+    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-6 ftco-animate d-flex align-items-end">
+          	<div class="text w-100">
+	            <h1 class="mb-4">Counseling For Your Better Life</h1>
+	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">Contact us</a> <a href="#" class="btn btn-white py-3 px-4">Read more</a></p>
+            </div>
+          </div>
+          <a href="https://vimeo.com/45830194" class="img-video popup-vimeo d-flex align-items-center justify-content-center">
+          	<span class="fa fa-play"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="ftco-intro">
+    	<div class="container">
+    		<div class="row no-gutters">
+    			<div class="col-md-4 d-flex">
+    				<div class="intro aside-stretch d-lg-flex w-100">
+    					<div class="icon">
+    						<span class="flaticon-checklist"></span>
+    					</div>
+    					<div class="text">
+    						<h2>100% Confidential</h2>
+    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex">
+    				<div class="intro color-1 d-lg-flex w-100">
+    					<div class="icon">
+    						<span class="flaticon-employee"></span>
+    					</div>
+    					<div class="text">
+    						<h2>Qualified Team</h2>
+    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    					</div>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex">
+    				<div class="intro color-2 d-lg-flex w-100">
+    					<div class="icon">
+    						<span class="flaticon-umbrella"></span>
+    					</div>
+    					<div class="text">
+    						<h2>Individual Approach</h2>
+    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+		<section class="ftco-section">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Services</span>
+            <h2>How It Works</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
+    				<div class="services-2 text-center">
+    					<div class="icon-wrap">
+    						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<span class="flaticon-calendar"></span>
+	    					</div>
+    					</div>
+    					<h2>Make Schedule</h2>
+    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
+    				<div class="services-2 text-center">
+    					<div class="icon-wrap">
+    						<div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<span class="flaticon-qa"></span>
+	    					</div>
+    					</div>
+    					<h2>Start Discussion</h2>
+  						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
+    				<div class="services-2 text-center">
+    					<div class="icon-wrap">
+    						<div class="number d-flex align-items-center justify-content-center"><span>03</span></div>
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<span class="flaticon-checklist"></span>
+	    					</div>
+    					</div>
+    					<h2>Enjoy Plan</h2>
+  						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/about-1.jpg);">
+					</div>
+					<div class="col-md-6 wrap-about px-md-5 ftco-animate py-5 bg-light">
+	          <div class="heading-section">
+	          	<span class="subheading">Welcome to Counselor</span>
+	            <h2 class="mb-4">Best Counseling Funding Network Worldwide.</h2>
+
+	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
+
+	            <a href="https://vimeo.com/45830194" class="play-video popup-vimeo d-flex align-items-center mt-4">
+	            	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-play"></span></div>
+	            	<span class="watch">Watch Our Consultant Video</span>
+	            </a>
+	          </div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ftco-section">
+			<div class="container">
+				<div class="row justify-content-center mb-5">
+          <div class="col-md-8 text-center heading-section ftco-animate">
+          	<span class="subheading">Our Services</span>
+            <h2 class="mb-3">We Can Help You With This Situation</h2>
+          </div>
+        </div>
+				<div class="row tabulation mt-4 ftco-animate">
+  				<div class="col-md-4">
+						<ul class="nav nav-pills nav-fill d-md-flex d-block flex-column">
+						  <li class="nav-item text-left">
+						    <a class="nav-link active py-4" data-toggle="tab" href="#services-1">Relation Problem</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-2">Couples Counseling</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-3">Depression Treatment</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-4">Family Problem</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-5">Personal Problem</a>
+						  </li>
+						  <li class="nav-item text-left">
+						    <a class="nav-link py-4" data-toggle="tab" href="#services-6">Business Problem</a>
+						  </li>
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<div class="tab-content">
+						  <div class="tab-pane container p-0 active" id="services-1">
+						  	<div class="img" style="background-image: url(images/services-1.jpg);"></div>
+						  	<h3><a href="#">Relation Problem</a></h3>
+						  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-2">
+						  	<div class="img" style="background-image: url(images/services-2.jpg);"></div>
+						  	<h3><a href="#">Couples Counseling</a></h3>
+						  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-3">
+						  	<div class="img" style="background-image: url(images/services-3.jpg);"></div>
+						  	<h3><a href="#">Depression Treatment</a></h3>
+						  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-4">
+						  	<div class="img" style="background-image: url(images/services-4.jpg);"></div>
+						  	<h3><a href="#">Family Problem</a></h3>
+						  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-5">
+						  	<div class="img" style="background-image: url(images/services-5.jpg);"></div>
+						  	<h3><a href="#">Personal Problem</a></h3>
+						  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						  </div>
+						  <div class="tab-pane container p-0 fade" id="services-6">
+						  	<div class="img" style="background-image: url(images/services-6.jpg);"></div>
+						  	<h3><a href="#">Business Problem</a></h3>
+						  	<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+  
+    <section class="ftco-section testimony-section">
+    	<div class="img img-bg border" style="background-image: url(images/bg_4.jpg);"></div>
+    	<div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+          	<span class="subheading">Testimonial</span>
+            <h2 class="mb-3">Happy Clients</h2>
+          </div>
+        </div>
+        <div class="row ftco-animate">
+          <div class="col-md-12">
+            <div class="carousel-testimony owl-carousel ftco-owl">
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="testimony-wrap py-4">
+                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
+                  <div class="text">
+                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <div class="d-flex align-items-center">
+                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
+                    	<div class="pl-3">
+		                    <p class="name">Roger Scott</p>
+		                    <span class="position">Marketing Manager</span>
+		                  </div>
+	                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+		<section class="ftco-section bg-light">
+    	<div class="container">
+    		<div class="row justify-content-center pb-5 mb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Price &amp; Plans</span>
+            <h2>Affordable Packages</h2>
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-4 ftco-animate d-flex">
+	          <div class="block-7 w-100">
+	            <div class="text-center">
+		            <span class="price"><sup>$</sup> <span class="number">49</span> <sub>/mo</sub></span>
+		            <span class="excerpt d-block">For Adults</span>
+		            <ul class="pricing-text mb-5">
+		              <li><span class="fa fa-check mr-2"></span>Individual Counseling</li>
+		              <li><span class="fa fa-check mr-2"></span>Couples Therapy</li>
+		              <li><span class="fa fa-check mr-2"></span>Family Therapy</li>
+		            </ul>
+
+		            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate d-flex">
+	          <div class="block-7 w-100">
+	            <div class="text-center">
+		            <span class="price"><sup>$</sup> <span class="number">79</span> <sub>/mo</sub></span>
+		            <span class="excerpt d-block">For Children</span>
+		            <ul class="pricing-text mb-5">
+		              <li><span class="fa fa-check mr-2"></span>Counseling for Children</li>
+		              <li><span class="fa fa-check mr-2"></span>Behavioral Management</li>
+		              <li><span class="fa fa-check mr-2"></span>Educational Counseling</li>
+		            </ul>
+
+		            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
+	            </div>
+	          </div>
+	        </div>
+	        <div class="col-md-4 ftco-animate d-flex">
+	          <div class="block-7 w-100">
+	            <div class="text-center">
+		            <span class="price"><sup>$</sup> <span class="number">109</span> <sub>/mo</sub></span>
+		            <span class="excerpt d-block">For Business</span>
+		            <ul class="pricing-text mb-5">
+		              <li><span class="fa fa-check mr-2"></span>Consultancy Services</li>
+		              <li><span class="fa fa-check mr-2"></span>Employee Counseling</li>
+		              <li><span class="fa fa-check mr-2"></span>Psychological Assessment</li>
+		            </ul>
+
+		            <a href="#" class="btn btn-primary d-block px-2 py-3">Get Started</a>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+    	</div>
+    </section>
+		
+		<section class="ftco-appointment ftco-section img" style="background-image: url(images/bg_2.jpg);">
+			<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6 half ftco-animate">
+    				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
+    				<form action="#" class="appointment">
+    					<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="text" class="form-control" placeholder="Your Name">
+			            </div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="text" class="form-control" placeholder="Email">
+			            </div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			    					<div class="form-field">
+	          					<div class="select-wrap">
+	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+	                      <select name="" id="" class="form-control">
+	                      	<option value="">Services</option>
+	                        <option value="">Relation Problem</option>
+	                        <option value="">Couple Counseling</option>
+	                        <option value="">Depression Treatment</option>
+	                        <option value="">Family Problem</option>
+	                        <option value="">Personal Problem</option>
+	                        <option value="">Business Problem</option>
+	                      </select>
+	                    </div>
+			              </div>
+			    				</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+			            </div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+			            </div>
+								</div>
+    					</div>
+	          </form>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+          	<span class="subheading">Blog</span>
+            <h2>Recent Blog</h2>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
+	              </a>
+	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
+                	<div>
+                		<span class="day">18</span>
+                		<span class="mos">April</span>
+                		<span class="yr">2020</span>
+                	</div>
+                </div>
+                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
+	              </a>
+	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
+                	<div>
+                		<span class="day">18</span>
+                		<span class="mos">April</span>
+                		<span class="yr">2020</span>
+                	</div>
+                </div>
+                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <div class="text text-center">
+              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
+	              </a>
+	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
+                	<div>
+                		<span class="day">18</span>
+                		<span class="mos">April</span>
+                		<span class="yr">2020</span>
+                	</div>
+                </div>
+                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a mb-3></h3>
+								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>              
+							</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>	
+
+    <footer class="ftco-footer">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo"><a href="#">Counselor</a></h2>
+              <p>Far far away, behind the word mountains, far from the countries.</p>
+              <ul class="ftco-footer-social list-unstyled mt-2">
+                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Explore</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>What We Do</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Plans &amp; Pricing</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Legal</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Company</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
+                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid px-0 py-5 bg-black">
+      	<div class="container">
+      		<div class="row">
+	          <div class="col-md-12">
+		
+	            <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+	          </div>
+	        </div>
+      	</div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="${cpath}/resources/js/jquery.min.js"></script>
+  <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="${cpath}/resources/js/popper.min.js"></script>
+  <script src="${cpath}/resources/js/bootstrap.min.js"></script>
+  <script src="${cpath}/resources/js/jquery.easing.1.3.js"></script>
+  <script src="${cpath}/resources/js/jquery.waypoints.min.js"></script>
+  <script src="${cpath}/resources/js/jquery.stellar.min.js"></script>
+  <script src="${cpath}/resources/js/owl.carousel.min.js"></script>
+  <script src="${cpath}/resources/js/jquery.magnific-popup.min.js"></script>
+  <script src="${cpath}/resources/js/jquery.animateNumber.min.js"></script>
+  <script src="${cpath}/resources/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="${cpath}/resources/js/google-map.js"></script>
+  <script src="${cpath}/resources/js/main.js"></script>
+    
   </body>
 </html>
