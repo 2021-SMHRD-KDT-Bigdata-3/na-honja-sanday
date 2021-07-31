@@ -5,10 +5,11 @@
 <mapper namespace="com.smhrd.mapper.nahonsanMapper">
     
 
-    	<select id="login" resultType = "com.smhrd.mapper.testVO" >
-    	    select * from test_tbl where name=#{name} and birth=#{birth} 
+    	<select id="login" resultType = "com.smhrd.mapper.guardianVO" >
+    	    select * from guardian where email=#{email} and password=#{password} 
     	                                 <!-- 앞 db에 있는 값 뒤 사용자가 입력한 값-->
-    	    
     	</select>
+    	
+    	
     
 </mapper>
