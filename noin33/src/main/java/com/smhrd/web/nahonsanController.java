@@ -107,6 +107,10 @@ public class nahonsanController {
       return "main";
    }
    
+   @RequestMapping(value = "/index.do")
+   public String index() {
+      return "index";
+   }
 	/*
 	 * jsp가 만들어지지 않은 페이지
 	 *
