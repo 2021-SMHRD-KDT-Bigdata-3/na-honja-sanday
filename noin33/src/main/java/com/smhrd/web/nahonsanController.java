@@ -58,7 +58,7 @@ public class nahonsanController {
    public String home() {
       return "index";
    }
-   @RequestMapping(value = "/About.do")
+   @RequestMapping("/About.do")
    public String about() {
       return "about";
    }
