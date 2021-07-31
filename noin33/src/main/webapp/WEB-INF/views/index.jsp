@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR" %>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<c:set var="cpath" value="${pageContext.request.contextPath}"/>     
 
 <!DOCTYPE html>
 <html style="font-size: 16px;">
@@ -30,7 +31,7 @@
   </head>
   <body data-home-page="Home.html" data-home-page-title="Home" class="u-body"><header class="u-align-center u-clearfix u-header" id="sec-6a02" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <a href="https://nicepage.com" class="u-image u-logo u-image-1" data-image-width="80" data-image-height="40">
-          <img src="resources/images/default-logo.png" class="u-logo-image u-logo-image-1">
+          <img src="${cpath}/resources/images/default-logo.png" class="u-logo-image u-logo-image-1">
         </a>
         <a href="https://nicepage.com/k/shopping-cart-html-templates" class="u-align-right u-border-2 u-border-black u-btn u-button-style u-hover-black u-none u-text-black u-text-hover-white u-btn-1">·Î±×ÀÎ</a>
       </div></header>
@@ -39,7 +40,7 @@
         <li data-u-target="#carousel_7b8f" class="u-active u-grey-30" data-u-slide-to="0"></li>
       </ol>
       <div class="u-carousel-inner" role="listbox">
-        <div class="u-active u-carousel-item u-clearfix u-image u-section-1-1" src="" data-image-width="275" data-image-height="183">
+        <div class="u-active u-carousel-item u-clearfix u-image u-section-1-1 banner" data-image-width="275" data-image-height="183">
           <div class="u-clearfix u-sheet u-sheet-1">
             <div class="u-align-left u-border-4 u-border-grey-dark-1 u-container-style u-group u-opacity u-opacity-50 u-group-1">
              <div class="u-container-layout u-valign-middle u-container-layout-1">
