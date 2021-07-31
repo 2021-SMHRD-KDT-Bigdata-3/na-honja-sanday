@@ -40,15 +40,31 @@ public class HomeController {
 		return "index";
 	}
 	@RequestMapping(value = "/About.do")
-	public String About() {
-		return "About";
+	public String about() {
+		return "about";
 	}
-	@RequestMapping(value = "/Contact.do")
-	public String Contact() {
-		return "Contact2";
-	}
-	@RequestMapping(value = "/Home.do")
+	@RequestMapping(value = "/blog.do")
 	public String Home() {
-		return "Home";
+		return "blog";
+	}
+	@RequestMapping(value = "/contract.do")
+	public String Contract() {
+		return "contract";
+	}
+	@RequestMapping(value = "/blog-single.do")
+	public String blog_single() {
+		return "blog-single";
+	}
+	@RequestMapping(value = "/counselor.do")
+	public String counselor() {
+		return "counselor";
+	}
+	@RequestMapping(value = "/pricing.do")
+	public String pricing() {
+		return "pricing";
+	}
+	@RequestMapping(value = "/services.do")
+	public String services() {
+		return "services";
 	}
 }
