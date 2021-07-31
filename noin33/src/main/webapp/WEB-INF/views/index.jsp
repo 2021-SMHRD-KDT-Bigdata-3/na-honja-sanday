@@ -49,27 +49,28 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Counselor</a>
+	      <a class="navbar-brand" href="index.do">Counselor</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
+	<!-- 상단 메뉴 버튼 부분 -->
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="counselor.html" class="nav-link">Counselor</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="index.do" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="About.do" class="nav-link">About</a></li>
+	          <li class="nav-item"><a href="counselor.do" class="nav-link">Counselor</a></li>
+	          <li class="nav-item"><a href="services.do" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="pricing.do" class="nav-link">Pricing</a></li>
+	          <li class="nav-item"><a href="blog.do" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contract.do" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('../resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">
