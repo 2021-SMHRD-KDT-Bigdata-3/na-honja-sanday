@@ -102,6 +102,10 @@ public class nahonsanController {
       return "services";
    }
    
+   @RequestMapping(value = "/main.do")
+   public String main() {
+      return "main";
+   }
    
 	/*
 	 * jsp가 만들어지지 않은 페이지
@@ -123,17 +127,5 @@ public class nahonsanController {
 	 * 
 	 */
    
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+
 }

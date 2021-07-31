@@ -49,85 +49,44 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.html">Counselor</a>
+	      <a class="navbar-brand" href="index.do">Counselor</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="counselor.html" class="nav-link">Counselor</a></li>
-	          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
-	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+	          <li class="nav-item"><a href="main.do" class="nav-link">Home</a></li>
+	          <li class="nav-item"><a href="About.do" class="nav-link">About</a></li>
+	          <li class="nav-item active"><a href="counselor.do" class="nav-link">Counselor</a></li>
+	          <li class="nav-item"><a href="services.do" class="nav-link">Services</a></li>
+	          <li class="nav-item"><a href="pricing.do" class="nav-link">Pricing</a></li>
+	          <li class="nav-item"><a href="blog.do" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contract.do" class="nav-link">Contact</a></li>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg'); height: 500px; position: relative;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
-        <div class="row no-gutters slider-text align-items-center">
+        <div style="height: 500px; position: relative;" class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
 	            <h1 class="mb-4">Counseling For Your Better Life</h1>
 	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-	            <p><a href="#" class="btn btn-primary py-3 px-4">Contact us</a> <a href="#" class="btn btn-white py-3 px-4">Read more</a></p>
             </div>
           </div>
-          <a href="https://vimeo.com/45830194" class="img-video popup-vimeo d-flex align-items-center justify-content-center">
-          	<span class="fa fa-play"></span>
-          </a>
+          
         </div>
       </div>
     </div>
 
-    <section class="ftco-intro">
-    	<div class="container">
-    		<div class="row no-gutters">
-    			<div class="col-md-4 d-flex">
-    				<div class="intro aside-stretch d-lg-flex w-100">
-    					<div class="icon">
-    						<span class="flaticon-checklist"></span>
-    					</div>
-    					<div class="text">
-    						<h2>100% Confidential</h2>
-    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4 d-flex">
-    				<div class="intro color-1 d-lg-flex w-100">
-    					<div class="icon">
-    						<span class="flaticon-employee"></span>
-    					</div>
-    					<div class="text">
-    						<h2>Qualified Team</h2>
-    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    					</div>
-    				</div>
-    			</div>
-    			<div class="col-md-4 d-flex">
-    				<div class="intro color-2 d-lg-flex w-100">
-    					<div class="icon">
-    						<span class="flaticon-umbrella"></span>
-    					</div>
-    					<div class="text">
-    						<h2>Individual Approach</h2>
-    						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+    
 
-		<section class="ftco-section">
+		<section class="ftco-intro">
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -145,7 +104,6 @@
 	    					</div>
     					</div>
     					<h2>Make Schedule</h2>
-    					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     				</div>
     			</div>
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
@@ -157,7 +115,6 @@
 	    					</div>
     					</div>
     					<h2>Start Discussion</h2>
-  						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     				</div>
     			</div>
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
@@ -169,7 +126,6 @@
 	    					</div>
     					</div>
     					<h2>Enjoy Plan</h2>
-  						<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
     				</div>
     			</div>
     		</div>
