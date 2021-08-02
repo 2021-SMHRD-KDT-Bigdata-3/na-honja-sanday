@@ -1,4 +1,4 @@
-package com.smhrd.web;
+package com.smhrd.nahonsan;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -40,33 +40,23 @@ public class nahonsanController {
    }
    
    // 만들어지지 않은 페이지
-   //@RequestMapping("/firstpage")
-	//public String first() {
-		//return "firstpage";
-	//}
-
-   /*
-	 * @RequestMapping("/loginTEST.do") public String loginTEST(testVO test) {
-	 * testVO vo = naMapper.login(test);
-	 * 
-	 * if(vo==null) { System.out.println("로그인 실패"); return "logintest"; } else {
-	 * return "loginsuccesstest"; }
-	 * 
-	 * }
-	 */
-	
-   
-   
-   @RequestMapping(value = "/login.do")
-   public String login(guardianVO guardian) {
-	   guardianVO guard = naMapper.login(guardian);
-	   
-	   if(guard == null) {
-		   return "login";
-	   }else {
-		   return "main_guard";
-	   }
+   @RequestMapping("/firstpage")
+	public String first() {
+	   return "firstpage";
    }
+
+	
+   @RequestMapping("/login.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
+   public String login() {
+	   return "login";
+   }
+   
+	/*// 진짜로 쓸예정인 매핑
+	 * @RequestMapping(value = "/login.do") public String login(guardianVO guardian)
+	 * { guardianVO guard = naMapper.login(guardian);
+	 * 
+	 * if(guard == null) { return "login"; }else { return "main_guard"; } }
+	 */
   
    @RequestMapping(value = "/About.do")
    public String about() {
