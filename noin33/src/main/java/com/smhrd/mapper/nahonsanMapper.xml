@@ -10,9 +10,7 @@
     	                                 <!-- 앞 db에 있는 값 뒤 사용자가 입력한 값-->
     	</select>
     	
-    	<insert>
-    	    insert into 
-    	</insert>
+    	
     	
     
 </mapper>
