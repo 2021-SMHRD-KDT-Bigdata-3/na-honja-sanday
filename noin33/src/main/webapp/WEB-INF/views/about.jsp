@@ -24,6 +24,15 @@
     
     
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+     <style>
+     	#tlscjd{
+     		border:2px solid; border-collapse:collapse; text-align;center;
+     		width : 100%;
+     		
+     	}
+     	td, th{border:1px solid; padding 10px 5px;}
+     </style>
   </head>
   <body>
 
@@ -73,6 +82,65 @@
 	  </nav>
     <!-- END nav -->
     
+    
+    
+    <section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container" >
+				<div class="row" >
+					<div style="width:25%; margin-top:50px;">
+						<h1 class="">관리</h1>
+                <ul class="">
+                    <li class="">
+                        <a class="" href="#">
+                            	관리 신청
+                            <i class=""></i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#">
+                            	관리 등록
+                            <i class=""></i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="" href="#">
+                            	관리 목록
+                            <i class=""></i>
+                        </a>
+                    </li>
+                </ul>
+					</div>
+					<div class="" style="width:75%">
+	          <div class="heading-section py-md-5" >
+	          	<span class="subheading">Welcome to Counselor</span>
+	            <h2 class="mb-4">관리 신청</h2>
+				<div class="heading-section py-md-5">
+					<table id="tlscjd" >
+						<tr>
+							<th>컬럼1</th>
+							<th>컬럼2</th>
+							<th>컬럼3</th>
+							<th>컬럼4</th>
+						</tr>
+						<tr>
+							<td>ㅇㅇㅇ</td>
+							<td>ㅇㅇㅇ</td>
+							<td>ㅇㅇㅇ</td>
+							<td>ㅇㅇㅇ</td>
+						</tr>					
+					</table>	            
+				</div>
+			  </div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+    
+    
+    
+    
+    
     <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_5.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -85,29 +153,7 @@
       </div>
     </section>
 
-    <section class="ftco-section ftco-no-pb ftco-no-pt">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center" style="background-image: url(images/about-1.jpg);">
-					</div>
-					<div class="col-md-6 wrap-about px-md-5 ftco-animate py-5 bg-light">
-	          <div class="heading-section py-md-5">
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">Best Counseling Funding Network Worldwide.</h2>
-
-	            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-	            <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-
-	            <a href="https://vimeo.com/45830194" class="play-video popup-vimeo d-flex align-items-center mt-4">
-	            	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-play"></span></div>
-	            	<span class="watch">Watch Our Consultant Video</span>
-	            </a>
-	          </div>
-
-					</div>
-				</div>
-			</div>
-		</section>
+    
 
 		<section class="ftco-counter ftco-section ftco-no-pt ftco-no-pb img bg-light" id="section-counter">
     	<div class="container">
