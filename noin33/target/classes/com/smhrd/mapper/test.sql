@@ -2,31 +2,45 @@ drop table welfare_worker;
 drop table senior;
 drop table emergency;
 drop table request;
+
 --보호자 테이블 --
-create table guardian(email varchar(100),
+create table guardian(
+email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-adress varchar(50) not null,
-seperator varchar(20) not null,
+address varchar(50),
+seperator varchar(10) not null,   --구분자(2)--
 constraint guard_email primary key(email))
 --복지사 테이블 --
-create table welfare_worker(email varchar(100),
+create table welfare_worker(
+email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-seperator varchar(20) not null, 
+seperator varchar(10) not null,   --구분자(3)--
 constraint wel_email primary key(email))
 -- 노인 테이블 --
-create table senior(idx int not null auto_increment,
-seperator varchar(20) not null,
+create table senior(
+idx int not null auto_increment,
+seperator varchar(10) not null,   --구분자 (1)--
 name varchar(50) not null,
 age int not null,
-regi_number varchar(50) not null,
-adress varchar(100) not null,
+regi_number varchar(50) not null, --주민번호--
+address varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
-aplication_date datetime default now(),
+application_date datetime default now(),
+constraint seni_id primary key(ID))
 primary key(idx))
---로그인 테이블 필요--
+
+
+--회원 테이블 필요--
+create table member(
+id varchar(30) primary key,
+password varchar(20) not null,
+seperator varchar(10) not null
+)
+drop table member;
+constraint mem_id foreign key(id) references 
 --각테이블의 seperator 참조해서--
 
 --위험 상황 테이블--
@@ -46,10 +60,10 @@ recipient varchar(50) not null,
 contents varchar(4000) not null,
 send_date datetime default now(),
 primary key(idx))
-
 select * from senior;
 select * from welfare_worker;
 select * from request;
+
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,
 seperator varchar(20) not null,
@@ -75,7 +89,7 @@ select * from request;
 --해당 idx를 가진 행 보여주기.
 select * from request where idx = 2;
 
-delete from request where idx = 5;
+delete from request where idx = 7;
 
 --복지사가 관리승인을 할 시 , 신청 테이블에서 노인 테이블로 복사해주고 해당 번호를 가진 테이블은 지우기.
 INSERT INTO senior SELECT * FROM request WHERE idx = 2;
@@ -86,5 +100,5 @@ select * from welfare_worker;
 
 commit;
 
-
+show variables like 'c%';
 

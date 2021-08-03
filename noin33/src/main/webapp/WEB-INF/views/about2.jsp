@@ -90,19 +90,19 @@
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
-                        <a class="" href="about2.do">
+                        <a class="" href="${cpath}/about2.do">
                             	관리 신청
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="main_guard.do">
+                        <a class="" href="${cpath}/About.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="about3.do">
+                        <a class="" href="${cpath}/about3.do">
                             	관리 목록
                             <i class=""></i>
                         </a>
@@ -111,15 +111,14 @@
 					</div>
 			<!--  신청 -->		
 			<div class="" style="width:75%">
-	         <form action = "${cpath}/about2.do" method="post">
 	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
 	            <h2 class="mb-4">관리 신청</h2>
 	            
 				<div class="heading-section py-md-5" >
 					
+	       		  <form action = "${cpath}/noinsert.do" method="post">
 					<div >
-						
 						이름 : 
 						<input type="text" name ="name">
 						<br>
@@ -138,13 +137,13 @@
 						특이사항 : 
 						<input type="text" name = "uniqueness">
 					</div>  
-				</div>
-				<div align="right">
-						<input type= "submit" value = "신청">
+					<div align="right">
+						<button type="submit" class="btn btn-primary btn-sm">등록</button>
 				
-				</div>  
+					</div>  
+			 	  </form>
+				</div>
 			  </div>
-			  </form>
 
 					
 				

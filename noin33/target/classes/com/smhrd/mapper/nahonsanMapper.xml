@@ -6,24 +6,28 @@
     
 
     	<select id="login" resultType = "com.smhrd.mapper.loginVO" >
-    	    select * from login where id=#{email} and password=#{password}
+    	    select * from login where id=#{id} and password=#{password}
     	                                 <!-- 앞 db에 있는 값 뒤 사용자가 입력한 값-->
     	</select>
     	
     	<!-- 회원가입할때 정보를 나눠서 담기 -->
     	<insert id="join" parameterType = "com.smhrd.mapper.loginVO">
-    	    insert into member(id, password)
-    	    values(#{email}, #{password})
+    	    insert into member(id, password, seperator)
+    	    values(#{email}, #{password}, "2")
     	</insert> 
     	<insert id="join2" parameterType = "com.smhrd.mapper.guardianVO">
     	    insert into guardian(email, name, phone, address)
     	    values(#{email}, #{name}, #{phone}, #{address})
     	</insert>
+    	<insert id="join3" parameterType = "com.smhrd.mapper.welfare_workerVO">
+    	    insert into welfare_worker(email, name, phone)
+    	    values(#{email}, #{name}, #{phone})
+    	</insert>
     	
     		<!--  신청 테이블 신청하면서 신청테이블 정보 넣기-->
     	<insert id="addnoin" parameterType="com.smhrd.mapper.requestVO">
     		insert into request(seperator,name,age,regi_number,adress,phone,uniqueness) 
-    		values(1,#{name},#{age},#{regi_number}#{adress},#{phone},#{uniqueness})
+    		values(1,#{name},#{age},#{regi_number},#{adress},#{phone},#{uniqueness})
     	</insert>
     
     	<!-- 관리 승인하면 노인테이블에선 신청테이블의 번호를가진 행 복사해서 넣고, 신청테이블에선 삭제하기. -->

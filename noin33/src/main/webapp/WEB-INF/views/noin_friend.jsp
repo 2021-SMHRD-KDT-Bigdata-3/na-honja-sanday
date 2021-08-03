@@ -18,36 +18,118 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
+    
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
   </head>
   <body>
+
+     <div class="wrap">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 d-flex align-items-center">
+                  <p class="mb-0 phone pl-md-2">
+                     <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+                     <a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+                  </p>
+               </div>
+               <div class="col-md-6 d-flex justify-content-md-end">
+                  <div class="social-media">
+                   <p class="mb-0 d-flex">
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                   </p>
+              </div>
+               </div>
+            </div>
+         </div>
+      </div>
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
        <div class="container">
-         <a class="navbar-brand" href="index.do">나혼자산Day</a>
-      <div style="height:30px"><a href="#">로그인</a></div>
-      </div>
+         <a class="navbar-brand" href="index.do">나혼자산데이</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="oi oi-menu"></span> 메뉴
+         </button>
+
+         <div class="collapse navbar-collapse" id="ftco-nav">
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
+             <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
+             <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
+             <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
+           </ul>
+         </div>
+       </div>
      </nav>
     <!-- END nav -->
-    
-   <div align="center">
-      <h1>회원가입 </h1>
-      <form action="${cpath}/join_welfare.do" method="post" id="form">
-         구분 &nbsp;: &nbsp;&nbsp;
-         <select id='selector'>
-            <option value='join_welfare.do'>복지사</option>
-            <option value='join_gardian.do'>보호자</option>
-         </select> <br><br>
-         <input type="text" name="email" id="" placeholder="Email을 입력하세요"> <br><br>
-         <input type="text" name="password" id="" placeholder="password를 입력하세요"> <br><br>
-         <input type="text" name="name" id="" placeholder="이름을 입력하세요"> <br><br>
-         <input type="text" name="tel" id="" placeholder="전화번호를 입력하세요."> <br><br>
-         <input type="text" name="address" id="" placeholder="주소를 입력하세요"> <br><br>
-      <div id="btn_group"> <button type="submit" id="test_btn1">회원가입</button> <button id="test_btn2" onclick="index">메인으로</button> </div>
-      </form>
-   </div> <br><br>
+        <section class="ftco-section bg-light">
+			<div class="container">
+        <div>
+        	<h1 align="center">친구 찾기</h1> <br>
+        </div>
+				<div class="row justify-content-center">
+        <div id="daumRoughmapContainer1627974670032" class="root_daum_roughmap root_daum_roughmap_landing" style="width:960px; height:500px;"></div>
+							<div class="row no-gutters">
+								<div class="col-md-12">
+									<div class="contact-wrap w-100 p-md-5 p-4">
+										<h3 class="mb-4">친구 상세 정보</h3>
+											<div class="row">
+												<div class="col-md-4">
+													<div class="form-group">
+														<label class="label" for="name">이름</label>
+														<input type="text" class="form-control" name="name" id="name" placeholder="이름">
+													</div>
+												</div>
+												<div class="col-md-4"> 
+													<div class="form-group">
+														<label class="label" for="gender">성별</label>
+														<input type="text" class="form-control" name="gender" id="gender" placeholder="성별">
+													</div>
+												</div>
+												<div class="col-md-4"> 
+													<div class="form-group">
+														<label class="label" for="age">나이</label>
+														<input type="text" class="form-control" name="age" id="age" placeholder="나이">
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="address">주소</label>
+														<input type="text" class="form-control" name="address" id="address" placeholder="주소">
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="#">특이사항</label>
+														<textarea name="star" class="form-control" id="star" cols="30" rows="4" placeholder="특이사항"></textarea>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<input type="submit" value="친구 신청하기" class="btn btn-primary">
+														<div class="submitting"></div>
+													</div>
+												</div>
+											</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+									</div>
+					</section>
+
+
+
+
+
+
+
+<!-- footer 시작  -->
     <footer class="ftco-footer">
       <div class="container">
         <div class="row mb-5">
@@ -128,9 +210,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  
-  <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
-  <script src="${cpath}/resources/js/jquery.min.js"></script>
+
+ <script src="${cpath}/resources/js/jquery.min.js"></script>
   <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="${cpath}/resources/js/popper.min.js"></script>
   <script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -144,11 +225,20 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript">
-        $('#selector').on('change', function(){
-           $('#form').attr('action', $('#selector').val())
-        })
-  </script>
+    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1627974670032",
+		"key" : "26ugq",
+		"mapWidth" : "100%",
+		"mapHeight" : "500"
+	}).render();
+</script>
   </body>
 </html>

@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
+    <title>나혼자산DAY - 신청 현황</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/animate.css">
-    
+    <link rel="shortcut icon" type="image/x-icon" href="${cpath}/resources/images/logo.jpg">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
   </head>
   <body>
 
@@ -52,31 +53,37 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">Counselor</a>
+	      <a class="navbar-brand" href="index.do">나혼자산DAY</a>
 	     
 
-	  	  <div style="height:30px"><a href="#" >로그인</a></div>
+	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
 	      
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+ 
+    
+    <div class="hero-wrap"  data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            <h1 class="mb-4">Counseling For Your Better Life</h1>
-	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-	            <p><a href="#" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="#" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
-	            
+	            	<h1 class="mb-4" style="width:1110px;max-width:100%">이름 : <input style="max-width:100%" class="mb-4" type="text"></h1> 
+	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="text"> </h1>
+	            	<div class="mb-4" style="width:1110px;  max-width:100%" align="right">
+	            	<button type='button' class="btn btn-primary py-3 px-4" id="modal_btn">조회</button>
+	            	<button type='button' class="btn  py-3 px-4" onclick="location.href='index.do'">돌아가기</button>
+	            	</div>
             </div>
           </div>
-         
         </div>
       </div>
     </div>
+
+
+
 
 
     <footer class="ftco-footer">
@@ -159,6 +166,16 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
+	<!-- modal -->
+			<div class="black_bg"></div>
+					<div class="modal_wrap" id = "modal_temp">
+    				<div class="modal_close"><a href="#">close</a></div>
+    				<div>
+        				<h1 class="mb-4">(이름)님은</h1>
+	            		<p class="mb-4">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
+    				</div>
+					</div>
+
 
   <script src="${cpath}/resources/js/jquery.min.js"></script>
   <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
@@ -174,6 +191,24 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-    
+
+   <script>
+  window.onload = function() {
+
+  function onClick() {
+      document.querySelector('.modal_wrap').style.display ='block';
+      document.querySelector('.black_bg').style.display ='block';
+  }   
+  function offClick() {
+      document.querySelector('.modal_wrap').style.display ='none';
+      document.querySelector('.black_bg').style.display ='none';
+  }
+
+  document.getElementById('modal_btn').addEventListener('click', onClick);
+  document.querySelector('.modal_close').addEventListener('click', offClick);
+
+  };
+  </script>
+
   </body>
 </html>

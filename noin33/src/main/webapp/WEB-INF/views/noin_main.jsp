@@ -18,36 +18,66 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
-    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
+    
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
   </head>
   <body>
+
+     <div class="wrap">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 d-flex align-items-center">
+                  <p class="mb-0 phone pl-md-2">
+                     <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+                     <a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+                  </p>
+               </div>
+               <div class="col-md-6 d-flex justify-content-md-end">
+                  <div class="social-media">
+                   <p class="mb-0 d-flex">
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                   </p>
+              </div>
+               </div>
+            </div>
+         </div>
+      </div>
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
        <div class="container">
-         <a class="navbar-brand" href="index.do">나혼자산Day</a>
-      <div style="height:30px"><a href="#">로그인</a></div>
-      </div>
+         <a class="navbar-brand" href="index.do">나혼자산데이</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="oi oi-menu"></span> 메뉴
+         </button>
+
+         <div class="collapse navbar-collapse" id="ftco-nav">
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
+             <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
+             <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
+             <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
+           </ul>
+         </div>
+       </div>
      </nav>
     <!-- END nav -->
+        
+             <div class="text w-100" align="center" >
+               <h1 class="mb-4">Counseling For Your Better Life</h1>
+               <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+       
+   	<div align="center">
+   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">복지사 호출</button> &nbsp;&nbsp;&nbsp;
+   		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">친구 찾기</button>
+   	</div>
     
-   <div align="center">
-      <h1>회원가입 </h1>
-      <form action="${cpath}/join_welfare.do" method="post" id="form">
-         구분 &nbsp;: &nbsp;&nbsp;
-         <select id='selector'>
-            <option value='join_welfare.do'>복지사</option>
-            <option value='join_gardian.do'>보호자</option>
-         </select> <br><br>
-         <input type="text" name="email" id="" placeholder="Email을 입력하세요"> <br><br>
-         <input type="text" name="password" id="" placeholder="password를 입력하세요"> <br><br>
-         <input type="text" name="name" id="" placeholder="이름을 입력하세요"> <br><br>
-         <input type="text" name="tel" id="" placeholder="전화번호를 입력하세요."> <br><br>
-         <input type="text" name="address" id="" placeholder="주소를 입력하세요"> <br><br>
-      <div id="btn_group"> <button type="submit" id="test_btn1">회원가입</button> <button id="test_btn2" onclick="index">메인으로</button> </div>
-      </form>
-   </div> <br><br>
+    <br><br>
+
     <footer class="ftco-footer">
       <div class="container">
         <div class="row mb-5">
@@ -128,9 +158,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-  
-  <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
-  <script src="${cpath}/resources/js/jquery.min.js"></script>
+
+ <script src="${cpath}/resources/js/jquery.min.js"></script>
   <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="${cpath}/resources/js/popper.min.js"></script>
   <script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -144,11 +173,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript">
-        $('#selector').on('change', function(){
-           $('#form').attr('action', $('#selector').val())
-        })
-  </script>
+    
   </body>
 </html>

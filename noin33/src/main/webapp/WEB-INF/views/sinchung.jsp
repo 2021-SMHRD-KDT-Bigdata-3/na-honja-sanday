@@ -21,20 +21,7 @@
    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
-   <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
  </head>
- 
- <style>
- 	.modal_wrap1{
-        display: none;
-        position: absolute;
-        top:50%;
-        left: 50%;
-        margin: -250px 0 0 -250px;
-        background:#eee;
-        z-index: 2;
-    }
- </style>
  <body>
 
  	<div class="wrap">
@@ -63,72 +50,65 @@
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="index.do">나혼자산Day</a>
+		<div style="height:30px"><a href="#">로그인</a></div>
 		</div>
 	  </nav>
 	 <br><br><br>
-	 <div align="center"><h1>로그인</h1> <br>
-	 </div> 
-	<div>
-	
-	
-	
-	<div class="row justify-content-center">
-		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
-			<div class="services-2 text-center ">
-				<button style="width:250px;height:250px" type='button' id="modal_btn1" class="btn btn-primary py-3 px-4" style="width : 100%" form="loginForm">노인</button>
-			</div>
-		</div>
-		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
-			<div class="services-2 text-center">
-			<button style="width:250px;height:250px" type='button' id="modal_btn2" class="btn btn-primary py-3 px-4" style="width : 100%" form="loginForm">보호자</button>
-			</div>
-		</div>
-		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
-			<div class="services-2 text-center">
-			<button style="width:250px;height:250px" type='button' id="modal_btn3" class="btn btn-primary py-3 px-4" style="width : 100%" form="loginForm">복지사</button>
-			</div>
-		</div>
-    </div>
-    <br><br>
-    <div align="center">
-		<button class="btn btn-primary py-3 px-4" onclick="location.href='join.do'">회원가입</button>
-	</div>
-    <br><br>
-		
-		
-  	</div>
+	 <div align="center"><h1>관리 신청</h1> <br>
+	 <!--  
+	 <form action="" method="get" id="loginForm">
+	 -->
+	 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
+			이런식으로 주고
+			Controller에 가보면
+			RequestMapping() <-- 이거 있잖아
+			여기 안에가다 "index.do" 이런식으로 맵핑해주면 돼
+			파일 경로를 적는게 아니라
+			저렇게			
+
+ --%>
+	 <table>
+	<tr>
+		<td>
+			<input type="text" name=id id=id size="35" placeholder="이름">
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			<input type="text" name=pw id=pw size="35" placeholder="주민등록번호 (-빼고)">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<input type="text" name=address id=address size="35" placeholder="주소">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<input type="text" name=tel id=tel size="35" placeholder="전화번호 (-빼고)">
+		</td>
+	</tr>	
+	<tr>	
+		<td colspan="3">
+			<textarea name="star" class="form-control" id="star" cols="30" rows="4" placeholder="특이사항"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<button type="submit" class="btn btn-success" style="width : 100%" onclick="location.href='join.do'">신청하기</button>
+		</td>
+	</tr>
+		<tr>
+		<td colspan="3">
+			<button class="btn btn-success" style="width : 100%" onclick="location.href='index.do'">메인으로</button>
+		</td>
+	</tr>
+	</table>
+	</form>
+	 </div> <br><br><br><br><br><br><br><br>
   
-  	<!-- modal -->
-			<div class="black_bg"></div>
-					<div class="modal_wrap1" id = "modal_temp">
-    				<div class="modal_close"><a href="#">close</a></div>
-    				<div>
-    				<form action="login.do" method="get" id="loginForm">
-    					 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
-								이런식으로 주고
-								Controller에 가보면
-								RequestMapping() <-- 이거 있잖아
-								여기 안에가다 "index.do" 이런식으로 맵핑해주면 돼
-								파일 경로를 적는게 아니라
-								저렇게			
-						
-						--%>
-        				 <table>
-					<tr>
-						<td>
-							<input type="text" name=id id=id size="25" placeholder="아이디">
-						</td>
-					</tr>
-					<tr>	
-						<td>
-							<input type="password" name=pw id=pw size="25" placeholder="비밀번호">
-						</td>
-					</tr>
-					</table>
-					</form>
-					<button class="btn btn-success" style="width : 250px" type="submit" form="loginForm">로그인</button>
-    				</div>
-					</div>
+  
+  
   
   
   <footer class="ftco-footer">
@@ -207,43 +187,5 @@
     </footer>
 
 
-
-
-
-  <script src="${cpath}/resources/js/jquery.min.js"></script>
-  <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="${cpath}/resources/js/popper.min.js"></script>
-  <script src="${cpath}/resources/js/bootstrap.min.js"></script>
-  <script src="${cpath}/resources/js/jquery.easing.1.3.js"></script>
-  <script src="${cpath}/resources/js/jquery.waypoints.min.js"></script>
-  <script src="${cpath}/resources/js/jquery.stellar.min.js"></script>
-  <script src="${cpath}/resources/js/owl.carousel.min.js"></script>
-  <script src="${cpath}/resources/js/jquery.magnific-popup.min.js"></script>
-  <script src="${cpath}/resources/js/jquery.animateNumber.min.js"></script>
-  <script src="${cpath}/resources/js/scrollax.min.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-  <script src="${cpath}/resources/js/google-map.js"></script>
-  <script src="${cpath}/resources/js/main.js"></script>
-
-   <script>
-  window.onload = function() {
-
-  function onClick() {
-      document.querySelector('.modal_wrap1').style.display ='block';
-      document.querySelector('.black_bg').style.display ='block';
-  }   
-  function offClick() {
-      document.querySelector('.modal_wrap1').style.display ='none';
-      document.querySelector('.black_bg').style.display ='none';
-  }
-
-  
-  document.getElementById('modal_btn1').addEventListener('click', onClick);
-  document.getElementById('modal_btn2').addEventListener('click', onClick);
-  document.getElementById('modal_btn3').addEventListener('click', onClick);
-  document.querySelector('.modal_close').addEventListener('click', offClick);
-
-  };
-  </script>
 </body>
 </html>
