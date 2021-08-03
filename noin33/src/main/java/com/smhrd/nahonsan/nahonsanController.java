@@ -23,7 +23,7 @@ import com.smhrd.mapper.seniorVO;
 @Controller
 public class nahonsanController {
 
-   private static final Logger logger = LoggerFactory.getLogger(nahonsanController.class);
+   private static final Logger LOGGER = LoggerFactory.getLogger(nahonsanController.class);
 
    @Autowired
    nahonsanMapper naMapper;
@@ -133,11 +133,6 @@ public class nahonsanController {
    }
    
    /* 새로만듬*/
-	@RequestMapping(value = "/noinsert.do")
-	public String noinsert(requestVO vo) {
-		naMapper.addnoin(vo);
-		return "redirect:/About.do";
-	}
 	@RequestMapping(value = "/about2.do")
 	public String about2(){
 		return "about2";
