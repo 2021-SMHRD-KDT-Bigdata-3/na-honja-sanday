@@ -1,27 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-   xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
-   xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd
-   http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
-   
-   <!-- Root Context: defines shared resources visible to all other web components -->
-   <!-- DB설정 3개의 API  -->   
-   <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
-      <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-      <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/mysql"/>
-      <property name="username" value="root"/>
-      <property name="password" value="12345"/>
-   </bean>
-
-
-   <bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
-      <constructor-arg ref="hikariConfig" />
-   </bean>
-      
-   <bean class="org.mybatis.spring.SqlSessionFactoryBean">
-       <property name="dataSource" ref="dataSource"/>
-   </bean>   
-      
-   <mybatis-spring:scan base-package="com.smhrd.mapper"/>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mybatis-spring="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd
+	http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<!--  DB설정 3개의 API > ContextLoaderListener가 읽음 제일중요한 부분!!!!!!!!!!!!!!-->
+	
+	
+	<!-- 객체 생성 xmi방식. <bean id= "변수이름" class = "..객체명"> -->
+	<!--  db 읽어주는 hikariconfig. driverclassname등 4개 입력. -->
+	<bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+		<property name="jdbcUrl" value="jdbc:mysql://localhost/mysql?allowMultiQueries=true"/>
+		<property name="username" value="root"/>
+		<property name="password" value="12345"/>
+	</bean>
+	
+	<!-- hikariconfig친구가 hikaridatasource를 필요로 한다. -->
+	<bean id="dataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
+		<!-- ref=를 통해 참조해서 source가 돌아감. -->
+		<constructor-arg ref="hikariConfig" />
+	</bean>
+		
+		<!-- 애는 참조시킬 애가 없으니까 id 안적음.	 -->
+	<bean class ="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref = "dataSource"></property>
+	    
+	</bean>
+	
+	<!-- pojo들을 스캔해줄 빈을 생성해야함. 데이터베이스 연동하는 와중에! -->
+	<!-- scan을 해줘야하는데 위에서 xmlns:이름 해주고, location에서 .xsd해줘야함.-->
+	
+	<mybatis-spring:scan base-package="com.smhrd.mapper"/>
+	
 </beans>

@@ -108,7 +108,6 @@
                     </li>
                 </ul>
 					</div>
-					<!-- ajax로 해야할듯 -->
 			<div class="" style="width:75%">
 	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
@@ -132,24 +131,33 @@
 
 					
 				
-					
+			<!-- 관리 등록 완료. -->
 	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
 	            <h2 class="mb-4">관리 등록</h2>
 				<div class="heading-section py-md-5">
 					<table id="tlscjd" >
 						<tr>
-							<th>컬럼1</th>
-							<th>컬럼2</th>
-							<th>컬럼3</th>
-							<th>컬럼4</th>
+							<th>대기번호</th>
+							<th>이름</th>
+							<th>나이</th>
+							<th>주소</th>
+							<th>전화번호</th>
+							<th>특이사항</th>
+							<th>신청일</th>
+							
 						</tr>
+					<c:forEach var="vo" items="${list}">
 						<tr>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-						</tr>					
+							<td>${vo.idx}</td>
+							<td>${vo.name}</td>
+							<td>${vo.age}</td>
+							<td>${vo.adress}</td>
+							<td>${vo.phone}</td>
+							<td>${vo.uniqueness}</td>
+							<td>${vo.aplication_date}</td>
+						</tr>
+					</c:forEach>						
 					</table>	  
 				</div>
 					<div align="right">

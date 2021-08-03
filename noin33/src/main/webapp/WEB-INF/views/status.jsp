@@ -21,6 +21,7 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
   </head>
   <body>
 
@@ -73,14 +74,7 @@
 	            	<h1>이름 : <input type="text"></h1> 
 	            	<h1>주민등록번호 : <input type="text"></h1>
 	            	<button type='button' id="modal_btn">조회</button>
-					<div class="black_bg"></div>
-					<div class="modal_wrap">
-    				<div class="modal_close"><a href="#">close</a></div>
-    				<div>
-        				<h1 class="mb-4">(이름)님은</h1>
-	            		<p class="mb-4">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
-    				</div>
-					</div>
+			
 
 
 	            
@@ -174,6 +168,16 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+	<!-- modal -->
+			<div class="black_bg"></div>
+					<div class="modal_wrap" id = "modal_temp">
+    				<div class="modal_close"><a href="#">close</a></div>
+    				<div>
+        				<h1 class="mb-4">(이름)님은</h1>
+	            		<p class="mb-4">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
+    				</div>
+					</div>
 
 
   <script src="${cpath}/resources/js/jquery.min.js"></script>
