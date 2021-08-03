@@ -54,8 +54,8 @@
 		</div>
 	  </nav>
 	 <br><br><br>
-	 <div align="center"><h1>로그인</h1> <br>
-	 <form action="login.do" method="get" id="loginForm">
+	 <div align="center"><h1>관리 신청</h1> <br>
+	 <form action="" method="get" id="loginForm">
 	 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
 			이런식으로 주고
 			Controller에 가보면
@@ -68,38 +68,41 @@
 	 <table>
 	<tr>
 		<td>
-			<input type="text" name=id id=id size="25" placeholder="아이디">
+			<input type="text" name=id id=id size="35" placeholder="이름">
 		</td>
 	</tr>
 	<tr>	
 		<td>
-			<input type="password" name=pw id=pw size="25" placeholder="비밀번호">
-		</td>
-	</tr>
-	</table>
-	</form>
-	<table>
-	<tr>
-		<td colspan="3">
-		<button class="btn btn-success" style="width : 100%" type="submit" form="loginForm">노인 로그인</button>
+			<input type="text" name=pw id=pw size="35" placeholder="주민등록번호 (-빼고)">
 		</td>
 	</tr>
 	<tr>
 		<td colspan="3">
-		<button class="btn btn-success" style="width : 100%" type="submit" form="loginForm">보호자 로그인</button>
+			<input type="text" name=address id=address size="35" placeholder="주소">
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3">
+			<input type="text" name=tel id=tel size="35" placeholder="전화번호 (-빼고)">
 		</td>
 	</tr>	
 	<tr>	
 		<td colspan="3">
-		<button class="btn btn-success" style="width : 250px" type="submit" form="loginForm">복지사 로그인</button>
+			<textarea name="star" class="form-control" id="star" cols="30" rows="4" placeholder="특이사항"></textarea>
 		</td>
 	</tr>
 	<tr>
 		<td colspan="3">
-		<button class="btn btn-success" style="width : 100%" onclick="location.href='join.do'">회원가입</button>
+			<button type="submit" class="btn btn-success" style="width : 100%" onclick="location.href='join.do'">신청하기</button>
+		</td>
+	</tr>
+		<tr>
+		<td colspan="3">
+			<button class="btn btn-success" style="width : 100%" onclick="location.href='main.do'">메인으로</button>
 		</td>
 	</tr>
 	</table>
+	</form>
 	 </div> <br><br><br><br><br><br><br><br>
   
   

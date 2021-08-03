@@ -9,12 +9,14 @@ phone varchar(50) not null,
 adress varchar(50) not null,
 seperator varchar(20) not null,
 constraint guard_email primary key(email))
+
 --복지사 테이블 --
 create table welfare_worker(email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
 seperator varchar(20) not null, 
 constraint wel_email primary key(email))
+
 -- 노인 테이블 --
 create table senior(idx int not null auto_increment,
 seperator varchar(20) not null,
@@ -25,9 +27,13 @@ adress varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
 aplication_date datetime default now(),
+<<<<<<< HEAD
+constraint seni_id primary key(ID))
+=======
 primary key(idx))
 --로그인 테이블 필요--
 --각테이블의 seperator 참조해서--
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/na-honja-sanday.git
 
 --위험 상황 테이블--
 create table emergency(emergency_id int not null auto_increment,
@@ -39,6 +45,7 @@ email varchar(100) not null,
 primary key(emergency_id),
 constraint emer_id foreign key(idx) references senior(idx),
 constraint emer_email foreign key(email) references welfare_worker(email))
+
 --메신저 테이블--
 create table massenger(idx int not null auto_increment,
 sender varchar(50) not null,
@@ -46,6 +53,9 @@ recipient varchar(50) not null,
 contents varchar(4000) not null,
 send_date datetime default now(),
 primary key(idx))
+
+이따가 password삭제하고 senior테이블 수정되서 오면, login테이블 추가하고, loginVO 생성
+
 
 select * from senior;
 select * from welfare_worker;

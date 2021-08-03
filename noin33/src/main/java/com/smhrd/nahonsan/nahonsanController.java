@@ -14,38 +14,44 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.smhrd.mapper.guardianVO;
+import com.smhrd.mapper.loginVO;
 import com.smhrd.mapper.nahonsanMapper;
+import com.smhrd.mapper.welfare_workerVO;
 import com.smhrd.mapper.requestVO;
 
 @Controller
 public class nahonsanController {
 
+	private static final Logger logger = LoggerFactory.getLogger(nahonsanController.class);
 
-   private static final Logger logger = LoggerFactory.getLogger(nahonsanController.class);
-   
-   @Autowired
-   nahonsanMapper nahonsanMapper;
- 
-   @RequestMapping(value = "/", method = RequestMethod.GET)
-   public String home(Locale locale, Model model) {
-      logger.info("Welcome home! The client locale is {}.", locale);
-      
-      Date date = new Date();
-      DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-      
-      String formattedDate = dateFormat.format(date);
-      
-      model.addAttribute("serverTime", formattedDate );
-      
-      return "Home";
-   }
-   
-   // 만들어지지 않은 페이지
-   @RequestMapping("/firstpage")
+	@Autowired
+	nahonsanMapper naMapper;
+
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String home(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+
+		String formattedDate = dateFormat.format(date);
+
+		model.addAttribute("serverTime", formattedDate);
+
+		return "Home";
+	}
+
+	@Autowired
+	nahonsanMapper nahonsanMapper;
+
+	// 만들어지지 않은 페이지
+	@RequestMapping("/firstpage")
 	public String first() {
-	   return "firstpage";
-   }
+		return "firstpage";
+	}
 
 	
    @RequestMapping("/login.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
@@ -144,5 +150,5 @@ public class nahonsanController {
    public String status() {
       return "status";
    }
-
+   
 }
