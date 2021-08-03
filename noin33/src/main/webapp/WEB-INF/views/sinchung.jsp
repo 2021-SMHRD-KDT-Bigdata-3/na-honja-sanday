@@ -55,7 +55,9 @@
 	  </nav>
 	 <br><br><br>
 	 <div align="center"><h1>관리 신청</h1> <br>
+	 <!--  
 	 <form action="" method="get" id="loginForm">
+	 -->
 	 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
 			이런식으로 주고
 			Controller에 가보면
@@ -98,7 +100,7 @@
 	</tr>
 		<tr>
 		<td colspan="3">
-			<button class="btn btn-success" style="width : 100%" onclick="location.href='main.do'">메인으로</button>
+			<button class="btn btn-success" style="width : 100%" onclick="location.href='index.do'">메인으로</button>
 		</td>
 	</tr>
 	</table>
