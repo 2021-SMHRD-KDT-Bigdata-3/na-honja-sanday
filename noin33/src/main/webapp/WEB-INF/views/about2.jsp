@@ -111,6 +111,7 @@
 					</div>
 			<!--  신청 -->		
 			<div class="" style="width:75%">
+	         <form action = "${cpath}/about2.do" method="post">
 	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
 	            <h2 class="mb-4">관리 신청</h2>
@@ -118,27 +119,32 @@
 				<div class="heading-section py-md-5" >
 					
 					<div >
+						
 						이름 : 
-						<input type="text" >
+						<input type="text" name ="name">
 						<br>
 						나이 : 
-						<input type="text">
+						<input type="text" name = "age">
+						<br>
+						주민등록번호 : 
+						<input type="text" name = "regi_number">
 						<br>
 						주소 : 
-						<input type="text">
+						<input type="text" name = "adress">
 						<br>
 						연락처 : 
-						<input type="text">
+						<input type="text" name = "phone">
 						<br>
 						특이사항 : 
-						<input type="text">
+						<input type="text" name = "uniqueness">
 					</div>  
-					
 				</div>
 				<div align="right">
-						<button>신청</button>
+						<input type= "submit" value = "신청">
+				
 				</div>  
 			  </div>
+			  </form>
 
 					
 				

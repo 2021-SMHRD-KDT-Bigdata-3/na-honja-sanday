@@ -14,12 +14,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.smhrd.mapper.guardianVO;
 import com.smhrd.mapper.loginVO;
 import com.smhrd.mapper.nahonsanMapper;
-import com.smhrd.mapper.welfare_workerVO;
 import com.smhrd.mapper.requestVO;
 
 @Controller
@@ -66,10 +64,6 @@ public class nahonsanController {
 		}
 	}
 
-	@RequestMapping(value = "/About.do")
-	public String about() {
-		return "about";
-	}
 
 	// 회원가입페이지 들어가기
 	@RequestMapping("/goJoin.do")
@@ -125,10 +119,6 @@ public class nahonsanController {
 		return "index";
 	}
 
-	@RequestMapping("/login.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
-	public String login() {
-		return "login";
-	}
 
 	// 신청 테이블 보여주기//
 	@RequestMapping(value = "/About.do")
@@ -138,15 +128,12 @@ public class nahonsanController {
 		return "about";
 	}
 
-	@RequestMapping(value = "/join.do")
-	public String join() {
-		return "join";
-	}
 
 	/* 새로만듬 */
 	@RequestMapping(value = "/about2.do")
-	public String about2() {
-		return "about2";
+	public String noinsert(requestVO vo) {
+		nahonsanMapper.addnoin(vo);
+		return "redirect:/About.do";
 	}
 
 	@RequestMapping(value = "/about3.do")
