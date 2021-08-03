@@ -131,5 +131,9 @@ public class nahonsanController {
    public String about3() {
       return "about3";
    }
+   @RequestMapping(value = "/status.do")
+   public String status() {
+      return "status";
+   }
 
 }

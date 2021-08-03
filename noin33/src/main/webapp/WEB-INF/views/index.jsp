@@ -70,7 +70,8 @@
 	            <h1 class="mb-4">Counseling For Your Better Life</h1>
 	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 	            <p><a href="#" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="#" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
-	            
+	           
+					            
             </div>
           </div>
          
@@ -155,7 +156,7 @@
     </footer>
     
   
-
+ 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 

@@ -61,15 +61,28 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    
+    
+    
+    <div class="hero-wrap"  data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            <h1 class="mb-4">Counseling For Your Better Life</h1>
-	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-	            <p><a href="#" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="#" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
+	            	<h1>이름 : <input type="text"></h1> 
+	            	<h1>주민등록번호 : <input type="text"></h1>
+	            	<button type='button' id="modal_btn">조회</button>
+					<div class="black_bg"></div>
+					<div class="modal_wrap">
+    				<div class="modal_close"><a href="#">close</a></div>
+    				<div>
+        				<h1 class="mb-4">(이름)님은</h1>
+	            		<p class="mb-4">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
+    				</div>
+					</div>
+
+
 	            
             </div>
           </div>
@@ -77,6 +90,9 @@
         </div>
       </div>
     </div>
+
+
+
 
 
     <footer class="ftco-footer">
@@ -174,6 +190,24 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-    
+
+   <script>
+  window.onload = function() {
+
+  function onClick() {
+      document.querySelector('.modal_wrap').style.display ='block';
+      document.querySelector('.black_bg').style.display ='block';
+  }   
+  function offClick() {
+      document.querySelector('.modal_wrap').style.display ='none';
+      document.querySelector('.black_bg').style.display ='none';
+  }
+
+  document.getElementById('modal_btn').addEventListener('click', onClick);
+  document.querySelector('.modal_close').addEventListener('click', offClick);
+
+  };
+  </script>
+
   </body>
 </html>
