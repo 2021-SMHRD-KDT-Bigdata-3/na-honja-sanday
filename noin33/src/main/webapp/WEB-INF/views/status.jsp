@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
+    <title>나혼자산DAY - 신청 현황</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/animate.css">
-    
+    <link rel="shortcut icon" type="image/x-icon" href="${cpath}/resources/images/logo.jpg">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
@@ -53,10 +53,10 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">Counselor</a>
+	      <a class="navbar-brand" href="index.do">나혼자산DAY</a>
 	     
 
-	  	  <div style="height:30px"><a href="#" >로그인</a></div>
+	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
 	      
 	    </div>
 	  </nav>
@@ -74,7 +74,7 @@
 	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="text"> </h1>
 	            	<div class="mb-4" style="width:1110px;  max-width:100%" align="right">
 	            	<button type='button' class="btn btn-primary py-3 px-4" id="modal_btn">조회</button>
-	            	<button type='button' class="btn  py-3 px-4" onclick="index.do">돌아가기</button>
+	            	<button type='button' class="btn  py-3 px-4" onclick="location.href='index.do'">돌아가기</button>
 	            	</div>
             </div>
           </div>

@@ -72,8 +72,8 @@
             </div>
        
    	<div align="center">
-   		<button type=button onclick="noin_help.do" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">복지사 호출</button> &nbsp;&nbsp;&nbsp;
-   		<button type=button style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">친구 찾기</button>
+   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">복지사 호출</button> &nbsp;&nbsp;&nbsp;
+   		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">친구 찾기</button>
    	</div>
     
     <br><br>
