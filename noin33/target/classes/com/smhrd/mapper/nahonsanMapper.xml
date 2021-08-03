@@ -6,11 +6,21 @@
     
 
     	<select id="login" resultType = "com.smhrd.mapper.guardianVO" >
-    	    select * from guardian where email=#{email} and password=#{password} 
+    	    select * from login where id=#{id} and password=#{password}
     	                                 <!-- 앞 db에 있는 값 뒤 사용자가 입력한 값-->
     	</select>
     	
+    	<insert id="join" parameterType = "com.smhrd.mapper.loginVO">
+    	    insert into member(id, password)
+    	    values(#{email}, #{password})
+    	</insert>
     	
+    	<insert id="join2" parameterType = "com.smhrd.mapper.guardianVO">
+    	    insert into guardian(email, name, phone, address)
+    	    values(#{email}, #{name}, #{phone}, #{address})
+    	</insert>
     	
     
 </mapper>
+
+
