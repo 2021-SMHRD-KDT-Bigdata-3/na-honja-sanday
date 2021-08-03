@@ -37,10 +37,13 @@ primary key(idx))
 
 --회원 테이블 필요--
 create table member(
-id varchar(30) not null,
+id varchar(30) primary key,
 password varchar(20) not null,
-seperator varchar(10) not null,
-constraint mem_id primary key(id),
+seperator varchar(10) not null
+)
+
+drop table member;
+constraint mem_id foreign key(id) references 
 
 
 constraint 
@@ -71,6 +74,7 @@ primary key(idx))
 select * from senior;
 select * from welfare_worker;
 select * from request;
+
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,
 seperator varchar(20) not null,

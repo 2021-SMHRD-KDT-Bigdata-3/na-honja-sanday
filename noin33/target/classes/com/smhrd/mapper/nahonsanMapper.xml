@@ -5,13 +5,13 @@
 <mapper namespace="com.smhrd.mapper.nahonsanMapper">
     
 
-    	<select id="login" resultType = "com.smhrd.mapper.loginVO" >
+    	<select id="login" resultType = "com.smhrd.mapper.memberVO" >
     	    select * from login where id=#{email} and password=#{password}
     	                                 <!-- 앞 db에 있는 값 뒤 사용자가 입력한 값-->
     	</select>
     	
     	<!-- 회원가입할때 정보를 나눠서 담기 -->
-    	<insert id="join" parameterType = "com.smhrd.mapper.loginVO">
+    	<insert id="join" parameterType = "com.smhrd.mapper.memberVO">
     	    insert into member(id, password)
     	    values(#{email}, #{password})
     	</insert> 
