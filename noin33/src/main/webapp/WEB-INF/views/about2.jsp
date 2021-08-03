@@ -21,6 +21,19 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     
+     <style>
+     	#tlscjd{
+     		border:2px solid; border-collapse:collapse; text-align;center;
+     		width : 100%;
+     		
+     	}
+     	td, th{border:1px solid; padding 10px 5px;}
+     	
+     </style>
   </head>
   <body>
 
@@ -67,159 +80,133 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg'); height: 500px; position: relative;" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div style="height: 500px; position: relative;" class="row no-gutters slider-text align-items-center">
-          <div class="col-md-6 ftco-animate d-flex align-items-end">
-          	<div class="text w-100">
-	            <h1 class="mb-4">Counseling For Your Better Life</h1>
-	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-            </div>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-	
     
+    
+    <section class="ftco-section ftco-no-pb ftco-no-pt" >
+			<div class="container">
+			
+				<div class="row" >
+					<div style="width:25%; margin-top:50px;">
+						<h1 class="">관리</h1>
+                <ul class="">
+                    <li class="">
+                        <a class="" href="about2.do">
+                            	관리 신청
+                            <i class=""></i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="" href="main_guard.do">
+                            	관리 등록
+                            <i class=""></i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="" href="about3.do">
+                            	관리 목록
+                            <i class=""></i>
+                        </a>
+                    </li>
+                </ul>
+					</div>
+			<!--  신청 -->		
+			<div class="" style="width:75%">
+	          <div class="heading-section py-md-5" >
+	          	<span class="subheading">Welcome to Counselor</span>
+	            <h2 class="mb-4">관리 신청</h2>
+	            
+				<div class="heading-section py-md-5" >
+					
+					<div >
+						이름 : 
+						<input type="text" >
+						<br>
+						나이 : 
+						<input type="text">
+						<br>
+						주소 : 
+						<input type="text">
+						<br>
+						연락처 : 
+						<input type="text">
+						<br>
+						특이사항 : 
+						<input type="text">
+					</div>  
+					
+				</div>
+				<div align="right">
+						<button>신청</button>
+				</div>  
+			  </div>
 
-		<section class="ftco-intro">
+					
+				
+			</div>
+			
+			</div>
+					
+					
+		</div>
+		</section>
+    
+    
+  
+  
+
+		
+		<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_2.jpg);">
+			<div class="overlay"></div>
     	<div class="container">
-    		<div class="row justify-content-center pb-5">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Services</span>
-            <h2>How It Works</h2>
-          </div>
-        </div>
-    		<div class="row justify-content-center">
-    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
-    				<div class="services-2 text-center ">
-    					<div class="icon-wrap">
-    						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
-	    					<div class="icon d-flex align-items-center justify-content-center">
-	    						<span class="flaticon-calendar"></span>
-	    					</div>
+    		<div class="row">
+    			<div class="col-md-6 half ftco-animate">
+    				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
+    				<form action="${cpath}/About.do" class="appointment">
+    					<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="text" class="form-control" placeholder="Your Name">
+			            </div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+			              <input type="text" class="form-control" placeholder="Email">
+			            </div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			    					<div class="form-field">
+	          					<div class="select-wrap">
+	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
+	                      <select name="" id="" class="form-control">
+	                      	<option value="">Services</option>
+	                        <option value="">Relation Problem</option>
+	                        <option value="">Couple Counseling</option>
+	                        <option value="">Depression Treatment</option>
+	                        <option value="">Family Problem</option>
+	                        <option value="">Personal Problem</option>
+	                        <option value="">Business Problem</option>
+	                      </select>
+	                    </div>
+			              </div>
+			    				</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+			            </div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+			            </div>
+								</div>
     					</div>
-    					<h2>관리 신청</h2>
-    				</div>
+	          </form>
     			</div>
-    			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
-    				<div class="services-2 text-center">
-    					<div class="icon-wrap">
-    						<div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
-	    					<div class="icon d-flex align-items-center justify-content-center">
-	    						<span class="flaticon-qa"></span>
-	    					</div>
-    					</div>
-    					<h2>위험 분석</h2>
-    				</div>
-    			</div>
-    			
     		</div>
     	</div>
     </section>
-    <br><br>
-
-    
-
-		  
-    <section class="ftco-section testimony-section">
-    	<div class="img img-bg border" style="background-image: url(${cpath}/resources/images/bg_4.jpg);"></div>
-    	<div class="overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">Testimonial</span>
-            <h2 class="mb-3">복지사 소개</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_3.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-		
 
     <footer class="ftco-footer">
       <div class="container">
@@ -302,7 +289,7 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
- <script src="${cpath}/resources/js/jquery.min.js"></script>
+  <script src="${cpath}/resources/js/jquery.min.js"></script>
   <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="${cpath}/resources/js/popper.min.js"></script>
   <script src="${cpath}/resources/js/bootstrap.min.js"></script>
