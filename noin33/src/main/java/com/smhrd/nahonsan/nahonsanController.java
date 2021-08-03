@@ -121,5 +121,15 @@ public class nahonsanController {
 	 * 
 	 */
    
+   
+   /* 새로만듬*/
+   @RequestMapping(value = "/about2.do")
+   public String about2() {
+      return "about2";
+   }
+   @RequestMapping(value = "/about3.do")
+   public String about3() {
+      return "about3";
+   }
 
 }
