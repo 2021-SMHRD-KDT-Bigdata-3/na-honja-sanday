@@ -56,7 +56,7 @@
 	      <a class="navbar-brand" href="index.do">나혼자산DAY</a>
 	     
 
-	  	  <div style="height:30px"><a href="#" >로그인</a></div>
+	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
 	      
 	    </div>
 	  </nav>
