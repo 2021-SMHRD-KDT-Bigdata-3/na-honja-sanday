@@ -30,23 +30,6 @@ public class nahonsanController {
 	@Autowired
 	nahonsanMapper naMapper;
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String home(Locale locale, Model model) {
-		logger.info("Welcome home! The client locale is {}.", locale);
-
-		Date date = new Date();
-		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
-
-		String formattedDate = dateFormat.format(date);
-
-		model.addAttribute("serverTime", formattedDate);
-
-		return "Home";
-	}
-
-	@Autowired
-	nahonsanMapper nahonsanMapper;
-
 	// 만들어지지 않은 페이지
 	@RequestMapping("/firstpage")
 	public String first() {
@@ -54,30 +37,47 @@ public class nahonsanController {
 	}
 
 	
-   @RequestMapping("/login.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
+   @RequestMapping("/gologin.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
    public String login() {
 	   return "login";
    }
    
-	/*// 진짜로 쓸예정인 매핑
-	 * @RequestMapping(value = "/login.do") public String login(guardianVO guardian)
-	 * { guardianVO guard = naMapper.login(guardian);
-	 * 
-	 * if(guard == null) { return "login"; }else { return "main_guard"; } }
-	 */
+	
+   @RequestMapping("/login.do") 
+	public String login(loginVO vo){ 
+		if(vo.getId()==""  || vo.getPassword()=="") { 
+			return "redirect:/login.do"; 
+		}else if(vo.getSeperator() == "1"){
+		  
+		  naMapper.login(vo);
+		  return "main"; 
+		}else {
+			return "main";
+		}
+		}
+   
   
  //신청 테이블 보여주기//
    @RequestMapping(value = "/About.do")
    public String about(HttpServletRequest request) {
-	   List<requestVO> list = nahonsanMapper.selectall();
+	   List<requestVO> list = naMapper.selectall();
 	   request.setAttribute("list", list);
        return "about";
    }
    
-   @RequestMapping(value = "/join.do")
+   //회원가입페이지 들어가기
+   @RequestMapping(value = "/goJoin.do")
    public String join() {
       return "join";
    }
+   
+   @RequestMapping("/join.do")
+	public String join(loginVO vo, guardianVO vo2) { // joinVO = 사용자가 작성해서 받아온 값
+		naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
+		naMapper.join2(vo2);	// select는 객체(vo, arrayList로 담아서 돌아온다)
+		return "main";
+	}
+   
    @RequestMapping(value = "/apply.do")
    public String apply() {
       return "blog";
