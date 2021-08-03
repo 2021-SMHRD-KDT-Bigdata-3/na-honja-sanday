@@ -2,38 +2,49 @@ drop table welfare_worker;
 drop table senior;
 drop table emergency;
 drop table request;
+
 --보호자 테이블 --
-create table guardian(email varchar(100),
+create table guardian(
+email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-adress varchar(50) not null,
-seperator varchar(20) not null,
+address varchar(50) not null,
+seperator varchar(10) not null,   --구분자(2)--
 constraint guard_email primary key(email))
 
 --복지사 테이블 --
-create table welfare_worker(email varchar(100),
+create table welfare_worker(
+email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-seperator varchar(20) not null, 
+seperator varchar(10) not null,   --구분자(3)--
 constraint wel_email primary key(email))
 
 -- 노인 테이블 --
-create table senior(idx int not null auto_increment,
-seperator varchar(20) not null,
+create table senior(
+idx int not null auto_increment,
+seperator varchar(10) not null,   --구분자 (1)--
 name varchar(50) not null,
 age int not null,
-regi_number varchar(50) not null,
-adress varchar(100) not null,
+regi_number varchar(50) not null, --주민번호--
+address varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
-aplication_date datetime default now(),
-<<<<<<< HEAD
+application_date datetime default now(),
 constraint seni_id primary key(ID))
-=======
 primary key(idx))
---로그인 테이블 필요--
+
+
+--회원 테이블 필요--
+create table member(
+id varchar(30) not null,
+password varchar(20) not null,
+seperator varchar(10) not null,
+constraint mem_id primary key(id),
+
+
+constraint 
 --각테이블의 seperator 참조해서--
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/na-honja-sanday.git
 
 --위험 상황 테이블--
 create table emergency(emergency_id int not null auto_increment,
