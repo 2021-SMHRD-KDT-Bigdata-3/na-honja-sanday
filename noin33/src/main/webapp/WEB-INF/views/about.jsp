@@ -108,28 +108,6 @@
                     </li>
                 </ul>
 					</div>
-			<div class="" style="width:75%">
-	          <div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 신청</h2>
-	            
-				<div class="heading-section py-md-5" >
-					
-					<div >
-						이름 : 
-						<input type="text" >
-						<br>
-						나이 : 
-						<input type="text">
-					</div>  
-					
-				</div>
-				<div align="right">
-						<button>신청</button>
-				</div>  
-			  </div>
-
-					
 				
 			<!-- 관리 등록 완료. -->
 	          <div class="heading-section py-md-5" >
@@ -166,36 +144,11 @@
 					</div>          
 			  </div>
 
-			<div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 목록</h2>
-				<div class="heading-section py-md-5">
-					<table id="tlscjd" >
-						<tr>
-							<th>컬럼1</th>
-							<th>컬럼2</th>
-							<th>컬럼3</th>
-							<th>컬럼4</th>
-						</tr>
-						<tr>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-						</tr>					
-					</table>	  
-				</div>
-					<div align="right">
-						<button>수정</button>
-						<button>삭제</button>
-					</div>          
-			  </div>
 			</div>
 			
 			</div>
 					
 					
-		</div>
 		</section>
     
     
