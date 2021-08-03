@@ -32,6 +32,7 @@
      		
      	}
      	td, th{border:1px solid; padding 10px 5px;}
+     	
      </style>
   </head>
   <body>
@@ -61,21 +62,18 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">Counselor</a>
+	      <a class="navbar-brand" href="index.do">나혼자산데이</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
+	        <span class="oi oi-menu"></span> 메뉴
 	      </button>
 
-	<!-- 상단 메뉴 버튼 부분 -->
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.do" class="nav-link">Home</a></li>
-	          <li class="nav-item active"><a href="About.do" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="counselor.do" class="nav-link">Counselor</a></li>
-	          <li class="nav-item"><a href="services.do" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="pricing.do" class="nav-link">Pricing</a></li>
-	          <li class="nav-item"><a href="blog.do" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contract.do" class="nav-link">Contact</a></li>
+	          <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
+	          <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
+	          <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
+	          <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
+
 	        </ul>
 	      </div>
 	    </div>
@@ -84,8 +82,8 @@
     
     
     
-    <section class="ftco-section ftco-no-pb ftco-no-pt">
-			<div class="container" >
+    <section class="ftco-section ftco-no-pb ftco-no-pt" >
+			<div class="container">
 				<div class="row" >
 					<div style="width:25%; margin-top:50px;">
 						<h1 class="">관리</h1>
@@ -110,10 +108,34 @@
                     </li>
                 </ul>
 					</div>
-					<div class="" style="width:75%">
+					<!-- ajax로 해야할듯 -->
+			<div class="" style="width:75%">
 	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
 	            <h2 class="mb-4">관리 신청</h2>
+	            
+				<div class="heading-section py-md-5" >
+					
+					<div >
+						이름 : 
+						<input type="text" >
+						<br>
+						나이 : 
+						<input type="text">
+					</div>  
+					
+				</div>
+				<div align="right">
+						<button>신청</button>
+				</div>  
+			  </div>
+
+					
+				
+					
+	          <div class="heading-section py-md-5" >
+	          	<span class="subheading">Welcome to Counselor</span>
+	            <h2 class="mb-4">관리 등록</h2>
 				<div class="heading-section py-md-5">
 					<table id="tlscjd" >
 						<tr>
@@ -128,168 +150,52 @@
 							<td>ㅇㅇㅇ</td>
 							<td>ㅇㅇㅇ</td>
 						</tr>					
-					</table>	            
+					</table>	  
 				</div>
+					<div align="right">
+						<button>거절</button>
+						<button>승인</button>
+					</div>          
 			  </div>
 
-					</div>
+			<div class="heading-section py-md-5" >
+	          	<span class="subheading">Welcome to Counselor</span>
+	            <h2 class="mb-4">관리 목록</h2>
+				<div class="heading-section py-md-5">
+					<table id="tlscjd" >
+						<tr>
+							<th>컬럼1</th>
+							<th>컬럼2</th>
+							<th>컬럼3</th>
+							<th>컬럼4</th>
+						</tr>
+						<tr>
+							<td>ㅇㅇㅇ</td>
+							<td>ㅇㅇㅇ</td>
+							<td>ㅇㅇㅇ</td>
+							<td>ㅇㅇㅇ</td>
+						</tr>					
+					</table>	  
 				</div>
+					<div align="right">
+						<button>수정</button>
+						<button>삭제</button>
+					</div>          
+			  </div>
 			</div>
+			
+			</div>
+					
+					
+		</div>
 		</section>
     
     
-    
-    
-    
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_5.jpg');" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-end justify-content-center">
-          <div class="col-md-9 ftco-animate mb-5 text-center">
-          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>About us <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-0 bread">About Us</h1>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-
-		<section class="ftco-counter ftco-section ftco-no-pt ftco-no-pb img bg-light" id="section-counter">
-    	<div class="container">
-    		<div class="row">
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text align-items-center">
-                <strong class="number" data-number="3000">0</strong>
-                <span>Our Satisfied  &amp; Happy Customers</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text align-items-center">
-                <strong class="number" data-number="30">0</strong>
-                <span>Years of Experience In Business</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text align-items-center">
-                <strong class="number" data-number="200">0</strong>
-                <span>Our Qualified Counselor</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
-            <div class="block-18 py-4 mb-4">
-              <div class="text align-items-center">
-                <strong class="number" data-number="40">0</strong>
-                <span>Services Points</span>
-              </div>
-            </div>
-          </div>
-        </div>
-    	</div>
-    </section>
-
   
-    <section class="ftco-section testimony-section">
-    	<div class="img img-bg border" style="background-image: url(images/bg_4.jpg);"></div>
-    	<div class="overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center mb-5">
-          <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">Testimonial</span>
-            <h2 class="mb-3">Happy Clients</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                    	<div class="pl-3">
-		                    <p class="name">Roger Scott</p>
-		                    <span class="position">Marketing Manager</span>
-		                  </div>
-	                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  
+
 		
-		<section class="ftco-appointment ftco-section img" style="background-image: url(images/bg_2.jpg);">
+		<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_2.jpg);">
 			<div class="overlay"></div>
     	<div class="container">
     		<div class="row">
