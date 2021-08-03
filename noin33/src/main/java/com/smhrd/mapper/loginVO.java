@@ -3,9 +3,12 @@ package com.smhrd.mapper;
 import lombok.Data;
 
 @Data
-public class memberVO {
+public class loginVO {
 
-	private String id;
+	private String email;
 	private String password;
 	private String seperator;
+	private String address;
+	private String name;
+	
 }

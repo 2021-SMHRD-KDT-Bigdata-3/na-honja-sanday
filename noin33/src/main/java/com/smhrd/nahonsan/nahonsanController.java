@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.smhrd.mapper.guardianVO;
-import com.smhrd.mapper.memberVO;
+import com.smhrd.mapper.loginVO;
 import com.smhrd.mapper.nahonsanMapper;
 import com.smhrd.mapper.welfare_workerVO;
 import com.smhrd.mapper.requestVO;
@@ -31,7 +31,7 @@ public class nahonsanController {
 	nahonsanMapper naMapper;
 
 	// 만들어지지 않은 페이지
-	@RequestMapping("/firstpage")
+	@RequestMapping("/firstpage.do")
 	public String first() {
 		return "firstpage";
 	}
@@ -43,18 +43,18 @@ public class nahonsanController {
    }
    
 	
-   @RequestMapping("/login.do") 
-	public String login(memberVO vo){ 
-		if(vo.getId()==""  || vo.getPassword()=="") { 
-			return "redirect:/login.do"; 
-		}else if(vo.getSeperator() == "1"){
-		  
-		  naMapper.login(vo);
-		  return "main"; 
-		}else {
-			return "main";
-		}
-		}
+//   @RequestMapping("/login.do") 
+//	public String login(loginVO vo){ 
+//		if(vo.getId()==""  || vo.getPassword()=="") { 
+//			return "redirect:/login.do"; 
+//		}else if(vo.getSeperator() == "1"){
+//		  
+//		  naMapper.login(vo);
+//		  return "main"; 
+//		}else {
+//			return "main";
+//		}
+//		}
    
   
  //신청 테이블 보여주기//
@@ -71,12 +71,32 @@ public class nahonsanController {
       return "join";
    }
    
-   @RequestMapping("/join.do")
-	public String join(memberVO vo, guardianVO vo2) { // joinVO = 사용자가 작성해서 받아온 값
-		naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
-		naMapper.join2(vo2);	// select는 객체(vo, arrayList로 담아서 돌아온다)
-		return "main";
-	}
+//   @RequestMapping("/join.do")
+//	public String join(loginVO vo) { // loginVO = 사용자가 작성해서 받아온 값
+//		if(vo.getSeperator()=="protect") {
+//			naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
+//			naMapper.join2(vo2);	// select는 객체(vo, arrayList로 담아서 돌아온다)
+//		}else {
+//			naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
+//			naMapper.join2(vo2);	// select는 객체(vo, arrayList로 담아서 돌아온다)
+//		}
+//		return "main";
+//	}
+   
+   @RequestMapping("/join_gardian.do")
+   public String join(loginVO vo, guardianVO vo2) {
+	   naMapper.join(vo);
+	   naMapper.join2(vo2);
+	   return "main";
+   }
+   
+   @RequestMapping("/join_welfare.do")
+   public String join(loginVO vo, welfare_workerVO vo2) {
+	   naMapper.join(vo);
+	   naMapper.join3(vo2);
+	   return "main";
+   }
+
    
    @RequestMapping(value = "/apply.do")
    public String apply() {

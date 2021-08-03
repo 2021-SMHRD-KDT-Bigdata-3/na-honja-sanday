@@ -7,11 +7,12 @@ import org.apache.ibatis.annotations.Select;
 public interface nahonsanMapper {
 
 	//로그인 임시
-	public memberVO login(memberVO login);
+	public loginVO login(loginVO login);
 	
 	//회원가입
-	public void join(memberVO vo); //회원가입은 가지고 오는 값이 없어서
+	public void join(loginVO vo); //회원가입은 가지고 오는 값이 없어서
 	public void join2(guardianVO vo);
+	public void join3(welfare_workerVO vo);
 	
 	//신청 테이블 노인 추가
 	public void addnoin(requestVO vo);

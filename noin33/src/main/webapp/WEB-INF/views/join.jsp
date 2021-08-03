@@ -24,29 +24,30 @@
   </head>
   <body>
     
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산Day</a>
-		<div style="height:30px"><a href="#">로그인</a></div>
-		</div>
-	  </nav>
+     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+       <div class="container">
+         <a class="navbar-brand" href="index.do">나혼자산Day</a>
+      <div style="height:30px"><a href="#">로그인</a></div>
+      </div>
+     </nav>
     <!-- END nav -->
     
-	<div align="center">
-		<h1>회원가입 </h1>
-		<form action="join.do" method="get" id="joinForm">
-		<input type="radio" name="chk_info" id="aaa" value="protect" onchange="setDisplay()">보호자 &nbsp;&nbsp;
-		<input type="radio" name="chk_info" id="bbb" value="welfareworker" onchange="setDisplay()">복지사 <br><br>
-		<input type="text" id="" placeholder="Email을 입력하세요"> <br><br>
-		<input type="text" id="" placeholder="password를 입력하세요"> <br><br>
-		<input type="text" id="" placeholder="이름을 입력하세요"> <br><br>
-		<input type="text" id="" placeholder="전화번호를 입력하세요."> <br><br>
-		<div id="divId">
-			<input type="text" id="" placeholder="주소를 입력하세요"> <br><br>
-		</div>
-		<div id="btn_group"> <button type="submit" id="test_btn1">회원가입</button> <button id="test_btn2" onclick="index">메인으로</button> </div>
-		</form>
-	</div> <br><br>
+   <div align="center">
+      <h1>회원가입 </h1>
+      <form action="${cpath}/join_welfare.do" method="post" id="form">
+         구분 &nbsp;: &nbsp;&nbsp;
+         <select id='selector'>
+            <option value='join_welfare.do'>복지사</option>
+            <option value='join_gardian.do'>보호자</option>
+         </select> <br><br>
+         <input type="text" name="email" id="" placeholder="Email을 입력하세요"> <br><br>
+         <input type="text" name="password" id="" placeholder="password를 입력하세요"> <br><br>
+         <input type="text" name="name" id="" placeholder="이름을 입력하세요"> <br><br>
+         <input type="text" name="tel" id="" placeholder="전화번호를 입력하세요."> <br><br>
+         <input type="text" name="address" id="" placeholder="주소를 입력하세요"> <br><br>
+      <div id="btn_group"> <button type="submit" id="test_btn1">회원가입</button> <button id="test_btn2" onclick="index">메인으로</button> </div>
+      </form>
+   </div> <br><br>
     <footer class="ftco-footer">
       <div class="container">
         <div class="row mb-5">
@@ -96,29 +97,29 @@
           </div>
           <div class="col-sm-12 col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
+               <h2 class="ftco-heading-2">Have a Questions?</h2>
+               <div class="block-23 mb-3">
+                 <ul>
+                   <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                   <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                   <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+                 </ul>
+               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container-fluid px-0 py-5 bg-black">
-      	<div class="container">
-      		<div class="row">
-	          <div class="col-md-12">
-		
-	            <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-	          </div>
-	        </div>
-      	</div>
+         <div class="container">
+            <div class="row">
+             <div class="col-md-12">
+      
+               <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+             </div>
+           </div>
+         </div>
       </div>
     </footer>
     
@@ -127,7 +128,8 @@
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
-	
+  
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
   <script src="${cpath}/resources/js/jquery.min.js"></script>
   <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="${cpath}/resources/js/popper.min.js"></script>
@@ -143,16 +145,10 @@
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-function setDisplay(){
-    if($('input:radio[id=aaa]').is(':checked')){
-        $('#divId').show();
-    }else{
-        $('#divId').hide();
-    }
-}
- 
- 
-</script>
+  <script type="text/javascript">
+        $('#selector').on('change', function(){
+           $('#form').attr('action', $('#selector').val())
+        })
+  </script>
   </body>
 </html>

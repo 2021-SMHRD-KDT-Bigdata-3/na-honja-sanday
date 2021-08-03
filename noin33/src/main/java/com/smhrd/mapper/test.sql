@@ -8,9 +8,11 @@ create table guardian(
 email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-address varchar(50) not null,
+address varchar(50),
 seperator varchar(10) not null,   --구분자(2)--
 constraint guard_email primary key(email))
+
+drop table guardian;
 
 --복지사 테이블 --
 create table welfare_worker(
@@ -41,12 +43,8 @@ id varchar(30) primary key,
 password varchar(20) not null,
 seperator varchar(10) not null
 )
-
 drop table member;
 constraint mem_id foreign key(id) references 
-
-
-constraint 
 --각테이블의 seperator 참조해서--
 
 --위험 상황 테이블--
@@ -67,8 +65,6 @@ recipient varchar(50) not null,
 contents varchar(4000) not null,
 send_date datetime default now(),
 primary key(idx))
-
-이따가 password삭제하고 senior테이블 수정되서 오면, login테이블 추가하고, loginVO 생성
 
 
 select * from senior;
