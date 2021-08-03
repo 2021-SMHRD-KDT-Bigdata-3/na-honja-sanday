@@ -1,8 +1,11 @@
-package com.smhrd.web;
+package com.smhrd.nahonsan;
 
 import java.text.DateFormat;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.smhrd.mapper.guardianVO;
 import com.smhrd.mapper.nahonsanMapper;
+import com.smhrd.mapper.requestVO;
 import com.smhrd.mapper.testVO;
 
 @Controller
@@ -23,7 +27,7 @@ public class nahonsanController {
    private static final Logger logger = LoggerFactory.getLogger(nahonsanController.class);
    
    @Autowired
-   nahonsanMapper naMapper;
+   nahonsanMapper nahonsanMapper;
  
    @RequestMapping(value = "/", method = RequestMethod.GET)
    public String home(Locale locale, Model model) {
@@ -40,37 +44,30 @@ public class nahonsanController {
    }
    
    // 만들어지지 않은 페이지
-   //@RequestMapping("/firstpage")
-	//public String first() {
-		//return "firstpage";
-	//}
-
-   /*
-	 * @RequestMapping("/loginTEST.do") public String loginTEST(testVO test) {
-	 * testVO vo = naMapper.login(test);
-	 * 
-	 * if(vo==null) { System.out.println("로그인 실패"); return "logintest"; } else {
-	 * return "loginsuccesstest"; }
-	 * 
-	 * }
-	 */
-	
-   
-   
-   @RequestMapping(value = "/login.do")
-   public String login(guardianVO guardian) {
-	   guardianVO guard = naMapper.login(guardian);
-	   
-	   if(guard == null) {
-		   return "login";
-	   }else {
-		   return "main_guard";
-	   }
+   @RequestMapping("/firstpage")
+	public String first() {
+	   return "firstpage";
    }
+
+	
+   @RequestMapping("/login.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
+   public String login() {
+	   return "login";
+   }
+   
+	/*// 진짜로 쓸예정인 매핑
+	 * @RequestMapping(value = "/login.do") public String login(guardianVO guardian)
+	 * { guardianVO guard = naMapper.login(guardian);
+	 * 
+	 * if(guard == null) { return "login"; }else { return "main_guard"; } }
+	 */
   
+ //신청 테이블 보여주기//
    @RequestMapping(value = "/About.do")
-   public String about() {
-      return "about";
+   public String about(HttpServletRequest request) {
+	   List<requestVO> list = nahonsanMapper.selectall();
+	   request.setAttribute("list", list);
+       return "about";
    }
    
    @RequestMapping(value = "/join.do")
@@ -111,6 +108,10 @@ public class nahonsanController {
    public String index() {
       return "index";
    }
+   
+   
+   
+   
 	/*
 	 * jsp가 만들어지지 않은 페이지
 	 *

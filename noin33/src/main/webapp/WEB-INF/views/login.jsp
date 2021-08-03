@@ -47,16 +47,41 @@
 		</div>
 	</div>
 	
-	 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="login.do">로그인</a>
-	    </div>
-	 </nav>
+	      <a class="navbar-brand" href="index.do">나혼자산Day</a>
+		<div style="height:30px"><a href="#">로그인</a></div>
+		</div>
+	  </nav>
+	 <br><br><br>
+	 <div align="center"><h1>로그인</h1> <br>
+	 <table>
+	<tr>
+		
+	</tr>
+	<tr>
+		<td>
+			아이디 &nbsp;
+		</td>
+		<td>
+			<input type="text" name=# id=# size="25">
+		</td>
+	</tr>
+	<tr>	
+		<td>
+			비밀번호 &nbsp;
+		</td>
+		<td>
+			<input type="password" name=# id=# size="25">
+		</td>	
+	</tr>
+	<tr>
+		<td colspan="2" align="right">
+		<button>로그인</button>
+		</td>
+	</tr>
+	 </table>
 	 
-	 <div>
-	 	<button>
-	 		
-	 	</button>
 	 </div>
   
   

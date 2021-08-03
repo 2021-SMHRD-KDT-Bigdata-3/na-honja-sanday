@@ -1,28 +1,34 @@
 drop table welfare_worker;
 drop table senior;
 drop table emergency;
+drop table request;
 --보호자 테이블 --
 create table guardian(email varchar(100),
-password varchar(50) not null,
 name varchar(30) not null,
 phone varchar(50) not null,
 adress varchar(50) not null,
+seperator varchar(20) not null,
 constraint guard_email primary key(email))
 --복지사 테이블 --
 create table welfare_worker(email varchar(100),
-password varchar(50) not null,
 name varchar(30) not null,
 phone varchar(50) not null,
+seperator varchar(20) not null, 
 constraint wel_email primary key(email))
 -- 노인 테이블 --
 create table senior(idx int not null auto_increment,
+seperator varchar(20) not null,
 name varchar(50) not null,
 age int not null,
+regi_number varchar(50) not null, --주민번호--
 adress varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
 aplication_date datetime default now(),
 primary key(idx))
+--로그인 테이블 필요--
+--각테이블의 seperator 참조해서--
+
 --위험 상황 테이블--
 create table emergency(emergency_id int not null auto_increment,
 idx int not null,
@@ -46,8 +52,10 @@ select * from welfare_worker;
 select * from request;
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,
+seperator varchar(20) not null,
 name varchar(50) not null,
 age int not null,
+regi_number varchar(50) not null, --주민번호--
 adress varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
