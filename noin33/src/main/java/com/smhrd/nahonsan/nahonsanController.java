@@ -15,10 +15,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import com.smhrd.mapper.guardianVO;
 import com.smhrd.mapper.nahonsanMapper;
 import com.smhrd.mapper.requestVO;
-import com.smhrd.mapper.testVO;
 
 @Controller
 public class nahonsanController {
@@ -132,5 +130,15 @@ public class nahonsanController {
 	 * 
 	 */
    
+   
+   /* 새로만듬*/
+   @RequestMapping(value = "/about2.do")
+   public String about2() {
+      return "about2";
+   }
+   @RequestMapping(value = "/about3.do")
+   public String about3() {
+      return "about3";
+   }
 
 }
