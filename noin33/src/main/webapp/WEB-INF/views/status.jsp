@@ -62,28 +62,26 @@
 	  </nav>
     <!-- END nav -->
     
+ 
     
-    
-    
+    <section >
     <div class="hero-wrap"  data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            	<h1>이름 : <input type="text"></h1> 
-	            	<h1>주민등록번호 : <input type="text"></h1>
-	            	<button type='button' id="modal_btn">조회</button>
-			
-
-
-	            
+	            	<h1 style="width:800px">이름 : <input type="text"></h1> 
+	            	<h1 style="width:800px">주민등록번호 : <input type="text"> </h1>
+	            	<div style="width:1110px" align="right">
+	            	<button type='button' class="btn btn-primary py-3 px-4" id="modal_btn">조회</button>
+	            	</div>
             </div>
           </div>
-         
         </div>
       </div>
     </div>
+    </section>    
 
 
 
