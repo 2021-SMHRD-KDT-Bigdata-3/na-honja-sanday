@@ -66,17 +66,15 @@
        </div>
      </nav>
     <!-- END nav -->
-        
         <section class="ftco-section bg-light">
 			<div class="container">
         <div>
         	<h1 align="center">친구 찾기</h1> <br>
         </div>
 				<div class="row justify-content-center">
-					<div class="col-md-12">
-			<div class="wrapper px-md-4">
+        <div id="daumRoughmapContainer1627974670032" class="root_daum_roughmap root_daum_roughmap_landing" style="width:960px; height:500px;"></div>
 							<div class="row no-gutters">
-								<div class="col-md-7">
+								<div class="col-md-12">
 									<div class="contact-wrap w-100 p-md-5 p-4">
 										<h3 class="mb-4">친구 상세 정보</h3>
 											<div class="row">
@@ -120,16 +118,16 @@
 										
 									</div>
 								</div>
-								<div class="col-md-5 order-md-first d-flex align-items-stretch">
-									<div id="map" class="map"></div>
-								</div>
 							</div>
 						</div>
 									</div>
-							</div>
-						</div>
 					</section>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6523.946943803682!2d126.92942167727593!3d35.15728234291652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718cc1cd106823%3A0x2ca6d085bd0bb904!2z6rSR7KO86rSR7Jet7IucIOuPmeq1rCDsgrDsiJjrj5k!5e0!3m2!1sko!2skr!4v1627951612936!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+
+
+
+
 
 <!-- footer 시작  -->
     <footer class="ftco-footer">
@@ -227,6 +225,20 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-    
+    <!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1627974670032",
+		"key" : "26ugq",
+		"mapWidth" : "100%",
+		"mapHeight" : "500"
+	}).render();
+</script>
   </body>
 </html>

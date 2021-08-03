@@ -3,7 +3,7 @@ package com.smhrd.mapper;
 import lombok.Data;
 
 @Data
-public class loginVO {
+public class memberVO {
 
 	private String id;
 	private String password;
