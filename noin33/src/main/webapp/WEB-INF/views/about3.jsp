@@ -89,93 +89,40 @@
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
-                        <a class="" href="#">
+                        <a class="" href="about2.do">
                             	관리 신청
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="#">
+                        <a class="" href="main_guard.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="#">
+                        <a class="" href="about3.do">
                             	관리 목록
                             <i class=""></i>
                         </a>
                     </li>
                 </ul>
 					</div>
+					
 			<div class="" style="width:75%">
-	          <div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 신청</h2>
-	            
-				<div class="heading-section py-md-5" >
-					
-					<div >
-						이름 : 
-						<input type="text" >
-						<br>
-						나이 : 
-						<input type="text">
-					</div>  
-					
-				</div>
-				<div align="right">
-						<button>신청</button>
-				</div>  
-			  </div>
-
-					
 				
-			<!-- 관리 등록 완료. -->
-	          <div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 등록</h2>
-				<div class="heading-section py-md-5">
-					<table id="tlscjd" >
-						<tr>
-							<th>대기번호</th>
-							<th>이름</th>
-							<th>나이</th>
-							<th>주소</th>
-							<th>전화번호</th>
-							<th>특이사항</th>
-							<th>신청일</th>
-							
-						</tr>
-					<c:forEach var="vo" items="${list}">
-						<tr>
-							<td>${vo.idx}</td>
-							<td>${vo.name}</td>
-							<td>${vo.age}</td>
-							<td>${vo.adress}</td>
-							<td>${vo.phone}</td>
-							<td>${vo.uniqueness}</td>
-							<td>${vo.aplication_date}</td>
-						</tr>
-					</c:forEach>						
-					</table>	  
-				</div>
-					<div align="right">
-						<button>거절</button>
-						<button>승인</button>
-					</div>          
-			  </div>
-
+			<!--  목록 -->
 			<div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
 	            <h2 class="mb-4">관리 목록</h2>
 				<div class="heading-section py-md-5">
 					<table id="tlscjd" >
 						<tr>
-							<th>컬럼1</th>
-							<th>컬럼2</th>
-							<th>컬럼3</th>
-							<th>컬럼4</th>
+							<th>이름</th>
+							<th>나이</th>
+							<th>주소</th>
+							<th>연락처</th>
+							<th>특이사항</th>
 						</tr>
 						<tr>
 							<td>ㅇㅇㅇ</td>

@@ -21,19 +21,6 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
-    
-    
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     
-     <style>
-     	#tlscjd{
-     		border:2px solid; border-collapse:collapse; text-align;center;
-     		width : 100%;
-     		
-     	}
-     	td, th{border:1px solid; padding 10px 5px;}
-     	
-     </style>
   </head>
   <body>
 
@@ -54,207 +41,43 @@
 			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
 			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 			    		</p>
+			    		
 		        </div>
 					</div>
 				</div>
 			</div>
+			
+			
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산데이</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> 메뉴
-	      </button>
+	      <a class="navbar-brand" href="index.do">Counselor</a>
+	     
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
-	          <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
-	          <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
-
-	        </ul>
-	      </div>
+	  	  <div style="height:30px"><a href="#" >로그인</a></div>
+	      
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    
-    
-    <section class="ftco-section ftco-no-pb ftco-no-pt" >
-			<div class="container">
-				<div class="row" >
-					<div style="width:25%; margin-top:50px;">
-						<h1 class="">관리</h1>
-                <ul class="">
-                    <li class="">
-                        <a class="" href="#">
-                            	관리 신청
-                            <i class=""></i>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="" href="#">
-                            	관리 등록
-                            <i class=""></i>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="" href="#">
-                            	관리 목록
-                            <i class=""></i>
-                        </a>
-                    </li>
-                </ul>
-					</div>
-			<div class="" style="width:75%">
-	          <div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 신청</h2>
+    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-center">
+          <div class="col-md-6 ftco-animate d-flex align-items-end">
+          	<div class="text w-100">
+	            <h1 class="mb-4">Counseling For Your Better Life</h1>
+	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            <p><a href="#" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="#" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
 	            
-				<div class="heading-section py-md-5" >
-					
-					<div >
-						이름 : 
-						<input type="text" >
-						<br>
-						나이 : 
-						<input type="text">
-					</div>  
-					
-				</div>
-				<div align="right">
-						<button>신청</button>
-				</div>  
-			  </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+    </div>
 
-					
-				
-			<!-- 관리 등록 완료. -->
-	          <div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 등록</h2>
-				<div class="heading-section py-md-5">
-					<table id="tlscjd" >
-						<tr>
-							<th>대기번호</th>
-							<th>이름</th>
-							<th>나이</th>
-							<th>주소</th>
-							<th>전화번호</th>
-							<th>특이사항</th>
-							<th>신청일</th>
-							
-						</tr>
-					<c:forEach var="vo" items="${list}">
-						<tr>
-							<td>${vo.idx}</td>
-							<td>${vo.name}</td>
-							<td>${vo.age}</td>
-							<td>${vo.adress}</td>
-							<td>${vo.phone}</td>
-							<td>${vo.uniqueness}</td>
-							<td>${vo.aplication_date}</td>
-						</tr>
-					</c:forEach>						
-					</table>	  
-				</div>
-					<div align="right">
-						<button>거절</button>
-						<button>승인</button>
-					</div>          
-			  </div>
-
-			<div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 목록</h2>
-				<div class="heading-section py-md-5">
-					<table id="tlscjd" >
-						<tr>
-							<th>컬럼1</th>
-							<th>컬럼2</th>
-							<th>컬럼3</th>
-							<th>컬럼4</th>
-						</tr>
-						<tr>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-						</tr>					
-					</table>	  
-				</div>
-					<div align="right">
-						<button>수정</button>
-						<button>삭제</button>
-					</div>          
-			  </div>
-			</div>
-			
-			</div>
-					
-					
-		</div>
-		</section>
-    
-    
-  
-  
-
-		
-		<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_2.jpg);">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6 half ftco-animate">
-    				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
-    				<form action="${cpath}/About.do" class="appointment">
-    					<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Your Name">
-			            </div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Email">
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			    					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Services</option>
-	                        <option value="">Relation Problem</option>
-	                        <option value="">Couple Counseling</option>
-	                        <option value="">Depression Treatment</option>
-	                        <option value="">Family Problem</option>
-	                        <option value="">Personal Problem</option>
-	                        <option value="">Business Problem</option>
-	                      </select>
-	                    </div>
-			              </div>
-			    				</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
-			            </div>
-								</div>
-    					</div>
-	          </form>
-    			</div>
-    		</div>
-    	</div>
-    </section>
 
     <footer class="ftco-footer">
       <div class="container">
