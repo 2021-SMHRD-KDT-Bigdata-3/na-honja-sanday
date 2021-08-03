@@ -3,7 +3,8 @@ package com.smhrd.mapper;
 import lombok.Data;
 
 @Data
-public class seniorVO {
+
+public class requestVO {
 
 	private int idx;
 	private String name;
@@ -12,4 +13,6 @@ public class seniorVO {
 	private String phone;
 	private String uniqueness;
 	private String aplication_date;
+	
+	
 }
