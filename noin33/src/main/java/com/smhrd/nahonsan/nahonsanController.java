@@ -150,28 +150,30 @@ public class nahonsanController {
    public String about2() {
       return "about2";
    }
-//   @RequestMapping("/realnoin.do")
-//   public String realnoin(int idx) {
-//	   naMapper.add_del(idx);
-//	   return "redirect:/about3.do";
-//   }
-//   @RequestMapping(value = "/about3.do")
-//   public String about3(HttpServletRequest request) {
-//	   list<seniorVO> list1 = naMapper.showlist();
-//	   request.setAttribute("list", list1);
-//      return "about3";
-//   }
+   @RequestMapping("/realnoin.do")
+   public String realnoin(int idx) {
+	   naMapper.add_del(idx);
+	   return "redirect:/about3.do";
+   }
+
+   @RequestMapping(value = "/about3.do")
+   public String about3(HttpServletRequest request) {
+	   list<seniorVO> list1 = naMapper.showlist();
+	   request.setAttribute("list", list1);
+      return "about3";
+   }
    @RequestMapping(value = "/status.do")
    public String status() {
       return "status";
    }
    
-//   @RequestMapping("/counselor.do")
-//   public String welfareList(HttpServletRequest request) {
-//	   request.setAttribute("welfareList", coun); = naMapper.counselor();
-//	   
-//	   return "counselor";
-//   }
+   @RequestMapping("/counselor.do")
+   public String welfareList(HttpServletRequest request) {
+	   List<welfare_workerVO> list = naMapper.counselor();
+	   request.setAttribute("welfareList", list);
+	   
+	   return "counselor";
+   }
 	/*
 	 * jsp가 만들어지지 않은 페이지
 	 *
