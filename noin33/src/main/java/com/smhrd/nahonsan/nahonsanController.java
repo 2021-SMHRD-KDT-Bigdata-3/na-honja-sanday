@@ -184,13 +184,6 @@ public class nahonsanController {
 		return "sinchung";
 	}
 
-   @RequestMapping("/counselor.do")
-   public String welfareList(HttpServletRequest request) {
-	   List<welfare_workerVO> list = naMapper.counselor();
-	   request.setAttribute("welfareList", list);
-	   
-	   return "counselor";
-   }
 	/*
 	 * jsp가 만들어지지 않은 페이지
 	 *

@@ -62,11 +62,7 @@
 	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
 	     
 
-<<<<<<< HEAD
 	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
-=======
-	  	  <div style="height:30px"><a href="/nahonsan/gologin.do" >로그인</a></div>
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/na-honja-sanday.git
 	      
 	    </div>
 	  </nav>
