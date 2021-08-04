@@ -84,17 +84,16 @@ public class nahonsanController {
 //	}
    
    @RequestMapping("/join_gardian.do")
-   public String join(loginVO vo, guardianVO vo2) {
+   public String join(loginVO vo) {
 	   naMapper.join(vo);
-	   naMapper.join2(vo2);
+	   naMapper.join2(vo);
 	   return "main";
    }
    
    @RequestMapping("/join_welfare.do")
-   public String join(loginVO vo, welfare_workerVO vo2) {
+   public String join2(loginVO vo) {
 	   naMapper.join(vo);
-	   naMapper.join3(vo2);
-	   return "main";
+	   return "main"; 
    }
 
    
@@ -139,8 +138,15 @@ public class nahonsanController {
    public String about2() {
       return "about2";
    }
+   @RequestMapping("/realnoin.do")
+   public String realnoin(int idx) {
+	   naMapper.add_del(idx);
+	   return "redirect:/about3.do";
+   }
    @RequestMapping(value = "/about3.do")
-   public String about3() {
+   public String about3(HttpServletRequest request) {
+	   list<seniorVO> list1 = naMapper.showlist();
+	   request.setAttribute("list", list1);
       return "about3";
    }
    @RequestMapping(value = "/status.do")

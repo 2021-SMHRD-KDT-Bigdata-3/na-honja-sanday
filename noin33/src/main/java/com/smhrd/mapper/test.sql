@@ -25,17 +25,19 @@ constraint wel_email primary key(email))
 -- 노인 테이블 --
 create table senior(
 idx int not null auto_increment,
-seperator varchar(10) not null,   --구분자 (1)--
+seperator varchar(10) not null,   
 name varchar(50) not null,
 age int not null,
-regi_number varchar(50) not null, --주민번호--
+regi_number varchar(50) not null, 
 address varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
 application_date datetime default now(),
-constraint seni_id primary key(ID))
-primary key(idx))
+constraint seni_id primary key(idx))
 
+select * from senior;
+select * from member;
+select * from welfare_worker;
 
 --회원 테이블 필요--
 create table member(
@@ -70,6 +72,10 @@ primary key(idx))
 select * from senior;
 select * from welfare_worker;
 select * from request;
+select * from guardian;
+select * from member;
+
+delete from member where id='123';
 
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,

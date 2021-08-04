@@ -37,8 +37,8 @@
       <form action="${cpath}/join_welfare.do" method="post" id="form">
          구분 &nbsp;: &nbsp;&nbsp;
          <select id='selector'>
-            <option value='join_welfare.do'>복지사</option>
-            <option value='join_gardian.do'>보호자</option>
+            <option value='${cpath}/join_welfare.do'>복지사</option>
+            <option value='${cpath}/join_gardian.do'>보호자</option>
          </select> <br><br>
          <input type="text" name="email" id="" placeholder="Email을 입력하세요"> <br><br>
          <input type="text" name="password" id="" placeholder="password를 입력하세요"> <br><br>

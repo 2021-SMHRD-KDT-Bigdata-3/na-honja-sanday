@@ -10,5 +10,6 @@ public class loginVO {
 	private String seperator;
 	private String address;
 	private String name;
+	private String phone;
 	
 }
