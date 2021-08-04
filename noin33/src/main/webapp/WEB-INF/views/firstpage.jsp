@@ -68,7 +68,7 @@
 	  </nav>
     <!-- END nav      -->
     
-    <div class="hero-wrap" style= "background-image: url('${cpath}/resources/images/banner.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style= "background-image: url('${cpath}/resources/images/banner.jpg'); height:800px" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container" style="height:800px">
         <div class="row no-gutters slider-text align-items-center" style="height:800px">
