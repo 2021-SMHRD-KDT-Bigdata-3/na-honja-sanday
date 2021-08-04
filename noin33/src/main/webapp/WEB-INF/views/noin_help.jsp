@@ -72,12 +72,12 @@
             </div>
        
    	<div align="center">
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="#">외출 동행<br>서비스</button> &nbsp;&nbsp;&nbsp;
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="#">송영 서비스</button>
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-together">외출 동행<br>서비스</button> &nbsp;&nbsp;&nbsp;
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-song">송영 서비스</button>
    	</div> <br>
    	<div align="center">
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="#">가사 서비스</button> &nbsp;&nbsp;&nbsp;
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="#">복지사 호출</button>
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-home">가사 서비스</button> &nbsp;&nbsp;&nbsp;
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-welfare">복지사 호출</button>
    	</div>
     
 
@@ -179,6 +179,29 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-    
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
+  <script type="text/javascript">
+  function sendemail(){
+	  $.ajax({
+			url : "http://211.105.165.117:9000/email",
+			type : "post",
+			data : {"email" : "wodnd1593@naver.com",
+				   "content" : $(this).html()},
+			success : (res) =>{
+				console.log(res);
+			},
+			error : () => {
+				alert("fail");
+			}
+		})
+	  
+  }
+  $("#btn-together").on("click", sendemail)
+  $("#btn-song").on("click", sendemail)
+  $("#btn-home").on("click", sendemail)
+  $("#btn-welfare").on("click", sendemail)
+  </script>
+ 	
+  
   </body>
 </html>

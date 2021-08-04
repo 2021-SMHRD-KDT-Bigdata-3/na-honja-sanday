@@ -12,57 +12,55 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.smhrd.mapper.guardianVO;
 import com.smhrd.mapper.loginVO;
 import com.smhrd.mapper.nahonsanMapper;
 import com.smhrd.mapper.welfare_workerVO;
 import com.smhrd.mapper.requestVO;
+import com.smhrd.mapper.seniorVO;
 
 @Controller
 public class nahonsanController {
 
-	private static final Logger logger = LoggerFactory.getLogger(nahonsanController.class);
+   private static final Logger LOGGER = LoggerFactory.getLogger(nahonsanController.class);
 
-	@Autowired
-	nahonsanMapper naMapper;
+   @Autowired
+   nahonsanMapper naMapper;
 
-	// 만들어지지 않은 페이지
-	@RequestMapping("/firstpage.do")
-	public String first() {
-		return "firstpage";
-	}
+   // 만들어지지 않은 페이지
+   @RequestMapping("/firstpage.do")
+   public String first() {
+      return "firstpage";
+   }
 
-	
+   
    @RequestMapping("/gologin.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
    public String login() {
-	   return "login";
+      return "login";
    }
    
-	
+   
 //   @RequestMapping("/login.do") 
-//	public String login(loginVO vo){ 
-//		if(vo.getId()==""  || vo.getPassword()=="") { 
-//			return "redirect:/login.do"; 
-//		}else if(vo.getSeperator() == "1"){
-//		  
-//		  naMapper.login(vo);
-//		  return "main"; 
-//		}else {
-//			return "main";
-//		}
-//		}
+//   public String login(loginVO vo){ 
+//      if(vo.getId()==""  || vo.getPassword()=="") { 
+//         return "redirect:/login.do"; 
+//      }else if(vo.getSeperator() == "1"){
+//        
+//        naMapper.login(vo);
+//        return "main"; 
+//      }else {
+//         return "main";
+//      }
+//      }
    
   
  //신청 테이블 보여주기//
    @RequestMapping(value = "/About.do")
    public String about(HttpServletRequest request) {
-	   List<requestVO> list = naMapper.selectall();
-	   request.setAttribute("list", list);
+      List<requestVO> list = naMapper.selectall();
+      request.setAttribute("list", list);
        return "about";
    }
    
@@ -73,16 +71,16 @@ public class nahonsanController {
    }
    
 //   @RequestMapping("/join.do")
-//	public String join(loginVO vo) { // loginVO = 사용자가 작성해서 받아온 값
-//		if(vo.getSeperator()=="protect") {
-//			naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
-//			naMapper.join2(vo2);	// select는 객체(vo, arrayList로 담아서 돌아온다)
-//		}else {
-//			naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
-//			naMapper.join2(vo2);	// select는 객체(vo, arrayList로 담아서 돌아온다)
-//		}
-//		return "main";
-//	}
+//   public String join(loginVO vo) { // loginVO = 사용자가 작성해서 받아온 값
+//      if(vo.getSeperator()=="protect") {
+//         naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
+//         naMapper.join2(vo2);   // select는 객체(vo, arrayList로 담아서 돌아온다)
+//      }else {
+//         naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
+//         naMapper.join2(vo2);   // select는 객체(vo, arrayList로 담아서 돌아온다)
+//      }
+//      return "main";
+//   }
    
    @RequestMapping("/join_gardian.do")
    public String join(loginVO vo) {
@@ -123,7 +121,7 @@ public class nahonsanController {
    }
    @RequestMapping(value = "/noinsert.do")
    public String main_guard(requestVO vo) {
-	  naMapper.addnoin(vo);
+     naMapper.addnoin(vo);
       return "redirect:/About.do";
    }
    @RequestMapping(value = "/noin_main.do")
@@ -158,7 +156,7 @@ public class nahonsanController {
 
    @RequestMapping(value = "/about3.do")
    public String about3(HttpServletRequest request) {
-	   list<seniorVO> list1 = naMapper.showlist();
+	   List<seniorVO> list1 = naMapper.showlist();
 	   request.setAttribute("list", list1);
       return "about3";
    }
