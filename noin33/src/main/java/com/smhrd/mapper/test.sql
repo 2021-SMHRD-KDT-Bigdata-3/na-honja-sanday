@@ -22,6 +22,20 @@ phone varchar(50) not null,
 seperator varchar(10) not null,   --구분자(3)--
 constraint wel_email primary key(email))
 
+select * from welfare_worker;
+
+--복지사 가데이터--
+insert into welfare_worker(email, name, phone, seperator)
+values('hello@cgi.com', '김인겸','01011111111','3')
+insert into welfare_worker(email, name, phone, seperator)
+values('niceto@cgi.com', '안현진','01022222222','3')
+insert into welfare_worker(email, name, phone, seperator)
+values('meetyou@cgi.com', '진성빈','01033333333','3')
+insert into welfare_worker(email, name, phone, seperator)
+values('havea@cgi.com', '최재웅','01055555555', '3')
+insert into welfare_worker(email, name, phone, seperator)
+values('niceday@cgi.com', '정태희','01066666666','3')
+
 -- 노인 테이블 --
 create table senior(
 idx int not null auto_increment,
@@ -75,7 +89,7 @@ select * from request;
 select * from guardian;
 select * from member;
 
-delete from member where id='123';
+delete from welfare_worker where email='qweq';
 
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,

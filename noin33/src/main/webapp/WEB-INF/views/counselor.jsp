@@ -79,6 +79,7 @@
     </section>
 
     <section class="ftco-section bg-light">
+    <c:forEach var="f" items="${welfare_list}" >
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-lg-3 ftco-animate">
@@ -87,7 +88,9 @@
 								<div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-1.jpg);"></div>
 							</div>
 							<div class="text pt-3 px-3 pb-4 text-center">
-								<h3>Lloyd Wilson</h3>
+							
+								<h3>${f}</h3>
+								
 								<span class="position mb-2">Counselor</span>
 								<div class="faded">
 									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
@@ -244,6 +247,7 @@
 					</div>
 				</div>
 			</div>
+		</c:forEach>
 		</section>
 
 		
