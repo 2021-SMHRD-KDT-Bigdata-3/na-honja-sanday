@@ -30,7 +30,8 @@ public class nahonsanController {
    @Autowired
    nahonsanMapper naMapper;
 
-   // 만들어지지 않은 페이지
+   
+   // 로그인 안했을때 맨처음 페이지
    @RequestMapping("/firstpage.do")
    public String first() {
       return "firstpage";
@@ -135,7 +136,9 @@ public class nahonsanController {
    }
    
    @RequestMapping(value = "/noin_friend.do")
-   public String main() {
+   public String main(HttpServletRequest request) {
+		 List<seniorVO> list1 = naMapper.showlist();
+		request.setAttribute("list1", list1);
       return "noin_friend";
    }
    
@@ -174,6 +177,7 @@ public class nahonsanController {
 	   model.addAttribute("welfareList", list);
 	   return "counselor";
    }
+
 	/*
 	 * jsp가 만들어지지 않은 페이지
 	 *

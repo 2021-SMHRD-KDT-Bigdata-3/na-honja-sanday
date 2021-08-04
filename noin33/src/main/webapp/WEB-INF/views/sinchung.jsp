@@ -49,8 +49,8 @@
 	
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산Day</a>
-		<div style="height:30px"><a href="#">로그인</a></div>
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do">나혼자산Day</a>
+		<div style="height:30px"><a href="/nahonsan/gologin.do">로그인</a></div>
 		</div>
 	  </nav>
 	 <br><br><br>
@@ -95,12 +95,12 @@
 	</tr>
 	<tr>
 		<td colspan="3">
-			<button type="submit" class="btn btn-success" style="width : 100%" onclick="location.href='join.do'">신청하기</button>
+			<button type="submit" class="btn btn-success" style="width : 100%" onclick="location.href='/nahonsan/help_success.do'">신청하기</button>
 		</td>
 	</tr>
 		<tr>
 		<td colspan="3">
-			<button class="btn btn-success" style="width : 100%" onclick="location.href='index.do'">메인으로</button>
+			<button class="btn btn-success" style="width : 100%" onclick="location.href='/nahonsan/firstpage.do'">메인으로</button>
 		</td>
 	</tr>
 	</table>
