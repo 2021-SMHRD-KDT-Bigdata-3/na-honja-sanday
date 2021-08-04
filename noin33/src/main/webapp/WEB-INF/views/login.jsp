@@ -91,7 +91,7 @@
     </div>
     <br><br>
     <div align="center">
-		<button class="btn btn-primary py-3 px-4" onclick="location.href='/nahonsan/goJoin.do'">회원가입</button>
+		<button class="btn btn-primary py-3 px-4" onclick="location.href='goJoin.do'">회원가입</button>
 	</div>
     <br><br>
 		

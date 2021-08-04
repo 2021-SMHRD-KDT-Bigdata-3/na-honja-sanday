@@ -29,11 +29,6 @@ public class nahonsanController {
    @Autowired
    nahonsanMapper naMapper;
 
-   // 신청현황
-   @RequestMapping("/status.do")
-   public String status() {
-      return "status";
-   }
    
    // 로그인 안했을때 맨처음 페이지
    @RequestMapping("/firstpage.do")
@@ -140,7 +135,9 @@ public class nahonsanController {
    }
    
    @RequestMapping(value = "/noin_friend.do")
-   public String main() {
+   public String main(HttpServletRequest request) {
+		 List<seniorVO> list1 = naMapper.showlist();
+		request.setAttribute("list1", list1);
       return "noin_friend";
    }
    
@@ -150,33 +147,43 @@ public class nahonsanController {
    }
    
    /* 새로만듬*/
+	@RequestMapping(value = "/about2.do")
+	public String about2(){
+		return "about2";
+	}
+	@RequestMapping(value = "/realnoin.do")
+	public String realnoin(int idx) {
+		naMapper.add_del(idx);
+		return "redirect:/about3.do";
+	}
+	@RequestMapping(value = "/about3.do")
+	public String about3(HttpServletRequest request) {
+		 List<seniorVO> list1 = naMapper.showlist();
+		request.setAttribute("list1", list1);
+		return "about3";
+	}
+	@RequestMapping(value = "/delnoin.do")
+	public String delnoin(int idx) {
+		naMapper.delnoin(idx);
+		return "redirect:/about3.do";
+	}
+	@RequestMapping(value = "/counselor.do")
+	public String counselor() {
+		return "counselor";
+	}
+	@RequestMapping(value = "/main.do")
+	public String main1() {
+		return "main";
+	}
+	@RequestMapping(value = "/status.do")
+	public String status() {
+		return "status";
+	}
+	@RequestMapping(value = "/sinchung.do")
+	public String sinchung() {
+		return "sinchung";
+	}
 
-   @RequestMapping(value = "/about2.do")
-   public String about2() {
-      return "about2";
-   }
-   @RequestMapping("/realnoin.do")
-   public String realnoin(int idx) {
-	   naMapper.add_del(idx);
-	   return "redirect:/about3.do";
-   }
-
-   @RequestMapping(value = "/about3.do")
-   public String about3(HttpServletRequest request) {
-	   List<seniorVO> list1 = naMapper.showlist();
-	   request.setAttribute("list", list1);
-      return "about3";
-   }
-
-
-   
-   @RequestMapping("/counselor.do")
-   public String welfareList(HttpServletRequest request) {
-	   List<welfare_workerVO> list = naMapper.counselor();
-	   request.setAttribute("welfareList", list);
-	   
-	   return "counselor";
-   }
 	/*
 	 * jsp가 만들어지지 않은 페이지
 	 *

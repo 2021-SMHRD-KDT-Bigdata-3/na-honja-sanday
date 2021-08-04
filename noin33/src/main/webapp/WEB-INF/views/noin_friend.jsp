@@ -225,6 +225,8 @@
   <script src="${cpath}/resources/js/main.js"></script>
   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=08ced0a2a4c09e8ee9cc8eea5d689577"></script>
   <script>
+  var number = vo.
+  var center1 = new kakao.maps.LatLng(35.13140241988734, 126.93058171350039)
   var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
   mapOption = { 
       center: new kakao.maps.LatLng(35.13140241988734, 126.93058171350039), // 지도의 중심좌표
