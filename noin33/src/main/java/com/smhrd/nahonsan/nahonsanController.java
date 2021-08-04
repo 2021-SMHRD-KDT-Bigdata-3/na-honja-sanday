@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.smhrd.mapper.guardianVO;
@@ -164,12 +165,13 @@ public class nahonsanController {
    public String status() {
       return "status";
    }
-   
+   // Controller에 만들어져있나요?
+   // 아 이 counselor가 그 페이지에요?넹
    @RequestMapping("/counselor.do")
-   public String welfareList(HttpServletRequest request) {
-	   List<welfare_workerVO> list = naMapper.counselor();
-	   request.setAttribute("welfareList", list);
-	   
+   public String welfareList(Model model) {
+	   List<welfare_workerVO> list = naMapper.counselor();	   
+	   // 일단 여기까지는 문제없고
+	   model.addAttribute("welfareList", list);
 	   return "counselor";
    }
 	/*
