@@ -10,17 +10,15 @@ email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
 address varchar(50),
-seperator varchar(10) not null,   --구분자(2)--
+seperator varchar(10) not null,   
 constraint guard_email primary key(email))
 --복지사 테이블 --
 create table welfare_worker(
 email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-seperator varchar(10) not null,   --구분자(3)--
+seperator varchar(10) not null,   
 constraint wel_email primary key(email))
-<<<<<<< HEAD
-=======
 
 select * from welfare_worker;
 
@@ -36,7 +34,6 @@ values('havea@cgi.com', '최재웅','01055555555', '3')
 insert into welfare_worker(email, name, phone, seperator)
 values('niceday@cgi.com', '정태희','01066666666','3')
 
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/na-honja-sanday.git
 -- 노인 테이블 --
 create table senior(
 idx int not null auto_increment,
