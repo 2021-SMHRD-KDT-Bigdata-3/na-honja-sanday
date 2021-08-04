@@ -30,6 +30,7 @@ public interface nahonsanMapper {
 	@Select("select * from welfare_worker") 
 	public List<welfare_workerVO> counselor();
 	
+	
 	//관리 받고있는 노인분들 목록
 	@Select("select * from senior")
 	public List<seniorVO> showlist();

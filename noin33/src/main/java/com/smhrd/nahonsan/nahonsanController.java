@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.smhrd.mapper.guardianVO;
@@ -147,42 +148,35 @@ public class nahonsanController {
    }
    
    /* 새로만듬*/
-	@RequestMapping(value = "/about2.do")
-	public String about2(){
-		return "about2";
-	}
-	@RequestMapping(value = "/realnoin.do")
-	public String realnoin(int idx) {
-		naMapper.add_del(idx);
-		return "redirect:/about3.do";
-	}
-	@RequestMapping(value = "/about3.do")
-	public String about3(HttpServletRequest request) {
-		 List<seniorVO> list1 = naMapper.showlist();
-		request.setAttribute("list1", list1);
-		return "about3";
-	}
-	@RequestMapping(value = "/delnoin.do")
-	public String delnoin(int idx) {
-		naMapper.delnoin(idx);
-		return "redirect:/about3.do";
-	}
-	@RequestMapping(value = "/counselor.do")
-	public String counselor() {
-		return "counselor";
-	}
-	@RequestMapping(value = "/main.do")
-	public String main1() {
-		return "main";
-	}
-	@RequestMapping(value = "/status.do")
-	public String status() {
-		return "status";
-	}
-	@RequestMapping(value = "/sinchung.do")
-	public String sinchung() {
-		return "sinchung";
-	}
+   @RequestMapping(value = "/about2.do")
+   public String about2() {
+      return "about2";
+   }
+   @RequestMapping("/realnoin.do")
+   public String realnoin(int idx) {
+	   naMapper.add_del(idx);
+	   return "redirect:/about3.do";
+   }
+
+   @RequestMapping(value = "/about3.do")
+   public String about3(HttpServletRequest request) {
+	   List<seniorVO> list1 = naMapper.showlist();
+	   request.setAttribute("list", list1);
+      return "about3";
+   }
+   @RequestMapping(value = "/status.do")
+   public String status() {
+      return "status";
+   }
+   // Controller에 만들어져있나요?
+   // 아 이 counselor가 그 페이지에요?넹
+   @RequestMapping("/counselor.do")
+   public String welfareList(Model model) {
+	   List<welfare_workerVO> list = naMapper.counselor();	   
+	   // 일단 여기까지는 문제없고
+	   model.addAttribute("welfareList", list);
+	   return "counselor";
+   }
 
 	/*
 	 * jsp가 만들어지지 않은 페이지
