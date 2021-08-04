@@ -42,18 +42,18 @@ public class nahonsanController {
    }
    
    
-//   @RequestMapping("/login.do") 
-//   public String login(loginVO vo){ 
-//      if(vo.getId()==""  || vo.getPassword()=="") { 
-//         return "redirect:/login.do"; 
-//      }else if(vo.getSeperator() == "1"){
-//        
-//        naMapper.login(vo);
-//        return "main"; 
-//      }else {
-//         return "main";
-//      }
-//      }
+   @RequestMapping("/login.do") 
+   public String login(loginVO vo){ 
+      if(vo.getId()==""  || vo.getPassword()=="") { 
+         return "redirect:/login.do"; 
+      }else if(vo.getSeperator() == "1"){
+        
+        naMapper.login(vo);
+        return "main"; 
+      }else {
+         return "main";
+      }
+      }
    
   
  //신청 테이블 보여주기//
