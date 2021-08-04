@@ -112,7 +112,7 @@
 			<div class="" style="width:75%">
 	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
-	            <h2 class="mb-4">관리 등록</h2>
+	            <h2 class="mb-4">관리 목록</h2>
 				<div class="heading-section py-md-5">
 					<table id="tlscjd" style="max-width:100%;">
 						<tr>
@@ -123,6 +123,7 @@
 							<th>전화번호</th>
 							<th>특이사항</th>
 							<th>신청일</th>
+							<th>삭제</th>
 							
 						</tr>
 					<c:forEach var="vo" items="${list1}">
@@ -134,14 +135,11 @@
 							<td>${vo.phone}</td>
 							<td>${vo.uniqueness}</td>
 							<td>${vo.aplication_date}</td>
+							<td><a href = "${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a></td>
 						</tr>
 					</c:forEach>						
 					</table>	  
 				</div>
-					<div align="right">
-						<button>수정</button>
-						<button>삭제</button>
-					</div>          
 			  </div>
 			</div>
 			

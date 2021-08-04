@@ -124,17 +124,18 @@
 							<th>전화번호</th>
 							<th>특이사항</th>
 							<th>신청일</th>
-							
+							<th>등록</th>
 						</tr>
 					<c:forEach var="vo" items="${list}">
 						<tr>
 							<td>${vo.idx}</td>
-							<td><a href = "${cpath}/realnoin.do?idx=${vo.idx}">${vo.name}</a></td>
+							<td>${vo.name}</td>
 							<td>${vo.age}</td>
 							<td>${vo.adress}</td>
 							<td>${vo.phone}</td>
 							<td>${vo.uniqueness}</td>
 							<td>${vo.aplication_date}</td>
+							<td><a href = "${cpath}/realnoin.do?idx=${vo.idx}">등록</a></td>
 						</tr>
 					</c:forEach>						
 					</table>	  

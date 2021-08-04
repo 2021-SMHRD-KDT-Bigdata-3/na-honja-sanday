@@ -2,6 +2,7 @@ drop table welfare_worker;
 drop table senior;
 drop table emergency;
 drop table request;
+drop table massenger;
 
 --보호자 테이블 --
 create table guardian(
@@ -102,3 +103,5 @@ commit;
 
 show variables like 'c%';
 
+
+-- 노인의 호출 서비스 보여주는 테이블--

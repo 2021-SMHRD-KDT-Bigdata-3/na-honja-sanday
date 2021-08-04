@@ -148,7 +148,22 @@ public class nahonsanController {
 		request.setAttribute("list1", list1);
 		return "about3";
 	}
+	@RequestMapping(value = "/delnoin.do")
+	public String delnoin(int idx) {
+		naMapper.delnoin(idx);
+		return "redirect:/about3.do";
+	}
+	@RequestMapping(value = "/counselor.do")
+	public String counselor() {
+		return "counselor";
+	}
+	@RequestMapping(value = "/main.do")
+	public String main1() {
+		return "main";
+	}
    
+	
+	
    /*
     * jsp가 만들어지지 않은 페이지
     *

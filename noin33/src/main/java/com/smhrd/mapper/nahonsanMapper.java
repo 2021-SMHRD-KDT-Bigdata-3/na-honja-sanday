@@ -2,6 +2,7 @@ package com.smhrd.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Delete;
 import org.apache.ibatis.annotations.Select;
 
 public interface nahonsanMapper {
@@ -27,6 +28,8 @@ public interface nahonsanMapper {
 	//관리 받고있는 노인분들 목록
 	@Select("select * from senior")
 	public List<seniorVO> showlist();
+	@Delete("delete from senior where idx = #{idx}")
+	public void delnoin(int idx);
 
 
 }
