@@ -70,12 +70,14 @@
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            	<h1 class="mb-4" style="width:1110px;max-width:100%">이름 : <input style="max-width:100%" class="mb-4" type="text"></h1> 
-	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="text"> </h1>
+          	<form action = "" method = "post">
+	            	<h1 class="mb-4" style="width:1110px;max-width:100%">이름 : <input style="max-width:100%" class="mb-4" type="text" name = "name"></h1> 
+	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="text" name = "regi_number"> </h1>
 	            	<div class="mb-4" style="width:1110px;  max-width:100%" align="right">
-	            	<button type='button' class="btn btn-primary py-3 px-4" id="modal_btn">조회</button>
-	            	<button type='button' class="btn  py-3 px-4" onclick="location.href='index.do'">돌아가기</button>
+	            	<input type="submit" value = "조회" class="btn btn-primary py-3 px-4" id="modal_btn">
+	            	<button type='button' class="btn  py-3 px-4" onclick="location.href='firstpage.do'">돌아가기</button>
 	            	</div>
+	        </form>
             </div>
           </div>
         </div>

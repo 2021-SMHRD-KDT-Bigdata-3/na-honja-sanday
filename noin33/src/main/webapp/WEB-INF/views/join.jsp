@@ -27,7 +27,7 @@
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
        <div class="container">
          <a class="navbar-brand" href="index.do">나혼자산Day</a>
-      <div style="height:30px"><a href="#">로그인</a></div>
+      <div style="height:30px"><a href="gologin.do">로그인</a></div>
       </div>
      </nav>
     <!-- END nav -->
@@ -45,8 +45,10 @@
          <input type="text" name="name" id="" placeholder="이름을 입력하세요"> <br><br>
          <input type="text" name="phone" id="" placeholder="전화번호를 입력하세요."> <br><br>
          <input type="text" name="address" id="" placeholder="주소를 입력하세요"> <br><br>
-      <div id="btn_group"> <button type="submit" id="test_btn1">회원가입</button> <button id="test_btn2" onclick="index">메인으로</button> </div>
+     
+      <div id="btn_group"> <button type="submit" id="test_btn1">회원가입</button> </div>
       </form>
+      <div id="btn_group"> <button id="test_btn2" onclick="location.href='firstpage.do'">메인으로</button> </div>
    </div> <br><br>
     <footer class="ftco-footer">
       <div class="container">

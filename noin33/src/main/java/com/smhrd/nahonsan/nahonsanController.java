@@ -134,7 +134,9 @@ public class nahonsanController {
    }
    
    @RequestMapping(value = "/noin_friend.do")
-   public String main() {
+   public String main(HttpServletRequest request) {
+		 List<seniorVO> list1 = naMapper.showlist();
+		request.setAttribute("list1", list1);
       return "noin_friend";
    }
    
@@ -171,6 +173,14 @@ public class nahonsanController {
 	@RequestMapping(value = "/main.do")
 	public String main1() {
 		return "main";
+	}
+	@RequestMapping(value = "/status.do")
+	public String status() {
+		return "status";
+	}
+	@RequestMapping(value = "/sinchung.do")
+	public String sinchung() {
+		return "sinchung";
 	}
    
 //   @RequestMapping("/counselor.do")
