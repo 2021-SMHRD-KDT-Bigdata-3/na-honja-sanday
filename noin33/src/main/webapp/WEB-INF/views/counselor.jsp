@@ -24,47 +24,47 @@
   </head>
   <body>
 
-  	<div class="wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 d-flex align-items-center">
-						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
-						</p>
-					</div>
-					<div class="col-md-6 d-flex justify-content-md-end">
-						<div class="social-media">
-			    		<p class="mb-0 d-flex">
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-			    		</p>
-		        </div>
-					</div>
-				</div>
-			</div>
-		</div>
+     <div class="wrap">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 d-flex align-items-center">
+                  <p class="mb-0 phone pl-md-2">
+                     <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+                     <a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+                  </p>
+               </div>
+               <div class="col-md-6 d-flex justify-content-md-end">
+                  <div class="social-media">
+                   <p class="mb-0 d-flex">
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+                   </p>
+              </div>
+               </div>
+            </div>
+         </div>
+      </div>
     
-	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산데이</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> 메뉴
-	      </button>
+     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+       <div class="container">
+         <a class="navbar-brand" href="index.do">나혼자산데이</a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="oi oi-menu"></span> 메뉴
+         </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
-	          <li class="nav-item"><a href="main_guard.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item"><a href="About.do" class="nav-link">관리</a></li>
-	          <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
+         <div class="collapse navbar-collapse" id="ftco-nav">
+           <ul class="navbar-nav ml-auto">
+             <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
+             <li class="nav-item"><a href="main_guard.do" class="nav-link">복지사 소개</a></li>
+             <li class="nav-item"><a href="About.do" class="nav-link">관리</a></li>
+             <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
 
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
+           </ul>
+         </div>
+       </div>
+     </nav>
     <!-- END nav -->
     
     <section class="hero-wrap hero-wrap-2" style="background-image: url('${cpath}/resources/images/bg_5.jpg');" data-stellar-background-ratio="0.5">
@@ -79,122 +79,176 @@
     </section>
 
     <section class="ftco-section bg-light">
-    <c:forEach var="f" items="${welfare_list}" >
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-1.jpg);"></div>
-							</div>
-							<div class="text pt-3 px-3 pb-4 text-center">
-<<<<<<< HEAD
-								<h3>김인겸</h3>
-=======
-							
-								<h3>${f}</h3>
-								
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/na-honja-sanday.git
-								<span class="position mb-2">Counselor</span>
-								<div class="faded">
-									<p></p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-2.jpg);"></div>
-							</div>
-							<div class="text pt-3 px-3 pb-4 text-center">
-								<h3>진성빈</h3>
-								<span class="position mb-2">Counselor</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-3.jpg);"></div>
-							</div>
-							<div class="text pt-3 px-3 pb-4 text-center">
-								<h3>안현진</h3>
-								<span class="position mb-2">Counselor</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-4.jpg);"></div>
-							</div>
-							<div class="text pt-3 px-3 pb-4 text-center">
-								<h3>김태희</h3>
-								<span class="position mb-2">Counselor</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-3 ftco-animate">
-						<div class="staff">
-							<div class="img-wrap d-flex align-items-stretch">
-								<div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-4.jpg);"></div>
-							</div>
-							<div class="text pt-3 px-3 pb-4 text-center">
-								<h3>최재웅</h3>
-								<span class="position mb-2">Counselor</span>
-								<div class="faded">
-									<p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
-									<ul class="ftco-social text-center">
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
-		                <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
-		              </ul>
-	              </div>
-							</div>
-						</div>
-					</div>
+    <c:forEach var="vo" items="${list}" >
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-1.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>${vo. }</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-2.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Rachel Parker</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-3.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Ian Smith</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-4.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Alicia Henderson</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
 
-				</div>
-			</div>
-		</c:forEach>
-		</section>
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-5.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Lloyd Wilson</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-6.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Rachel Parker</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-7.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Ian Smith</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6 col-lg-3 ftco-animate">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-8.jpg);"></div>
+                     </div>
+                     <div class="text pt-3 px-3 pb-4 text-center">
+                        <h3>Fred Henderson</h3>
+                        <span class="position mb-2">Counselor</span>
+                        <div class="faded">
+                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <ul class="ftco-social text-center">
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a></li>
+                      <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"></span></a></li>
+                    </ul>
+                 </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </c:forEach>
+      </section>
 
-		
+      
 
     <footer class="ftco-footer">
       <div class="container">
@@ -245,29 +299,29 @@
           </div>
           <div class="col-sm-12 col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
+               <h2 class="ftco-heading-2">Have a Questions?</h2>
+               <div class="block-23 mb-3">
+                 <ul>
+                   <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
+                   <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
+                   <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
+                 </ul>
+               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container-fluid px-0 py-5 bg-black">
-      	<div class="container">
-      		<div class="row">
-	          <div class="col-md-12">
-		
-	            <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-	  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-	  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-	          </div>
-	        </div>
-      	</div>
+         <div class="container">
+            <div class="row">
+             <div class="col-md-12">
+      
+               <p class="mb-0" style="color: rgba(255,255,255,.5);"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+     Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+     <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+             </div>
+           </div>
+         </div>
       </div>
     </footer>
     
