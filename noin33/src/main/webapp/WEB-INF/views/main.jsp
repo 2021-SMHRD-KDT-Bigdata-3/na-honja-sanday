@@ -49,17 +49,18 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산데이</a>
+	      <a class="navbar-brand" href="/nahonsan/main.do">나혼자산데이</a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 메뉴
 	      </button>
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
-	          <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
-	          <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
+	          <li class="nav-item active"><a href="/nahonsan/main.do" class="nav-link">홈</a></li>
+	          <li class="nav-item"><a href="/nahonsan/counselor.do" class="nav-link">복지사 소개</a></li>
+	          <li class="nav-item"><a href="/nahonsan/about2.do" class="nav-link">관리</a></li>
+	          <!-- 위험분석은 아직  -->
+	          <li class="nav-item"><a href="#" class="nav-link">위험분석</a></li>
 
 	        </ul>
 	      </div>
@@ -95,7 +96,7 @@
     		<div class="row justify-content-center">
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
     				<div class="services-2 text-center ">
-    					<a href="about2.do">
+    					<a href="/nahonsan/about2.do">
     					<div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
 	    					<div class="icon d-flex align-items-center justify-content-center">
@@ -107,6 +108,7 @@
     			</div>
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
     				<div class="services-2 text-center">
+    				<!-- 위험분석은 아직 -->
     				<a href="#">
     					<div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>02</span></div>

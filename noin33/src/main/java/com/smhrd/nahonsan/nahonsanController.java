@@ -29,7 +29,13 @@ public class nahonsanController {
    @Autowired
    nahonsanMapper naMapper;
 
-   // 만들어지지 않은 페이지
+   // 신청현황
+   @RequestMapping("/status.do")
+   public String status() {
+      return "status";
+   }
+   
+   // 로그인 안했을때 맨처음 페이지
    @RequestMapping("/firstpage.do")
    public String first() {
       return "firstpage";
@@ -171,6 +177,12 @@ public class nahonsanController {
 	@RequestMapping(value = "/main.do")
 	public String main1() {
 		return "main";
+	}
+	
+	// 시작화면에서 신청하기
+	@RequestMapping(value = "/sinchung.do")
+	public String sinchung() {
+		return "sinchung";
 	}
    
 //   @RequestMapping("/counselor.do")

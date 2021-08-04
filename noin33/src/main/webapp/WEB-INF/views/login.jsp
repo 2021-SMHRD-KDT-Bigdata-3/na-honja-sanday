@@ -62,7 +62,7 @@
 	
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산Day</a>
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do">나혼자산Day</a>
 		</div>
 	  </nav>
 	 <br><br><br>
@@ -91,7 +91,7 @@
     </div>
     <br><br>
     <div align="center">
-		<button class="btn btn-primary py-3 px-4" onclick="location.href='join.do'">회원가입</button>
+		<button class="btn btn-primary py-3 px-4" onclick="location.href='/nahonsan/goJoin.do'">회원가입</button>
 	</div>
     <br><br>
 		
@@ -126,6 +126,7 @@
 					</tr>
 					</table>
 					</form>
+					<!-- 여기는 수정해야댈듯 일단 보류 -->
 					<button class="btn btn-success" style="width : 250px" type="submit" form="loginForm">로그인</button>
     				</div>
 					</div>

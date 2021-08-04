@@ -59,10 +59,10 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
 	     
 
-	  	  <div style="height:30px"><a href="#" >로그인</a></div>
+	  	  <div style="height:30px"><a href="/nahonsan/gologin.do" >로그인</a></div>
 	      
 	    </div>
 	  </nav>
@@ -76,7 +76,8 @@
           	<div class="text w-100">
 	            <h1 class="mb-4">Counseling For Your Better Life</h1>
 	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-	            <p><a href="#" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="status.do" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
+	            <p><a href="/nahonsan/sinchung.do" class="btn btn-primary py-3 px-4">지금 신청하기!</a> 
+	            <a href="/nahonsan/status.do" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
 					            
             </div>
           </div>
