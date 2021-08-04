@@ -19,20 +19,40 @@ name varchar(30) not null,
 phone varchar(50) not null,
 seperator varchar(10) not null,   --구분자(3)--
 constraint wel_email primary key(email))
+<<<<<<< HEAD
+=======
+
+select * from welfare_worker;
+
+--복지사 가데이터--
+insert into welfare_worker(email, name, phone, seperator)
+values('hello@cgi.com', '김인겸','01011111111','3')
+insert into welfare_worker(email, name, phone, seperator)
+values('niceto@cgi.com', '안현진','01022222222','3')
+insert into welfare_worker(email, name, phone, seperator)
+values('meetyou@cgi.com', '진성빈','01033333333','3')
+insert into welfare_worker(email, name, phone, seperator)
+values('havea@cgi.com', '최재웅','01055555555', '3')
+insert into welfare_worker(email, name, phone, seperator)
+values('niceday@cgi.com', '정태희','01066666666','3')
+
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/na-honja-sanday.git
 -- 노인 테이블 --
 create table senior(
 idx int not null auto_increment,
-seperator varchar(10) not null,   --구분자 (1)--
+seperator varchar(10) not null,   
 name varchar(50) not null,
 age int not null,
-regi_number varchar(50) not null, --주민번호--
+regi_number varchar(50) not null, 
 address varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
 application_date datetime default now(),
-constraint seni_id primary key(ID))
-primary key(idx))
+constraint seni_id primary key(idx))
 
+select * from senior;
+select * from member;
+select * from welfare_worker;
 
 --회원 테이블 필요--
 create table member(
@@ -64,6 +84,10 @@ primary key(idx))
 select * from senior;
 select * from welfare_worker;
 select * from request;
+select * from guardian;
+select * from member;
+
+delete from welfare_worker where email='qweq';
 
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,

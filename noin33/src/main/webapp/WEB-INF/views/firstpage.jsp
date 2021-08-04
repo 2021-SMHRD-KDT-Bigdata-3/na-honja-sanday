@@ -5,10 +5,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
+    <title>나혼자산DAY - 독거노인 낙상 감지 서비스</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="shortcut icon" type="image/x-icon" href="${cpath}/resources/images/logo.jpg">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -29,8 +29,8 @@
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
 						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> 010 **** ****</a> 
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> *@email.com</a>
 						</p>
 					</div>
 					<div class="col-md-6 d-flex justify-content-md-end">
@@ -52,7 +52,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">Counselor</a>
+	      <a class="navbar-brand" href="index.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
 	     
 
 	  	  <div style="height:30px"><a href="#" >로그인</a></div>
@@ -61,7 +61,7 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/#.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">

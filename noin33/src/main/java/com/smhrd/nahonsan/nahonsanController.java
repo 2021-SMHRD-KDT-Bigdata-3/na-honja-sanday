@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -82,17 +83,27 @@ public class nahonsanController {
 //   }
    
    @RequestMapping("/join_gardian.do")
-   public String join(loginVO vo, guardianVO vo2) {
-      naMapper.join(vo);
-      naMapper.join2(vo2);
-      return "main";
+   public String join(loginVO vo) {
+	   naMapper.join(vo);
+	   naMapper.join2(vo);
+	   return "main";
    }
    
    @RequestMapping("/join_welfare.do")
-   public String join(loginVO vo, welfare_workerVO vo2) {
-      naMapper.join(vo);
-      naMapper.join3(vo2);
-      return "main";
+   public String join2( loginVO vo) {
+	   //지금 여기로 들어올때 매개변수로 loginVO받아올때 vo가 null인 상태인거 같거든요?
+	   //흠 잠시만용 기억이 잘안나 HttpServletRequest request,
+	   //vo.setPhone(request.getParameter("tel"));
+	   //System.out.println(vo.getPhone());
+	   naMapper.join(vo); // 보이죵?넹  흐름 설명 해줄게용!
+	   // join.jsp ---> join_welfare.do로 왔음 ---> 이때 입력한 데이터 request안에 담김
+	   // ----> 매개변수로 request 하나 받아옴! 위에처럼 ---> 그럼 이전에 jsp,servlet했던것처럼 form태그 안에 입력받았던 데이터
+	   // getparameter메소드 사용해서 하나씩 꺼내올 수 있음. ---> 꺼내온 데이터를 비어있는 vo에 담아서 ---> mapper로 보내주기
+	   // 이해안되는 부분 물어볼래용?
+	   // 왜 비었을까요? loginVO로 매개변수 받아올래!라고 써놔도 안담겨서? 이렇게 바뀌면 될수도 있어요! 해보까용?
+	   // 이해되엇나여넹 ㅎ힣ㅎㅎㅎㅎㅎ 맞춰줘야해여! 그래서 저는 lombok쓸때좋으면서도 불편ㅇ하더라구용
+	   // 한번 눈으로 보면서 확인해봐요!네네엥
+	   return "main"; 
    }
 
    
@@ -162,27 +173,31 @@ public class nahonsanController {
 		return "main";
 	}
    
-	
-	
-   /*
-    * jsp가 만들어지지 않은 페이지
-    *
-    * @RequestMapping("/senior_friend.do") 
-    * public String seniorfriend() { 
-    * return "senior_friend"; 
-    * }
-    * 
-    * @RequestMapping("/wel_manage.do") 
-    * public String manage() { 
-    * return "wel_manage"; 
-    * }
-    * 
-    * @RequestMapping("/danger.do") 
-    * public String danger() {
-    * return "danger"; 
-    * }
-    * 
-    */
+//   @RequestMapping("/counselor.do")
+//   public String welfareList(HttpServletRequest request) {
+//	   request.setAttribute("welfareList", coun); = naMapper.counselor();
+//	   
+//	   return "counselor";
+//   }
+	/*
+	 * jsp가 만들어지지 않은 페이지
+	 *
+	 * @RequestMapping("/senior_friend.do") 
+	 * public String seniorfriend() { 
+	 * return "senior_friend"; 
+	 * }
+	 * 
+	 * @RequestMapping("/wel_manage.do") 
+	 * public String manage() { 
+	 * return "wel_manage"; 
+	 * }
+	 * 
+	 * @RequestMapping("/danger.do") 
+	 * public String danger() {
+	 * return "danger"; 
+	 * }
+	 * 
+	 */
   
   
    
