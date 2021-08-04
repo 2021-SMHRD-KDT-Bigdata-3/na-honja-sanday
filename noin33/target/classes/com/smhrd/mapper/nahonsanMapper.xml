@@ -13,13 +13,15 @@
     	<!-- 회원가입할때 정보를 나눠서 담기 -->
     	<insert id="join" parameterType = "com.smhrd.mapper.loginVO">
     	    insert into member(id, password,seperator)
-    	    values(#{email}, #{password},2);
+    	    values(#{email}, #{password},3);
     	    insert into welfare_worker(email, name, phone,seperator)
     	    values(#{email}, #{name}, #{phone},3);
     	</insert>
     	<insert id="join2" parameterType = "com.smhrd.mapper.loginVO">
-    	    insert into guardian(email, name, phone, address)
-    	    values(#{email}, #{name}, #{phone}, #{address})
+    	    insert into member(id, password,seperator)
+    	    values(#{email}, #{password},2);
+    	    insert into guardian(email, name, phone, address, seperator)
+    	    values(#{email}, #{name}, #{phone}, #{address}, 2)
     	</insert>
     	
     	

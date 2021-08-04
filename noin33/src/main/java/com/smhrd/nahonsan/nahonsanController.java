@@ -29,7 +29,8 @@ public class nahonsanController {
    @Autowired
    nahonsanMapper naMapper;
 
-   // 만들어지지 않은 페이지
+   
+   // 로그인 안했을때 맨처음 페이지
    @RequestMapping("/firstpage.do")
    public String first() {
       return "firstpage";
@@ -182,13 +183,14 @@ public class nahonsanController {
 	public String sinchung() {
 		return "sinchung";
 	}
-   
-//   @RequestMapping("/counselor.do")
-//   public String welfareList(HttpServletRequest request) {
-//	   request.setAttribute("welfareList", coun); = naMapper.counselor();
-//	   
-//	   return "counselor";
-//   }
+
+   @RequestMapping("/counselor.do")
+   public String welfareList(HttpServletRequest request) {
+	   List<welfare_workerVO> list = naMapper.counselor();
+	   request.setAttribute("welfareList", list);
+	   
+	   return "counselor";
+   }
 	/*
 	 * jsp가 만들어지지 않은 페이지
 	 *

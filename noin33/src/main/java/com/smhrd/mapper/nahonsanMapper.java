@@ -25,6 +25,11 @@ public interface nahonsanMapper {
 	public requestVO selectone(int idx);
 	//해당번호를 가진 노인을 관리 승인시  노인테이블에 데이터 넣고 신청테이블에선 삭제
 	public void add_del(int idx);
+	
+	//복지사소개 페이지에 가져오기
+	@Select("select * from welfare_worker") 
+	public List<welfare_workerVO> counselor();
+	
 	//관리 받고있는 노인분들 목록
 	@Select("select * from senior")
 	public List<seniorVO> showlist();

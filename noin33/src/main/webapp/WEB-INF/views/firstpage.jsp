@@ -21,6 +21,13 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    
+    
+    <style>
+    #footbg{
+    	 background: #ffffff;
+    }
+    </style>
   </head>
   <body>
 
@@ -52,19 +59,23 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
 	     
 
+<<<<<<< HEAD
 	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
+=======
+	  	  <div style="height:30px"><a href="/nahonsan/gologin.do" >로그인</a></div>
+>>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-Bigdata-3/na-honja-sanday.git
 	      
 	    </div>
 	  </nav>
-    <!-- END nav -->
+    <!-- END nav      -->
     
-    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/#.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style= "background-image: url('${cpath}/resources/images/banner.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text align-items-center">
+      <div class="container" style="height:800px">
+        <div class="row no-gutters slider-text align-items-center" style="height:800px">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
 	            <h1 class="mb-4">Counseling For Your Better Life</h1>
@@ -80,68 +91,11 @@
     </div>
 
 
-    <footer class="ftco-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><a href="#">Counselor</a></h2>
-              <p>Far far away, behind the word mountains, far from the countries.</p>
-              <ul class="ftco-footer-social list-unstyled mt-2">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Explore</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>What We Do</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Plans &amp; Pricing</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Legal</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Company</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid px-0 py-5 bg-black">
+
+
+
+    <footer class="ftco-footer" id="footbg" style="width:100%;position:absolute; bottom:0; spadding: 0em 0 0 0;">
+      <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">
 	          <div class="col-md-12">

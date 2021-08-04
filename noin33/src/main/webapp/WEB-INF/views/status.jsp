@@ -53,7 +53,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산DAY</a>
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do">나혼자산DAY</a>
 	     
 
 	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
