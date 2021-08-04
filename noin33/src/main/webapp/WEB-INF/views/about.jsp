@@ -71,7 +71,7 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
+	          <li class="nav-item"><a href="About.do" class="nav-link">관리</a></li>
 	          <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
 
 	        </ul>
@@ -89,19 +89,19 @@
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
-                        <a class="" href="#">
+                         <a class="" href="${cpath}/about2.do">
                             	관리 신청
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="#">
+                        <a class="" href="${cpath}/About.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="#">
+                        <a class="" href="${cpath}/about3.do">
                             	관리 목록
                             <i class=""></i>
                         </a>
@@ -110,20 +110,21 @@
 					</div>
 				
 			<!-- 관리 등록 완료. -->
+			<div class="" style="width:75%">
 	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
 	            <h2 class="mb-4">관리 등록</h2>
 				<div class="heading-section py-md-5">
-					<table id="tlscjd" >
+					<table id="tlscjd" style="max-width:100%;">
 						<tr>
-							<th>대기번호</th>
-							<th>이름</th>
+							<th width="10%">대기번호</th>
+							<th width="%">이름</th>
 							<th>나이</th>
 							<th>주소</th>
 							<th>전화번호</th>
 							<th>특이사항</th>
 							<th>신청일</th>
-							
+							<th>등록</th>
 						</tr>
 					<c:forEach var="vo" items="${list}">
 						<tr>
@@ -134,6 +135,7 @@
 							<td>${vo.phone}</td>
 							<td>${vo.uniqueness}</td>
 							<td>${vo.aplication_date}</td>
+							<td><a href = "${cpath}/realnoin.do?idx=${vo.idx}">등록</a></td>
 						</tr>
 					</c:forEach>						
 					</table>	  

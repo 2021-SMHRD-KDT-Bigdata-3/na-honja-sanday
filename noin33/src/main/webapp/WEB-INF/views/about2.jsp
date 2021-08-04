@@ -90,19 +90,19 @@
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
-                        <a class="" href="about2.do">
+                        <a class="" href="${cpath}/about2.do">
                             	관리 신청
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="main_guard.do">
+                        <a class="" href="${cpath}/About.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="about3.do">
+                        <a class="" href="${cpath}/about3.do">
                             	관리 목록
                             <i class=""></i>
                         </a>
@@ -117,27 +117,32 @@
 	            
 				<div class="heading-section py-md-5" >
 					
+	       		  <form action = "${cpath}/noinsert.do" method="post">
 					<div >
 						이름 : 
-						<input type="text" >
+						<input type="text" name ="name">
 						<br>
 						나이 : 
-						<input type="text">
+						<input type="text" name = "age">
+						<br>
+						주민등록번호 : 
+						<input type="text" name = "regi_number">
 						<br>
 						주소 : 
-						<input type="text">
+						<input type="text" name = "adress">
 						<br>
 						연락처 : 
-						<input type="text">
+						<input type="text" name = "phone">
 						<br>
 						특이사항 : 
-						<input type="text">
+						<input type="text" name = "uniqueness">
 					</div>  
-					
+					<div align="right">
+						<button type="submit" class="btn btn-primary btn-sm">등록</button>
+				
+					</div>  
+			 	  </form>
 				</div>
-				<div align="right">
-						<button>신청</button>
-				</div>  
 			  </div>
 
 					

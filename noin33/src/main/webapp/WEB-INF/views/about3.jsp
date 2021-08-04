@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+ 
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/animate.css">
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
@@ -89,19 +89,19 @@
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
-                        <a class="" href="about2.do">
+                         <a class="" href="${cpath}/about2.do">
                             	관리 신청
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="main_guard.do">
+                        <a class="" href="${cpath}/About.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="about3.do">
+                        <a class="" href="${cpath}/about3.do">
                             	관리 목록
                             <i class=""></i>
                         </a>
@@ -110,32 +110,36 @@
 					</div>
 					
 			<div class="" style="width:75%">
-				
-			<!--  목록 -->
-			<div class="heading-section py-md-5" >
+	          <div class="heading-section py-md-5" >
 	          	<span class="subheading">Welcome to Counselor</span>
 	            <h2 class="mb-4">관리 목록</h2>
 				<div class="heading-section py-md-5">
-					<table id="tlscjd" >
+					<table id="tlscjd" style="max-width:100%;">
 						<tr>
-							<th>이름</th>
+							<th width="10%">대기번호</th>
+							<th width="%">이름</th>
 							<th>나이</th>
 							<th>주소</th>
-							<th>연락처</th>
+							<th>전화번호</th>
 							<th>특이사항</th>
+							<th>신청일</th>
+							<th>삭제</th>
+							
 						</tr>
+					<c:forEach var="vo" items="${list1}">
 						<tr>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-							<td>ㅇㅇㅇ</td>
-						</tr>					
+							<td>${vo.idx}</td>
+							<td>${vo.name}</td>
+							<td>${vo.age}</td>
+							<td>${vo.adress}</td>
+							<td>${vo.phone}</td>
+							<td>${vo.uniqueness}</td>
+							<td>${vo.aplication_date}</td>
+							<td><a href = "${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a></td>
+						</tr>
+					</c:forEach>						
 					</table>	  
 				</div>
-					<div align="right">
-						<button>수정</button>
-						<button>삭제</button>
-					</div>          
 			  </div>
 			</div>
 			
