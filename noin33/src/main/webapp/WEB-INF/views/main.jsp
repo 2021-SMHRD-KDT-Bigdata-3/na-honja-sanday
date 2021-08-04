@@ -95,23 +95,25 @@
     		<div class="row justify-content-center">
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
     				<div class="services-2 text-center ">
+    					<a href="about2.do">
     					<div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
 	    					<div class="icon d-flex align-items-center justify-content-center">
 	    						<span class="flaticon-calendar"></span>
 	    					</div>
-    					</div>
+    					</div></a>
     					<h2>관리 신청</h2>
     				</div>
     			</div>
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
     				<div class="services-2 text-center">
+    				<a href="#">
     					<div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
 	    					<div class="icon d-flex align-items-center justify-content-center">
 	    						<span class="flaticon-qa"></span>
 	    					</div>
-    					</div>
+    					</div></a>
     					<h2>위험 분석</h2>
     				</div>
     			</div>
