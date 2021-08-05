@@ -113,7 +113,7 @@ public class nahonsanController {
    @RequestMapping(value = "/noinsert.do")
    public String main_guard(requestVO vo) {
      naMapper.addnoin(vo);
-      return "redirect:/About.do";
+      return "redirect:/about.do";
    }
    
    @RequestMapping("/realnoin.do")
