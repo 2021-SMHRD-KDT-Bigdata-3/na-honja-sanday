@@ -13,7 +13,6 @@ public interface nahonsanMapper {
 	//회원가입
 	public void join(loginVO vo); //회원가입은 가지고 오는 값이 없어서
 	public void join2(loginVO vo);
-	public void join3(loginVO vo);
 	
 	//신청 테이블 노인 추가
 	public void addnoin(requestVO vo);
