@@ -1,11 +1,14 @@
 package com.smhrd.nahonsan;
 
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
@@ -15,6 +18,7 @@ import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.smhrd.mapper.guardianVO;
@@ -143,18 +147,41 @@ public class nahonsanController {
       return "help_success";
    }
    
-   @RequestMapping(value = "/about2.do") //관리신청
-   public String about2() {
-      return "about2";
-   }
-  
+   /* 새로만듬*/
+	@RequestMapping(value = "/about2.do")
+	public String about2(){
+		return "about2";
+	}
+	@RequestMapping(value = "/delnoin.do")
+	public String delnoin(int idx) {
+		naMapper.delnoin(idx);
+		return "redirect:/about3.do";
+	}
+	//애 지우면 status modal 창 안뜸.
+	@RequestMapping(value = "/noinselect.do")
+	public String noinselect() {
+		return "status";
+	}
+	//노인이 신청했는지 알아보고 조회 후 arraylist에 담아 res 라는 이름으로 ajax에 송출.
+	@RequestMapping(value = "/checkStatus.do")
+	public  @ResponseBody List<requestVO> noinselect(requestVO vo){
+		
+		List<requestVO> res =  naMapper.noinselect(vo);
+		
+		return res;
+	}
+	@RequestMapping(value = "/noinrequest.do")
+	   public String noinrequest(requestVO vo) {
+	     naMapper.addnoin(vo);
+	      return "redirect:/help_success.do";
+	   }
    @RequestMapping(value = "/about3.do") //관리목록
    public String about3(HttpServletRequest request) {
 	   List<seniorVO> list1 = naMapper.showlist();
 	   request.setAttribute("list", list1);
       return "about3";
    }
-   
+ //노인이 신청했는지 조회 후 알아보는 페이지
    @RequestMapping(value = "/status.do")
    public String status() {
       return "status";
@@ -166,7 +193,7 @@ public class nahonsanController {
 	   model.addAttribute("welfareList", list);
 	   return "counselor";
    }
-   
+ //신청을 안했다면 노인이 신청하는 시스템.
    @RequestMapping(value = "/sinchung.do")
    public String sinchung() {
       return "sinchung";
