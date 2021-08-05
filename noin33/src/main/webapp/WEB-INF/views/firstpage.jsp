@@ -38,11 +38,8 @@
   	<div class="wrap">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 d-flex align-items-center">
-						<p class="mb-0 phone pl-md-2">
-							<a class="mr-2">&nbsp;</a> 
-						</p>
-					</div>
+					<a href="gologin.do" >로그인</a>&emsp;
+					<a href="goJoin.do" >회원가입</a>
 				</div>
 			</div>
 		</div>
@@ -50,7 +47,7 @@
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
-	  	  <div style="font-size:30px"><a href="firstpage.do" >메인</a>&emsp;<a href="counselor.do">서비스 소개</a>&emsp;<a href="counselor.do">복지사 소개</a>&emsp;<a href="gologin.do" >로그인</a>&emsp;<a href="goJoin.do" >회원가입</a></div>
+	  	  <div style="font-size:30px"><a href="firstpage.do" >메인</a>&emsp;<a href="counselor.do">서비스 소개</a>&emsp;<a href="counselor.do">복지사 소개</a>&emsp;</div>
 	    </div>
 	  </nav>
     <!-- END nav      -->
