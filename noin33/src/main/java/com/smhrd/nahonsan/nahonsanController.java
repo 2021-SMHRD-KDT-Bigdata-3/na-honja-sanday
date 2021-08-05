@@ -14,9 +14,11 @@ import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.smhrd.mapper.guardianVO;
 import com.smhrd.mapper.loginVO;
+import com.smhrd.mapper.memberVO;
 import com.smhrd.mapper.nahonsanMapper;
 import com.smhrd.mapper.welfare_workerVO;
 import com.smhrd.mapper.requestVO;
@@ -44,19 +46,19 @@ public class nahonsanController {
    }
    
    
-   @RequestMapping("/login.do") 
-   public String login(loginVO vo){ 
-      if(vo.getEmail()==""  || vo.getPassword()=="") { 
-         return "redirect:/login.do"; 
-      }else if(vo.getSeperator() == "1"){
-        
-        naMapper.login(vo);
-        return "main"; 
+   @RequestMapping(value = "/login.do") 
+   public String login(memberVO vo){ 
+      if(vo.id == "" || vo.password == "") { 
+         return "login.do"; 
       }else {
-         return "main";
+    	  if(vo.seperator == "1") {
+    		  return "noin_main";
+    	  }else {
+    		  return "main";
+    	  }
       }
-      }
-   
+   }
+      
   
    //신청 테이블 보여주기//
    @RequestMapping(value = "/manage.do")//관리등록
@@ -76,14 +78,14 @@ public class nahonsanController {
    @RequestMapping("/join_gardian.do")
    public String join(loginVO vo) {
 	   naMapper.join2(vo);
-	   return "main";
+	   return "firstpage";
    }
    
  //보호자 회원가입시 member와 welfare_worker테이블에 담기
    @RequestMapping("/join_welfare.do")
    public String join2( loginVO vo) {
 	   naMapper.join(vo);
-	   return "main"; 
+	   return "firstpage"; 
    }
 
    

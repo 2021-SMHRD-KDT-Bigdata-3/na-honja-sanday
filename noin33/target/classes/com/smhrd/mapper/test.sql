@@ -45,7 +45,6 @@ id varchar(30) primary key,
 password varchar(20) not null,
 seperator varchar(10) not null
 )
-constraint mem_id foreign key(id) references 
 --각테이블의 seperator 참조해서--
 
 --위험 상황 테이블--
@@ -65,13 +64,7 @@ recipient varchar(50) not null,
 contents varchar(4000) not null,
 send_date datetime default now(),
 primary key(idx))
-select * from senior;
-select * from welfare_worker;
-select * from request;
-select * from guardian;
-select * from member;
 
-delete from welfare_worker where email='qweq';
 
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,
