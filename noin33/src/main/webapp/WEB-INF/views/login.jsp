@@ -22,6 +22,7 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
  
  <style>
  	.modal_wrap1{
@@ -30,7 +31,6 @@
         top:50%;
         left: 50%;
         margin: -250px 0 0 -250px;
-        background:#eee;
         z-index: 2;
         
     }
@@ -39,6 +39,16 @@
     }
     body{
     	font-family: 'NEXON Lv1 Gothic OTF';
+    }
+    .log{
+    	display:flex;
+    	flex-wrap:wrap;
+    	margin-right: 10%;
+    	margin-left : 10%;
+    }
+    .btnlo{
+    	background:#ffffff !important;
+    	border:1px solid #ffffff !important;
     }
  </style>
  </head>
@@ -72,20 +82,20 @@
 	
 	
 	
-	<div class="row justify-content-center">
+	<div class="justify-content-center log">
+		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
+			<div class="services-2 text-center">
+			<button type='button' id="modal_btn2" class="btn btn-primary btnlo" style="width : 100%" form="loginForm"><img src="${cpath}/resources/images/prot.png" ></button>
+			</div>
+		</div>
 		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
 			<div class="services-2 text-center ">
-				<button style="width:250px;height:250px" type='button' id="modal_btn1" class="btn btn-primary py-3 px-4" style="width : 100%" form="loginForm">노인</button>
+				<button type='button' id="modal_btn1" class="btn btn-primary btnlo" style="width : 100%" form="loginForm"><img src="${cpath}/resources/images/noin.png" ></button>
 			</div>
 		</div>
 		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
 			<div class="services-2 text-center">
-			<button style="width:250px;height:250px" type='button' id="modal_btn2" class="btn btn-primary py-3 px-4" style="width : 100%" form="loginForm">보호자</button>
-			</div>
-		</div>
-		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
-			<div class="services-2 text-center">
-			<button style="width:250px;height:250px" type='button' id="modal_btn3" class="btn btn-primary py-3 px-4" style="width : 100%" form="loginForm">복지사</button>
+			<button  type='button' id="modal_btn3" class="btn btn-primary btnlo" style="width : 100%" form="loginForm"><img src="${cpath}/resources/images/qhrwl.png" ></button>
 			</div>
 		</div>
     </div>
@@ -102,7 +112,7 @@
 			<div class="black_bg"></div>
 					<div class="modal_wrap1" id = "modal_temp">
     				<div class="modal_close"><a href="#">close</a></div>
-    				<div>
+    				<div align="center">
     				<form action="login.do" method="get" id="loginForm">
     					 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
 								이런식으로 주고
@@ -116,12 +126,12 @@
         				 <table>
 					<tr>
 						<td>
-							<input type="text" name=id id=id size="25" placeholder="아이디">
+							<input type="text" name=id id=id size="30" placeholder="아이디">
 						</td>
 					</tr>
 					<tr>	
 						<td>
-							<input type="password" name=pw id=pw size="25" placeholder="비밀번호">
+							<input type="password" name=pw id=pw size="30" placeholder="비밀번호">
 						</td>
 					</tr>
 					</table>
@@ -132,68 +142,8 @@
 					</div>
   
   
-  <footer class="ftco-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><a href="#">Counselor</a></h2>
-              <p>Far far away, behind the word mountains, far from the countries.</p>
-              <ul class="ftco-footer-social list-unstyled mt-2">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Explore</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>What We Do</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Plans &amp; Pricing</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Legal</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Company</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid px-0 py-5 bg-black">
+ <footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
+      <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">
 	          <div class="col-md-12">
@@ -206,7 +156,6 @@
       	</div>
       </div>
     </footer>
-
 
 
 
