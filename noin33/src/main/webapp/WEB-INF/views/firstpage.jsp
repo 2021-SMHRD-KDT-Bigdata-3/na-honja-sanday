@@ -40,25 +40,17 @@
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
 						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> 010 6626 8171</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> ruaql2@naver.com</a>
+							<a class="mr-2">&nbsp;</a> 
 						</p>
 					</div>
-					
 				</div>
 			</div>
-			
-			
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
-	      
-
-	  	  <div style="height:30px"><a href="gologin.do" >로그인</a>&nbsp;&nbsp;<a href="goJoin.do" >회원가입</a></div>
-	  	  
-	      
+	  	  <div style="font-size:30px"><a href="firstpage.do" >메인</a>&emsp;<a href="counselor.do">서비스 소개</a>&emsp;<a href="counselor.do">복지사 소개</a>&emsp;<a href="gologin.do" >로그인</a>&emsp;<a href="goJoin.do" >회원가입</a></div>
 	    </div>
 	  </nav>
     <!-- END nav      -->
@@ -69,8 +61,8 @@
         <div class="row no-gutters slider-text align-items-center" style="height:800px">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            <h1 class="mb-4">Counseling For Your Better Life</h1>
-	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            <h1 class="mb-4">노인 돌봄 서비스</h1>
+	            <p class="mb-4">일상생활 영위가 어려운 취약노인에게 적절한 돌봄서비스를 제공하여<br>안정적인 노후생활 보장, 노인의 기능·건강 유지 및 악화 예방을 지원합니다.</p>
 	            <p><a href="sinchung.do" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="status.do" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
 	           
 					             

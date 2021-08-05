@@ -8,5 +8,5 @@ public class emergencyVO {
 	private String SITUATION_INFO;
 	private String CLASSIFICATION;
 	private String EMAIL;
-	// 아무거나
+	// 아무거나123
 }

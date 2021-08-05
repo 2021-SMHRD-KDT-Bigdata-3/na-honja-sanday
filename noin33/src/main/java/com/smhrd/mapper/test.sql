@@ -12,6 +12,10 @@ phone varchar(50) not null,
 address varchar(50),
 seperator varchar(10) not null,   
 constraint guard_email primary key(email))
+
+select * from guardian;
+select * from member;
+
 --복지사 테이블 --
 create table welfare_worker(
 email varchar(100),
@@ -21,18 +25,6 @@ seperator varchar(10) not null,
 constraint wel_email primary key(email))
 
 select * from welfare_worker;
-
---복지사 가데이터--
-insert into welfare_worker(email, name, phone, seperator)
-values('hello@cgi.com', '김인겸','01011111111','3')
-insert into welfare_worker(email, name, phone, seperator)
-values('niceto@cgi.com', '안현진','01022222222','3')
-insert into welfare_worker(email, name, phone, seperator)
-values('meetyou@cgi.com', '진성빈','01033333333','3')
-insert into welfare_worker(email, name, phone, seperator)
-values('havea@cgi.com', '최재웅','01055555555', '3')
-insert into welfare_worker(email, name, phone, seperator)
-values('niceday@cgi.com', '정태희','01066666666','3')
 
 -- 노인 테이블 --
 create table senior(
@@ -47,18 +39,12 @@ uniqueness varchar(100),
 application_date datetime default now(),
 constraint seni_id primary key(idx))
 
-select * from senior;
-select * from member;
-select * from welfare_worker;
-
 --회원 테이블 필요--
 create table member(
 id varchar(30) primary key,
 password varchar(20) not null,
 seperator varchar(10) not null
 )
-drop table member;
-constraint mem_id foreign key(id) references 
 --각테이블의 seperator 참조해서--
 
 --위험 상황 테이블--
@@ -78,13 +64,7 @@ recipient varchar(50) not null,
 contents varchar(4000) not null,
 send_date datetime default now(),
 primary key(idx))
-select * from senior;
-select * from welfare_worker;
-select * from request;
-select * from guardian;
-select * from member;
 
-delete from welfare_worker where email='qweq';
 
 --노인 신청 테이블--
 create table request(idx int not null auto_increment,

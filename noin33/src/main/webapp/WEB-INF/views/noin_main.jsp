@@ -25,45 +25,23 @@
   <body>
 
      <div class="wrap">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 d-flex align-items-center">
-                  <p class="mb-0 phone pl-md-2">
-                     <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-                     <a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
-                  </p>
-               </div>
-               <div class="col-md-6 d-flex justify-content-md-end">
-                  <div class="social-media">
-                   <p class="mb-0 d-flex">
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-                   </p>
-              </div>
-               </div>
-            </div>
-         </div>
-      </div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a class="mr-2">&nbsp;</a> 
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-       <div class="container">
-         <a class="navbar-brand" href="index.do">나혼자산데이</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="oi oi-menu"></span> 메뉴
-         </button>
-
-         <div class="collapse navbar-collapse" id="ftco-nav">
-           <ul class="navbar-nav ml-auto">
-             <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
-             <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
-             <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
-             <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
-           </ul>
-         </div>
-       </div>
-     </nav>
+	    <div class="container">
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	  	  <div style="font-size:30px"><a href="firstpage.do" >로그아웃</a></div>
+	    </div>
+	  </nav>
     <!-- END nav -->
         
              <div class="text w-100" align="center" >
@@ -72,7 +50,7 @@
             </div>
        
    	<div align="center">
-   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">복지사 호출</button> &nbsp;&nbsp;&nbsp;
+   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px;" class="btn btn-success">복지사 호출</button> &nbsp;&nbsp;&nbsp;
    		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">친구 찾기</button>
    	</div>
     
