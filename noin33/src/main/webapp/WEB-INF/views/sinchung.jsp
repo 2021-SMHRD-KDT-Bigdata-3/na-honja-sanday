@@ -58,16 +58,6 @@
 	 <!--  
 	 <form action="" method="get" id="loginForm">
 	 -->
-	 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
-			이런식으로 주고
-			Controller에 가보면
-			RequestMapping() <-- 이거 있잖아
-			여기 안에가다 "index.do" 이런식으로 맵핑해주면 돼
-			파일 경로를 적는게 아니라
-			저렇게			
-
- --%>
- 
  	<form action = "noinrequest.do" method = "post">
 	 <table>
 	<tr>
@@ -105,13 +95,9 @@
 			<input type= "submit" class="btn btn-success" style="width : 100%" value = "신청하기">
 		</td>
 	</tr>
-		<tr>
-		<td colspan="3">
-			<button class="btn btn-success" style="width : 100%" onclick="location.href='/nahonsan/firstpage.do'">메인으로</button>
-		</td>
-	</tr>
 	</table>
 	</form>
+	<button class="btn btn-success" style="width : 22.3%" onclick="location.href='/nahonsan/firstpage.do'">메인으로</button>
 	 </div> <br><br><br><br><br><br><br><br>
   
   

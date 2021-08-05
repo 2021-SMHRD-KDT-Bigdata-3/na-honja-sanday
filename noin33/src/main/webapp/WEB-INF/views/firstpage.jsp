@@ -21,11 +21,15 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     
     <style>
     #footbg{
     	 background: #ffffff;
+    }
+    body{
+    	font-family: 'NEXON Lv1 Gothic OTF';
     }
     </style>
   </head>
@@ -36,49 +40,32 @@
 				<div class="row">
 					<div class="col-md-6 d-flex align-items-center">
 						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> 010 **** ****</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> *@email.com</a>
+							<a class="mr-2">&nbsp;</a> 
 						</p>
-					</div>
-					<div class="col-md-6 d-flex justify-content-md-end">
-						<div class="social-media">
-			    		<p class="mb-0 d-flex">
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-			    		</p>
-			    		
-		        </div>
 					</div>
 				</div>
 			</div>
-			
-			
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
-	     
-
-	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
-	      
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	  	  <div style="font-size:30px"><a href="firstpage.do" >메인</a>&emsp;<a href="counselor.do">서비스 소개</a>&emsp;<a href="counselor.do">복지사 소개</a>&emsp;<a href="gologin.do" >로그인</a>&emsp;<a href="goJoin.do" >회원가입</a></div>
 	    </div>
 	  </nav>
     <!-- END nav      -->
     
-    <div class="hero-wrap" style= "background-image: url('${cpath}/resources/images/banner.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style= "background-image: url('${cpath}/resources/images/banner.jpg'); height:800px" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container" style="height:800px">
         <div class="row no-gutters slider-text align-items-center" style="height:800px">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            <h1 class="mb-4">Counseling For Your Better Life</h1>
-	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	            <h1 class="mb-4">노인 돌봄 서비스</h1>
+	            <p class="mb-4">일상생활 영위가 어려운 취약노인에게 적절한 돌봄서비스를 제공하여<br>안정적인 노후생활 보장, 노인의 기능·건강 유지 및 악화 예방을 지원합니다.</p>
 	            <p><a href="sinchung.do" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="status.do" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
 	           
-					            
+					             
             </div>
           </div>
          
@@ -90,7 +77,7 @@
 
 
 
-    <footer class="ftco-footer" id="footbg" style="width:100%;position:absolute; bottom:0; spadding: 0em 0 0 0;">
+    <footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">

@@ -13,7 +13,6 @@ public interface nahonsanMapper {
 	//회원가입
 	public void join(loginVO vo); //회원가입은 가지고 오는 값이 없어서
 	public void join2(loginVO vo);
-	public void join3(loginVO vo);
 	
 	//신청 테이블 노인 추가
 	public void addnoin(requestVO vo);
@@ -29,6 +28,7 @@ public interface nahonsanMapper {
 	//복지사소개 페이지에 가져오기
 	@Select("select * from welfare_worker") 
 	public List<welfare_workerVO> counselor();
+	
 	
 	//관리 받고있는 노인분들 목록
 	@Select("select * from senior")
