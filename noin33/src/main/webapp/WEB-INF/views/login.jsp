@@ -23,7 +23,7 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
- 
+ 	
  <style>
  	.modal_wrap1{
         display: none;
@@ -51,6 +51,11 @@
     	border:1px solid #ffffff !important;
     }
  </style>
+ 
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
+ 
  </head>
  <body>
 
@@ -113,7 +118,7 @@
 					<div class="modal_wrap1" id = "modal_temp">
     				<div class="modal_close"><a href="#">close</a></div>
     				<div align="center">
-    				<form action="login.do" method="post" id="loginForm">
+    				<form action="/login.do" method="post" id="loginForm">
     					 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
 								이런식으로 주고
 								Controller에 가보면
@@ -135,9 +140,9 @@
 						</td>
 					</tr>
 					</table>
-					</form>
 					<!-- 여기는 수정해야댈듯 일단 보류 -->
 					<button class="btn btn-success" style="width : 250px" type="submit" form="loginForm">로그인</button>
+			</form>
     				</div>
 					</div>
   
