@@ -50,8 +50,8 @@
             </div>
        
    	<div align="center">
-   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px; border:0;" ><img style="border-radius: 7px; width:470px; height:466.66px;" src="${cpath}/resources/images/hochul.jpg"></button> &nbsp;&nbsp;&nbsp;
-   		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" >친구 찾기</button>
+   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px; border:0; background-color:white;"><img style="border-radius: 12px; width:470px; height:470px;" src="${cpath}/resources/images/hochul.png"></button> &nbsp;&nbsp;&nbsp;
+   		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px; border:0; background-color:white;"><img style="border-radius: 12px; width:470px; height:470px;" src="${cpath}/resources/images/friends.png"></button>
    	</div>
     
     <br><br>

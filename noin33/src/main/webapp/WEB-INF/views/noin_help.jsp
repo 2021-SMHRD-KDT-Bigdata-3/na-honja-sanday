@@ -72,12 +72,12 @@
             </div>
        
    	<div align="center">
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-together">외출 동행<br>서비스</button> &nbsp;&nbsp;&nbsp;
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-song">송영 서비스</button>
-   	</div> <br>
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-together"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/goout.png"></button> &nbsp;&nbsp;&nbsp;
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-song"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/songyoung.png"></button>
+   	</div><br>
    	<div align="center">
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-home">가사 서비스</button> &nbsp;&nbsp;&nbsp;
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px" class="btn btn-success" id="btn-welfare">복지사 호출</button>
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-home"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/housekeeping.png"></button> &nbsp;&nbsp;&nbsp;
+   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-welfare"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/hochul2.png"></button>
    	</div>
     
 

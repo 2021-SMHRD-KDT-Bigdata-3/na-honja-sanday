@@ -30,8 +30,11 @@
         position: absolute;
         top:50%;
         left: 50%;
-        margin: -250px 0 0 -250px;
+        margin: -80px 0 0 -200px;
         z-index: 2;
+        background:#eee;
+        width: 400px;
+        height: 160px;
         
     }
     #footbg{
@@ -47,9 +50,11 @@
     	margin-left : 10%;
     }
     .btnlo{
+    
     	background:#ffffff !important;
     	border:1px solid #ffffff !important;
     }
+    
  </style>
  
  	<%-- ${cpath}를 쓰기위해서 언급 --%>
@@ -59,20 +64,13 @@
  </head>
  <body>
 
- 	<div class="wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 d-flex align-items-center">
-						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> 010 6626 8171</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> ruaql2@naver.com</a>
-						</p>
-					</div>
-					
+ 	<div class="wrap" >
+			<div class="container" >
+				<div align="right">
+					<a href="#" style="color:white;"></a>&emsp;
+					<a href="#" style="color:white;"></a>
 				</div>
 			</div>
-			
-			
 		</div>
 	
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -81,9 +79,8 @@
 		</div>
 	  </nav>
 	 <br><br><br>
-	 <div align="center"><h1>로그인</h1> <br>
+	 <div align="center"><h1 style="color:black !important; font-size:70px; font-weight:700;">로그인</h1> <br>
 	 </div> 
-	<div>
 	
 	
 	
@@ -106,12 +103,11 @@
     </div>
     <br><br>
     <div align="center">
-		<button class="btn btn-primary py-3 px-4" onclick="location.href='goJoin.do'">회원가입</button>
+		<button class="btn btn-primary py-3 px-4 joinbtn" onclick="location.href='goJoin.do'">회원가입</button>
 	</div>
     <br><br>
 		
 		
-  	</div>
   
   	<!-- modal -->
 			<div class="black_bg"></div>
@@ -128,6 +124,7 @@
 								파일 경로를 적는게 아니라
 								저렇게			
 						--%>
+						<br>
         				 <table>
 					<tr>
 						<td>
