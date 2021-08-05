@@ -35,7 +35,7 @@
     	font-family: 'NEXON Lv1 Gothic OTF Bold';
     	font-weight: 800;
     }
-   
+    
     </style>
   </head>
   <body>
@@ -43,18 +43,18 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a href="gologin.do" style="color:white;">로그인</a>&emsp;
-					<a href="goJoin.do" style="color:white;">회원가입</a>
+					<a class="hov" href="gologin.do" style="color:white;">로그인</a>&emsp;
+					<a class="hov" href="goJoin.do" style="color:white;">회원가입</a>
 				</div>
 			</div>
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      <a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	  	  <div style="font-size:30px">
-	  	  <a href="counselor.do" style="color:black; font-size:24px;">서비스소개</a>&emsp;
-	  	  <a href="counselor.do" style="color:black; font-size:24px;">복지사소개</a>
+	  	  <a class="hov" href="counselor.do" style="color:black; font-size:24px;">서비스소개</a>&emsp;
+	  	  <a class="hov" href="counselor.do" style="color:black; font-size:24px;">복지사소개</a>
 	  	  </div>
 	    </div>
 	  </nav>

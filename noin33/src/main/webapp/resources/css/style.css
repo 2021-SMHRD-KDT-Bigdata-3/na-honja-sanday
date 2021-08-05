@@ -58,8 +58,12 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff; }
-
-a:hover{
+.title:hover{
+    	background-color:#fff !important;
+    	border-color:#fff !important;
+    }
+    
+.hov:hover{
     	background-color:#dbead5 !important;
     	border: 1px solid #dbead5 !important;
     	color : #000000 !important; }
@@ -8405,6 +8409,7 @@ h1, h2, h3, h4, h5,
     width: 60px;
     text-align: center;
     display: inline-block; }
+    
 
 .owl-carousel.owl-drag .owl-item {
   -ms-touch-action: pan-y;
