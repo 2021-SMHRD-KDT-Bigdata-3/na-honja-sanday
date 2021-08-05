@@ -63,7 +63,7 @@ a:hover{
     	background-color:#dbead5 !important;
     	border: 1px solid #dbead5 !important;
     	color : #000000 !important; }
-button:hover{
+.btn:hover{
     	background-color:#dbead5 !important;
     	border: 1px solid #dbead5 !important;
     	color : #000000 !important; }
