@@ -5,8 +5,8 @@
 <mapper namespace="com.smhrd.mapper.nahonsanMapper">
     
 
-    	<select id="login" resultType = "com.smhrd.mapper.loginVO" >
-    	    select * from login where id=#{id} and password=#{password}
+    	<select id="login" resultType = "com.smhrd.mapper.memberVO" >
+    	    select * from member where id=#{id} and password=#{password}
     	                                 <!-- 앞 db에 있는 값 뒤 사용자가 입력한 값-->
     	</select>
     	

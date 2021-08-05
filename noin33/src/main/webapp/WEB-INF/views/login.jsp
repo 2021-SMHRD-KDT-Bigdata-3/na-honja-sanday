@@ -52,7 +52,7 @@
     }
  </style>
  
- 
+ 	<%-- ${cpath}를 쓰기위해서 언급 --%>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  
  
@@ -118,7 +118,8 @@
 					<div class="modal_wrap1" id = "modal_temp">
     				<div class="modal_close"><a href="#">close</a></div>
     				<div align="center">
-    				<form action="/login.do" method="post" id="loginForm">
+    				<%-- ${cpath} : 기본 경로 --%>
+    		<form action="login.do" method="post" id="loginForm">
     					 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
 								이런식으로 주고
 								Controller에 가보면
@@ -126,17 +127,16 @@
 								여기 안에가다 "index.do" 이런식으로 맵핑해주면 돼
 								파일 경로를 적는게 아니라
 								저렇게			
-						
 						--%>
         				 <table>
 					<tr>
 						<td>
-							<input type="text" name=id id=id size="30" placeholder="아이디">
+							<input type="text" name="id" id=id size="30" placeholder="아이디">
 						</td>
 					</tr>
 					<tr>	
 						<td>
-							<input type="password" name=pw id=pw size="30" placeholder="비밀번호">
+							<input type="password" name="password" id=pw size="30" placeholder="비밀번호">
 						</td>
 					</tr>
 					</table>

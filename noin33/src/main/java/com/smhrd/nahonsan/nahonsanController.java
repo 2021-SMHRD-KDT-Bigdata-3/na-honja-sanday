@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -45,19 +46,27 @@ public class nahonsanController {
       return "login";
    }
    
-   
+
    @RequestMapping(value = "/login.do") 
-   public String login(memberVO vo){ 
-      if(vo.id == "" || vo.password == "") { 
-         return "login.do"; 
-      }else {
-    	  if(vo.seperator == "1") {
-    		  return "noin_main";
-    	  }else {
-    		  return "main";
-    	  }
-      }
-   }
+   public String login(memberVO vo, HttpServletRequest request){
+	   HttpSession session = request.getSession();
+	   memberVO vore = naMapper.login(vo);
+	   session.setAttribute("vore", vore);
+	   
+	   if(vore == null) { 
+	    	  System.out.println("실패");
+	         return "login"; 
+	      }else {
+	    	  if(vore.seperator == "1") {
+	    		  System.out.println("seperator가 1일때 :" + vore.getId());
+	    		  return "noin_main";
+	    	  }else {
+	    		  System.out.println("seperator가 1이 아닐때 :" +vore.getId());
+	    		  return "main";
+	    	  }
+	      }
+	   } 
+      
       
   
    //신청 테이블 보여주기//
