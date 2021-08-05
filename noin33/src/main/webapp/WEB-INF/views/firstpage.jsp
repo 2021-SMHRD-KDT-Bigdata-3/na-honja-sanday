@@ -21,11 +21,15 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     
     <style>
     #footbg{
     	 background: #ffffff;
+    }
+    body{
+    	font-family: 'NEXON Lv1 Gothic OTF';
     }
     </style>
   </head>
@@ -37,32 +41,28 @@
 					<div class="col-md-6 d-flex align-items-center">
 						<p class="mb-0 phone pl-md-2">
 							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> 010 6626 8171</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span>ruaql2@naver.com</a>
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> ruaql2@naver.com</a>
 						</p>
 					</div>
-					<div class="col-md-6 d-flex justify-content-md-end">
-						<div class="social-media">
-			    		
-		        </div>
-					</div>
+					
 				</div>
 			</div>
+			
+			
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-       <div class="container">
-         <a class="navbar-brand" href="firstpage.do"><img width="200px" src="${cpath}/resources/images/title.jpg"></a>
-          <div style="height:30px; font-weight:900; font-size:30px">
-          <a href="firstpage.do">홈</a> &emsp;
-          <a href="About.do">복지사 소개</a> &emsp;
-          <a href="About.do">관리</a> &emsp;
-          <a href="services.do">위험분석</a> &emsp;
-          <a href="goJoin.do">회원가입</a> &emsp;
-          <a href="gologin.do">로그인</a>
-          </div>
-       </div>
-     </nav>
-    <!-- END nav    -->
+	    <div class="container">
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      
+
+	  	  <div style="height:30px"><a href="gologin.do" >로그인</a>&nbsp;&nbsp;<a href="goJoin.do" >회원가입</a></div>
+	  	  
+	      
+	    </div>
+	  </nav>
+    <!-- END nav      -->
+    
     <div class="hero-wrap" style= "background-image: url('${cpath}/resources/images/banner.jpg'); height:800px" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container" style="height:800px">
@@ -85,7 +85,7 @@
 
 
 
-    <footer class="ftco-footer" id="footbg" style="width:100%; bottom:0; spadding: 0em 0 0 0;">
+    <footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">
