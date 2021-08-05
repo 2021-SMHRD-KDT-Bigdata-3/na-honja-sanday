@@ -104,5 +104,6 @@ commit;
 
 show variables like 'c%';
 
+select * from member;
 
 -- 노인의 호출 서비스 보여주는 테이블--
