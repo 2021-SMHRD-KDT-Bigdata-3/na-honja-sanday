@@ -118,7 +118,7 @@
 					<div class="modal_wrap1" id = "modal_temp">
     				<div class="modal_close"><a href="#">close</a></div>
     				<div align="center">
-    				<form action="${cpath}/login.do" method="post" id="loginForm">
+    				<form action="/login.do" method="post" id="loginForm">
     					 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
 								이런식으로 주고
 								Controller에 가보면
