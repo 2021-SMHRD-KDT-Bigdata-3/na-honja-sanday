@@ -67,35 +67,42 @@
 			저렇게			
 
  --%>
+ 
+ 	<form action = "noinrequest.do" method = "post">
 	 <table>
 	<tr>
 		<td>
-			<input type="text" name=id id=id size="35" placeholder="이름">
+			<input type="text" name=name size="35" placeholder="이름">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<input type="text" name=age size="35" placeholder="나이">
 		</td>
 	</tr>
 	<tr>	
 		<td>
-			<input type="text" name=pw id=pw size="35" placeholder="주민등록번호 (-빼고)">
+			<input type="password" name= regi_number size="35" placeholder="주민등록번호 (-빼고)">
 		</td>
 	</tr>
 	<tr>
 		<td colspan="3">
-			<input type="text" name=address id=address size="35" placeholder="주소">
+			<input type="text" name=adress size="35" placeholder="주소">
 		</td>
 	</tr>
 	<tr>
 		<td colspan="3">
-			<input type="text" name=tel id=tel size="35" placeholder="전화번호 (-빼고)">
+			<input type="text" name=phone size="35" placeholder="전화번호 (-빼고)">
 		</td>
 	</tr>	
 	<tr>	
 		<td colspan="3">
-			<textarea name="star" class="form-control" id="star" cols="30" rows="4" placeholder="특이사항"></textarea>
+			<textarea name="uniqueness" class="form-control"  cols="30" rows="4" placeholder="특이사항"></textarea>
 		</td>
 	</tr>
 	<tr>
 		<td colspan="3">
-			<button type="submit" class="btn btn-success" style="width : 100%" onclick="location.href='/nahonsan/help_success.do'">신청하기</button>
+			<input type= "submit" class="btn btn-success" style="width : 100%" value = "신청하기">
 		</td>
 	</tr>
 		<tr>
@@ -185,7 +192,6 @@
       	</div>
       </div>
     </footer>
-
 
 </body>
 </html>

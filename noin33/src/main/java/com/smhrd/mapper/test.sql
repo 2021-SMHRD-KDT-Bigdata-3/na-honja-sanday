@@ -80,7 +80,7 @@ send_date datetime default now(),
 primary key(idx))
 select * from senior;
 select * from welfare_worker;
-select * from request;
+
 select * from guardian;
 select * from member;
 

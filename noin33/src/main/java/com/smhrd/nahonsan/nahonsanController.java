@@ -1,11 +1,14 @@
 package com.smhrd.nahonsan;
 
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,6 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.smhrd.mapper.guardianVO;
 import com.smhrd.mapper.loginVO;
@@ -175,14 +179,34 @@ public class nahonsanController {
 	public String main1() {
 		return "main";
 	}
+	//노인이 신청했는지 조회 후 알아보는 페이지.
 	@RequestMapping(value = "/status.do")
 	public String status() {
 		return "status";
 	}
+	//신청을 안했다면 노인이 신청하는 시스템.
 	@RequestMapping(value = "/sinchung.do")
 	public String sinchung() {
 		return "sinchung";
 	}
+	//애 지우면 status modal 창 안뜸.
+	@RequestMapping(value = "/noinselect.do")
+	public String noinselect() {
+		return "status";
+	}
+	//노인이 신청했는지 알아보고 조회 후 arraylist에 담아 res 라는 이름으로 ajax에 송출.
+	@RequestMapping(value = "/checkStatus.do")
+	public  @ResponseBody List<requestVO> noinselect(requestVO vo){
+		
+		List<requestVO> res =  naMapper.noinselect(vo);
+		
+		return res;
+	}
+	@RequestMapping(value = "/noinrequest.do")
+	   public String noinrequest(requestVO vo) {
+	     naMapper.addnoin(vo);
+	      return "redirect:/help_success.do";
+	   }
 
 	/*
 	 * jsp가 만들어지지 않은 페이지

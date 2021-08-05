@@ -70,14 +70,12 @@
         <div class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-          	<form action = "" method = "post">
 	            	<h1 class="mb-4" style="width:1110px;max-width:100%">이름 : <input style="max-width:100%" class="mb-4" type="text" name = "name"></h1> 
-	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="text" name = "regi_number"> </h1>
+	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="password" name = "regi_number"> </h1>
 	            	<div class="mb-4" style="width:1110px;  max-width:100%" align="right">
-	            	<input type="submit" value = "조회" class="btn btn-primary py-3 px-4" id="modal_btn">
+	            	<input type="button" value = "조회" class="btn btn-primary py-3 px-4" id="modal_btn" >
 	            	<button type='button' class="btn  py-3 px-4" onclick="location.href='firstpage.do'">돌아가기</button>
 	            	</div>
-	        </form>
             </div>
           </div>
         </div>
@@ -173,8 +171,8 @@
 					<div class="modal_wrap" id = "modal_temp">
     				<div class="modal_close"><a href="#">close</a></div>
     				<div>
-        				<h1 class="mb-4">(이름)님은</h1>
-	            		<p class="mb-4">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
+        				<h1 class="mb-4" id="modal_name">(이름)님은</h1>
+	            		<p class="mb-4" id="modal_status">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
     				</div>
 					</div>
 
@@ -193,23 +191,63 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
    <script>
   window.onload = function() {
-
-  function onClick() {
-      document.querySelector('.modal_wrap').style.display ='block';
-      document.querySelector('.black_bg').style.display ='block';
-  }   
-  function offClick() {
-      document.querySelector('.modal_wrap').style.display ='none';
-      document.querySelector('.black_bg').style.display ='none';
+	  
+  function ajaxConn(){
+	  console.log($('input[name="name"]').val());
+	  console.log($('input[name="regi_number"]').val())
+	  $.ajax({
+		  url : 'checkStatus.do',
+		  type : 'post',
+		  data : {
+			  'name' : $('input[name="name"]').val(),
+			  'regi_number' : $('input[name="regi_number"]').val(),
+		  },
+		  datatype : 'json',
+		  success(res){
+			  isChecked(res);
+		  },
+		  error(){
+			alert('실패');
+		  }
+	  })
+  }
+  
+  function isChecked(res){
+	  
+	  if (res.length == 0){
+		  $('#modal_name').html($('input[name="name"]').val() + '님은');
+		  $('#modal_status').html('신청 내역이 없습니다.');
+	  }else{
+		  $('#modal_name').html(res[0].name  + '님은');
+		  $('#modal_status').html('이미 신청하셨습니다.');
+	  }
+	  
   }
 
-  document.getElementById('modal_btn').addEventListener('click', onClick);
-  document.querySelector('.modal_close').addEventListener('click', offClick);
+	  
+  function onClick() {
+	  ajaxConn()
+      $('.modal_wrap').css('display', 'block');;
+      $('.black_bg').css('display', 'block');;
+      
+  }   
+  function offClick() {
+	  $('.modal_wrap').css('display', 'none');
+      $('.black_bg').css('display', 'none');
+  }
 
-  };
+  $('#modal_btn').on('click', onClick);
+  $('.modal_close').on('click', offClick);
+
+  }
+  
+
+  
+
+
   </script>
 
   </body>
