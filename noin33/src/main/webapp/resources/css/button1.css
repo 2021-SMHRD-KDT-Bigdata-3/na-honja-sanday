@@ -5,7 +5,6 @@
 #btn_group button{ border: 1px solid skyblue; background-color: rgba(0,0,0,0); color: skyblue; padding: 5px; } 
 #btn_group button:hover{ color:white; background-color: skyblue; }
 
-h1{color:green !important; }
 
 
 .modal_wrap{

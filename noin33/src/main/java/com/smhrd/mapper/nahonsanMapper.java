@@ -8,7 +8,7 @@ import org.apache.ibatis.annotations.Select;
 public interface nahonsanMapper {
 
 	//로그인 임시
-	public loginVO login(loginVO login);
+	public memberVO login(memberVO vo);
 	
 	//회원가입
 	public void join(loginVO vo); //회원가입은 가지고 오는 값이 없어서
