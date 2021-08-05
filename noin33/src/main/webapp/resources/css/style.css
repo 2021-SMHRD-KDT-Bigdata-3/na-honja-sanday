@@ -62,7 +62,11 @@ body {
 a:hover{
     	background-color:#dbead5 !important;
     	border: 1px solid #dbead5 !important;
-    	color : black !important; }
+    	color : #000000 !important; }
+button:hover{
+    	background-color:#dbead5 !important;
+    	border: 1px solid #dbead5 !important;
+    	color : #000000 !important; }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }

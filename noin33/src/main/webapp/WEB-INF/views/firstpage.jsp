@@ -35,11 +35,7 @@
     	font-family: 'NEXON Lv1 Gothic OTF Bold';
     	font-weight: 800;
     }
-    a:hover{
-    	background-color:#dbead5 !important;
-    	border: 1px solid #dbead5 !important;
-    	color : black !important;
-    }
+   
     </style>
   </head>
   <body>
