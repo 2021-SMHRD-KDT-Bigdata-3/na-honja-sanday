@@ -59,6 +59,11 @@ body {
   text-align: left;
   background-color: #fff; }
 
+a:hover{
+    	background-color:#dbead5 !important;
+    	border: 1px solid #dbead5 !important;
+    	color : black !important; }
+
 [tabindex="-1"]:focus {
   outline: 0 !important; }
 
