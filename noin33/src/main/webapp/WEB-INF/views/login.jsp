@@ -49,12 +49,48 @@
     	margin-right: 10%;
     	margin-left : 10%;
     }
-    .btnlo{
-    
-    	background:#ffffff !important;
-    	border:1px solid #ffffff !important;
+    #modal_btn3{
+    	
+    	background: url('${cpath}/resources/images/qhrwl.png') no-repeat;
+    	border:3px solid #000000 !important;
+    	width:256px;
+    	height:250px;
     }
-    
+    #modal_btn3:hover{
+    	
+    	background: url('${cpath}/resources/images/qhrwlhover.png') no-repeat;
+    	border:3px solid #589167 !important;
+    	width:256px;
+    	height:250px;
+    }
+    #modal_btn2{
+    	
+    	background: url('${cpath}/resources/images/prot.png') no-repeat;
+    	border:3px solid #000000 !important;
+    	width:256px;
+    	height:250px;
+    }
+    #modal_btn2:hover{
+    	
+    	background: url('${cpath}/resources/images/prothover.png') no-repeat;
+    	border:3px solid #589167 !important;
+    	width:256px;
+    	height:250px;
+    }
+     #modal_btn1{
+    	
+    	background: url('${cpath}/resources/images/noin.png') no-repeat;
+    	border:3px solid #000000 !important;
+    	width:256px;
+    	height:250px;
+    }
+    #modal_btn1:hover{
+    	
+    	background: url('${cpath}/resources/images/noinhover.png') no-repeat;
+    	border:3px solid #589167 !important;
+    	width:256px;
+    	height:250px;
+    }
  </style>
  
  
@@ -87,17 +123,17 @@
 	<div class="justify-content-center log">
 		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
 			<div class="services-2 text-center">
-			<button type='button' id="modal_btn2" class="btn btn-primary btnlo" style="width : 100%" form="loginForm"><img src="${cpath}/resources/images/prot.png" ></button>
+			<button type='button' id="modal_btn2" class="btn btn-primary btnlo" form="loginForm"></button>
 			</div>
 		</div>
 		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
 			<div class="services-2 text-center ">
-				<button type='button' id="modal_btn1" class="btn btn-primary btnlo" style="width : 100%" form="loginForm"><img src="${cpath}/resources/images/noin.png" ></button>
+			<button type='button' id="modal_btn1" class="btn btn-primary btnlo" form="loginForm"></button>
 			</div>
 		</div>
 		<div class="col-md-4 d-flex align-items-stretch ftco-animate">
 			<div class="services-2 text-center">
-			<button  type='button' id="modal_btn3" class="btn btn-primary btnlo" style="width : 100%" form="loginForm"><img src="${cpath}/resources/images/qhrwl.png" ></button>
+			<button type='button' id="modal_btn3" class="btn btn-primary btnlo" form="loginForm"></button>
 			</div>
 		</div>
     </div>
