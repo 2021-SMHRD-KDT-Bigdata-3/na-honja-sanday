@@ -58,8 +58,8 @@ public class nahonsanController {
       }
    
   
- //신청 테이블 보여주기//
-   @RequestMapping(value = "/About.do")
+   //신청 테이블 보여주기//
+   @RequestMapping(value = "/manage.do")//관리등록
    public String about(HttpServletRequest request) {
       List<requestVO> list = naMapper.selectall();
       request.setAttribute("list", list);
@@ -71,27 +71,15 @@ public class nahonsanController {
    public String join() {
       return "join";
    }
-
-   //정태희
-//   @RequestMapping("/join.do")
-//   public String join(loginVO vo) { // loginVO = 사용자가 작성해서 받아온 값
-//      if(vo.getSeperator()=="protect") {
-//         naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
-//         naMapper.join2(vo2);   // select는 객체(vo, arrayList로 담아서 돌아온다)
-//      }else {
-//         naMapper.join(vo); //vo = db를 거친 값 (update, insert, delete는 void타입 ) 
-//         naMapper.join2(vo2);   // select는 객체(vo, arrayList로 담아서 돌아온다)
-//      }
-//      return "main";
-//   }
    
+   //보호자 회원가입시 member와 guardian테이블에 담기
    @RequestMapping("/join_gardian.do")
    public String join(loginVO vo) {
-	   naMapper.join(vo);
 	   naMapper.join2(vo);
 	   return "main";
    }
    
+ //보호자 회원가입시 member와 welfare_worker테이블에 담기
    @RequestMapping("/join_welfare.do")
    public String join2( loginVO vo) {
 	   naMapper.join(vo);
@@ -99,28 +87,35 @@ public class nahonsanController {
    }
 
    
-   @RequestMapping(value = "/apply.do")
+   @RequestMapping("/blog.do")
    public String apply() {
       return "blog";
    }
-   @RequestMapping(value = "/apply_complete.do")
+   @RequestMapping("/blog-single.do")
    public String apply_complete() {
-      return "contract";
-   }
-   @RequestMapping(value = "/apply_status.do")
-   public String apply_status() {
       return "blog-single";
+   }
+   @RequestMapping("/contract.do")
+   public String apply_status() {
+      return "contract";
    }
    @RequestMapping(value = "/noinsert.do")
    public String main_guard(requestVO vo) {
      naMapper.addnoin(vo);
       return "redirect:/About.do";
    }
-   @RequestMapping(value = "/noin_main.do")
+   
+   @RequestMapping("/realnoin.do")
+   public String realnoin(int idx) {
+	   naMapper.add_del(idx);
+	   return "redirect:/about3.do";
+   }
+   
+   @RequestMapping("/noin_main.do")
    public String main_senior() {
       return "noin_main";
    }
-   @RequestMapping(value = "/noin_help.do")
+   @RequestMapping("/noin_help.do")
    public String senior_msg() {
       return "noin_help";
    }
@@ -137,30 +132,24 @@ public class nahonsanController {
       return "help_success";
    }
    
-   /* 새로만듬*/
-   @RequestMapping(value = "/about2.do")
+   @RequestMapping(value = "/about2.do") //관리신청
    public String about2() {
       return "about2";
    }
-   @RequestMapping("/realnoin.do")
-   public String realnoin(int idx) {
-	   naMapper.add_del(idx);
-	   return "redirect:/about3.do";
-   }
-
-   @RequestMapping(value = "/about3.do")
+  
+   @RequestMapping(value = "/about3.do") //관리목록
    public String about3(HttpServletRequest request) {
 	   List<seniorVO> list1 = naMapper.showlist();
 	   request.setAttribute("list", list1);
       return "about3";
    }
+   
    @RequestMapping(value = "/status.do")
    public String status() {
       return "status";
    }
-   // Controller에 만들어져있나요?
-   // 아 이 counselor가 그 페이지에요?넹
-   @RequestMapping("/counselor.do")
+  
+   @RequestMapping("/counselor.do")//
    public String welfareList(Model model) {
 	   List<welfare_workerVO> list = naMapper.counselor();	   
 	   // 일단 여기까지는 문제없고
@@ -173,26 +162,19 @@ public class nahonsanController {
       return "sinchung";
    }
 
-	/*
-	 * jsp가 만들어지지 않은 페이지
-	 *
-	 * @RequestMapping("/senior_friend.do") 
-	 * public String seniorfriend() { 
-	 * return "senior_friend"; 
-	 * }
-	 * 
-	 * @RequestMapping("/wel_manage.do") 
-	 * public String manage() { 
-	 * return "wel_manage"; 
-	 * }
-	 * 
-	 * @RequestMapping("/danger.do") 
-	 * public String danger() {
-	 * return "danger"; 
-	 * }
-	 * 
-	 */
+   @RequestMapping("/main.do") // 복지사,보호자의 메인
+   public String main() {
+	   return "main";
+   }
+   
+   @RequestMapping("/pricing.do")
+   public String pricing() {
+	   return "pricing";
+   }
   
-  
+   @RequestMapping("/sevices.do")
+   public String sevices() {
+	   return "service";
+   }
    
 }

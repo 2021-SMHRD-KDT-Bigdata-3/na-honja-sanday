@@ -12,6 +12,10 @@ phone varchar(50) not null,
 address varchar(50),
 seperator varchar(10) not null,   
 constraint guard_email primary key(email))
+
+select * from guardian;
+select * from member;
+
 --복지사 테이블 --
 create table welfare_worker(
 email varchar(100),
