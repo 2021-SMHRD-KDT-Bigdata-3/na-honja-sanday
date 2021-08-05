@@ -26,18 +26,6 @@ constraint wel_email primary key(email))
 
 select * from welfare_worker;
 
---복지사 가데이터--
-insert into welfare_worker(email, name, phone, seperator)
-values('hello@cgi.com', '김인겸','01011111111','3')
-insert into welfare_worker(email, name, phone, seperator)
-values('niceto@cgi.com', '안현진','01022222222','3')
-insert into welfare_worker(email, name, phone, seperator)
-values('meetyou@cgi.com', '진성빈','01033333333','3')
-insert into welfare_worker(email, name, phone, seperator)
-values('havea@cgi.com', '최재웅','01055555555', '3')
-insert into welfare_worker(email, name, phone, seperator)
-values('niceday@cgi.com', '정태희','01066666666','3')
-
 -- 노인 테이블 --
 create table senior(
 idx int not null auto_increment,
@@ -51,17 +39,12 @@ uniqueness varchar(100),
 application_date datetime default now(),
 constraint seni_id primary key(idx))
 
-select * from senior;
-select * from member;
-select * from welfare_worker;
-
 --회원 테이블 필요--
 create table member(
 id varchar(30) primary key,
 password varchar(20) not null,
 seperator varchar(10) not null
 )
-drop table member;
 constraint mem_id foreign key(id) references 
 --각테이블의 seperator 참조해서--
 

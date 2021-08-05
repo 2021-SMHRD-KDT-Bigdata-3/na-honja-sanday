@@ -152,7 +152,6 @@ public class nahonsanController {
    @RequestMapping("/counselor.do")//
    public String welfareList(Model model) {
 	   List<welfare_workerVO> list = naMapper.counselor();	   
-	   // 일단 여기까지는 문제없고
 	   model.addAttribute("welfareList", list);
 	   return "counselor";
    }
