@@ -45,13 +45,13 @@
     <!-- END nav -->
         
              <div class="text w-100" align="center" >
-               <h1 class="mb-4">Counseling For Your Better Life</h1>
-               <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+               <h1 class="mb-4">돌봄 서비스에 오신것을 환영합니다.</h1>
+               <p class="mb-4">복지사 호출이 필요하시면 왼쪽 버튼을, 주변 친구를 찾으시려면 오른쪽 버튼을 눌러주세요.</p>
             </div>
        
    	<div align="center">
-   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px;" class="btn btn-success">복지사 호출</button> &nbsp;&nbsp;&nbsp;
-   		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" class="btn btn-success">친구 찾기</button>
+   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px;" >복지사 호출</button> &nbsp;&nbsp;&nbsp;
+   		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px" >친구 찾기</button>
    	</div>
     
     <br><br>
