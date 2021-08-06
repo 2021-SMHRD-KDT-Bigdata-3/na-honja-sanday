@@ -26,8 +26,32 @@ seperator varchar(10) not null,
 constraint wel_email primary key(email))
 
 --시연영상용 계정들 생성하기--
-
-
+--현진--
+insert into member(id, password,seperator)
+    values('anansi7543@gmail.com', 123,3);
+insert into welfare_worker(email, name, phone,seperator)
+    values('anansi7543@gmail.com', '안현진', '010-1234-4321',3);
+--성빈--
+insert into member(id, password,seperator)
+    values('sbjin620@naver.com', 123,3);
+insert into welfare_worker(email, name, phone,seperator)
+    values('sbjin620@naver.com', '진성빈', '010-1234-4321',3);
+--태희--
+insert into member(id, password,seperator)
+    values('tehe127@naver.com', 123,3);
+insert into welfare_worker(email, name, phone,seperator)
+    values('tehe127@naver.com', '정태희', '010-1234-4321',3);
+--인겸--
+insert into member(id, password,seperator)
+    values('twitch@kakao.com', 123,3);
+insert into welfare_worker(email, name, phone,seperator)
+    values('twitch@kakao.com', '김인겸', '010-1234-4321',3);
+--재웅--
+insert into member(id, password,seperator)
+    values('wodnd1593@naver.com', 123,3);
+insert into welfare_worker(email, name, phone,seperator)
+    values('wodnd1593@naver.com', '최재웅', '010-1234-4321',3);
+    
 --여기서부터 한줄씩 추가하기--
 alter table welfare_worker add intro varchar(100);
 alter table welfare_worker add certi varchar(100);
