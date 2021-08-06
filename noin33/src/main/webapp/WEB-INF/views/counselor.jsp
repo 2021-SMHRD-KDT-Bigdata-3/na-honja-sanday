@@ -2,6 +2,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -81,10 +82,11 @@
          <div class="container">
             <div class="row">
              <c:forEach var="vo" items="${welfareList}" >
+             <c:set var="imgName" value="${fn:split(vo.email,'\\\@')}"></c:set>
                <div class="col-md-6 col-lg-3 ftco-animate">
                   <div class="staff">
                      <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/staff-1.jpg);"></div>
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/${imgName[0]}.jpg);"></div>
                      </div>
                      <div class="text pt-3 px-3 pb-4 text-center" style="height:270px;">
                         <h3> ${vo.name}</h3>
