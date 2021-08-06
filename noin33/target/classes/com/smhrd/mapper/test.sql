@@ -21,9 +21,20 @@ create table welfare_worker(
 email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-seperator varchar(10) not null,   
+seperator varchar(10) not null,
 constraint wel_email primary key(email))
 
+--여기서부터 한줄씩 추가하기--
+alter table welfare_worker add intro varchar(100);
+alter table welfare_worker add certi varchar(100);
+update welfare_worker set  intro= '내 가족을 만나는 것처럼 성실하고 꼼꼼하게 보살펴 드립니다' where name='최재웅';
+update welfare_worker set  intro= '마음을 돌보다 - 진심을 다하여 돌봐드립니다' where name='헬로키티';
+update welfare_worker set  intro= '사랑을 채웁니다. 항상 건강하고 행복하세요 :)' where name='김인겸';
+update welfare_worker set  intro= '사랑은 나눌수록 커집니다' where name='진성빈';
+update welfare_worker set  intro= '따뜻한 마음으로 정성을 다하겠습니다' where name='정태희';
+update welfare_worker set  intro= '최고의 선물은 함께하는 시간입니다. 지금이 바로 안부전화할 시간입니다' where name='안현진';
+update welfare_worker set  intro= '불편함을 최대한 느끼시지 않도록 최선을 다하겠습니다' where name='정태히';
+update welfare_worker set  intro= '가족들의 걱정을 덜어드리도록 하겠습니다' where name='정태이';
 select * from welfare_worker;
 
 -- 노인 테이블 --
@@ -87,6 +98,7 @@ insert into request(seperator,name,age,regi_number,adress,phone,uniqueness) valu
 
 -- 신청테이블 정보 보여주기.
 select * from request;
+select * from senior;
 
 --해당 idx를 가진 행 보여주기.
 select * from request where idx = 2;
