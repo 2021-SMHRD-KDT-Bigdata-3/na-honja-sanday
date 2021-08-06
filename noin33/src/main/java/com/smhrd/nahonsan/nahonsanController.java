@@ -43,8 +43,14 @@ public class nahonsanController {
    public String first() {
       return "firstpage";
    }
-
    
+   @RequestMapping("/logout.do")
+   public String logout(HttpServletRequest request) {
+	  HttpSession session = request.getSession();
+	  session.invalidate();
+      return "firstpage";
+   }
+
    @RequestMapping("/gologin.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
    public String login() {
       return "login";
@@ -55,22 +61,23 @@ public class nahonsanController {
    public String login(memberVO vo, HttpServletRequest request){
 	   HttpSession session = request.getSession();
 	   memberVO vore = naMapper.login(vo);
+//	   System.out.println(vore.getId());
 	   
 	   if(vore == null) { 
-	    	  System.out.println("실패");
-	         return "login"; 
-	      }else {
-	    	  if(vore.seperator == "1") {
-	    		  System.out.println("seperator가 1일때 :" + vore.getId());
-	    		  session.setAttribute("vore", vore);
-	    		  return "noin_main";
-	    	  }else {
-	    		  System.out.println("seperator가 1이 아닐때 :" +vore.getId());
-	    		  session.setAttribute("noin", vore);
-	    		  return "main";
-	    	  }
-	      }
-	   } 
+    	  System.out.println("실패");
+         return "login"; 
+       }else {
+    	   if(vore.seperator == "1") {
+    		   System.out.println("seperator가 1일때 :" + vore.getId());
+    		   session.setAttribute("noin", vore);
+    		   return "noin_main";
+    	   }else {
+    	 	   System.out.println("seperator가 1이 아닐때 :" +vore.getId());
+    		   session.setAttribute("vore", vore);
+    		   return "main";
+    	  }
+       }
+   } 
       
       
   
