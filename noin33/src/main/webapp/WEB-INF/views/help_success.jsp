@@ -5,10 +5,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
+    <title>나혼자산DAY - 독거노인 낙상 감지 서비스</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="shortcut icon" type="image/x-icon" href="${cpath}/resources/images/logo.jpg">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,34 +19,25 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
     
-    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
+    
+    <style>
+     body{
+    	font-family: 'NEXON Lv1 Gothic OTF';
+    }
+    </style>
   </head>
   <body>
 
-     <div class="wrap">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-6 d-flex align-items-center">
-                  <p class="mb-0 phone pl-md-2">
-                     <a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-                     <a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
-                  </p>
-               </div>
-               <div class="col-md-6 d-flex justify-content-md-end">
-                  <div class="social-media">
-                   <p class="mb-0 d-flex">
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-                      <a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-                   </p>
-              </div>
-               </div>
-            </div>
-         </div>
-      </div>
+     <div class="wrap" >
+			<div class="container" >
+				<div align="right">
+					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+				</div>
+			</div>
+		</div>
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
        <div class="container">
