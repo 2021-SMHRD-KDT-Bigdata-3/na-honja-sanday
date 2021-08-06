@@ -82,9 +82,9 @@
                      </div>
                      <div class="text pt-3 px-3 pb-4 text-center">
                         <h3> ${vo.name}</h3>
-                        <span class="position mb-2">Counselor</span>
+                        <span class="position mb-2">노인생활관리사</span>
                         <div class="faded">
-                           <p>I am an ambitious workaholic, but apart from that, pretty simple person.</p>
+                           <p> ${vo.intro}</p>
                            <ul class="ftco-social text-center">
                       <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a></li>
                       <li class="ftco-animate"><a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a></li>

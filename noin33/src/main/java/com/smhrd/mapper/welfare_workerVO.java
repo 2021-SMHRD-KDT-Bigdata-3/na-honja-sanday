@@ -9,4 +9,6 @@ public class welfare_workerVO {
 	private String name;
 	private String phone;
 	private String seperator;
+	private String intro;
+	private String ceti;
 }
