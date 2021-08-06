@@ -60,13 +60,13 @@
 	  </nav>
     <!-- END nav -->
     
-    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg'); height: 500px; position: relative;" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/ban2.png'); height: 500px; position: relative;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div style="height: 500px; position: relative;" class="row no-gutters slider-text align-items-center">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            <h1 class="mb-4">Counseling For Your Better Life</h1>
+	            <span class="mb-4">어르신들의 행복한 삶을 응원합니다</span>
 	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
             </div>
           </div>
@@ -121,7 +121,7 @@
 
 		  
     <section class="ftco-section testimony-section">
-    	<div class="img img-bg border" style="background-image: url(${cpath}/resources/images/bg_4.jpg);"></div>
+    	<div class="img img-bg border" style="background-image: url(${cpath}/resources/images/gmdp.png);"></div>
     	<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center mb-5">

@@ -26,7 +26,7 @@
     
     <style>
     h1{
-    	font-family: 'SDSamliphopangche_Outline';
+    	font-family: 'TmonMonsori';
     } 
     
      body, textarea{
@@ -103,7 +103,7 @@
 	</tr>
 	</table>
 	<br><br>
-	<span><button type= "submit" class="btn btn-primary py-3 px-4 joinbtn">신청하기</button></span>
+	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn">신청하기</button></span>
 	</form>
 	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/firstpage.do'">메인으로</button></span>
 	 </div> <br><br><br><br><br><br><br><br>
