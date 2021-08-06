@@ -24,303 +24,97 @@
   </head>
   <body>
 
-  	<div class="wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 d-flex align-items-center">
-						<p class="mb-0 phone pl-md-2">
-							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
-							<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
-						</p>
-					</div>
-					<div class="col-md-6 d-flex justify-content-md-end">
-						<div class="social-media">
-			    		<p class="mb-0 d-flex">
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
-			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
-			    		</p>
-		        </div>
-					</div>
+  	<div class="wrap" >
+			<div class="container" >
+				<div align="right">
+					<a href="gologin.do" style="color:white;">로그인</a>&emsp;
+					<a href="goJoin.do" style="color:white;">회원가입</a>
 				</div>
 			</div>
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">Counselor</a>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
-		
-		<!-- 상단 메뉴 버튼 부분 -->
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item"><a href="index.do" class="nav-link">Home</a></li>
-	          <li class="nav-item"><a href="About.do" class="nav-link">About</a></li>
-	          <li class="nav-item"><a href="counselor.do" class="nav-link">Counselor</a></li>
-	          <li class="nav-item"><a href="services.do" class="nav-link">Services</a></li>
-	          <li class="nav-item"><a href="pricing.do" class="nav-link">Pricing</a></li>
-	          <li class="nav-item active"><a href="blog.do" class="nav-link">Blog</a></li>
-	          <li class="nav-item"><a href="contract.do" class="nav-link">Contact</a></li>
-	        </ul>
-	      </div>
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	  	  <div style="font-size:30px">
+	  	  <a href="blog.do" style="color:black; font-size:24px;">서비스소개</a>&emsp;
+	  	  <a href="counselor.do" style="color:black; font-size:24px;">복지사소개</a>
+	  	  </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_5.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate mb-5 text-center">
-          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span>Blog <i class="fa fa-chevron-right"></i></span></p>
-            <h1 class="mb-0 bread">Our Blog</h1>
+          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="firstpage.do">메인 <i class="fa fa-chevron-right"></i></a></span> <span>서비스 소개 <i class="fa fa-chevron-right"></i></span></p>
+            <h1 class="mb-0 bread">서비스 소개</h1>
           </div>
         </div>
       </div>
     </section>
 
-		<section class="ftco-section">
-      <div class="container">
-        <div class="row d-flex">
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_1.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_2.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_3.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a mb-3></h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>              
-							</div>
-            </div>
-          </div>
+		<section class="ftco-section ftco-no-pb ftco-no-pt">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 img img-3 d-flex justify-content-center align-items-center"><img style="width:100%; height:100%;" src="${cpath}/resources/images/service1.jpg">
+					</div>
+					<div class="col-md-6 wrap-about px-md-5 ftco-animate py-5 bg-light">
+	          <div class="heading-section py-md-5">
+	          	<span class="subheading">나혼자 산Day의 서비스를 소개합니다.</span>
+	            <h2 class="mb-4">꾸준한 관심이 필요한<br>독거노인 어르신들을 위한<br>낙상 감지 서비스</h2>
 
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_4.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_5.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_6.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a mb-3></h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>              
-							</div>
-            </div>
-          </div>
+	            <p>나혼자 산DAY 서비스는 독거노인 어르신 분들을 위한 서비스 입니다. 어르신들 집에 낙상을 감지하기 위한 cctv를 설치합니다. cctv는 움직임 추출이 목적이며 낙상 감지가 되지 않은 영상은 삭제됩니다.</p>
+	            <p>이외에도 복지사가 필요하실 때 호출하실수 있는 서비스와 <br>각 시, 도, 군별 시행하는 독거노인 친구만들기 사업에 연계한 서비스도 있습니다.</p>
 
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_7.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+	          </div>
+
+					</div>
+				</div>
+			</div>
+		</section>	
+		<section class="ftco-counter ftco-section ftco-no-pt ftco-no-pb img bg-light" id="section-counter">
+    	<div class="container">
+    		<div class="row">
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-4 mb-4">
+              <div class="text align-items-center">
+                <strong class="number" data-number="3000">0</strong>
+                <span>서비스 대상 수</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_8.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-4 mb-4">
+              <div class="text align-items-center">
+                <strong class="number" data-number="30">0</strong>
+                <span>사업 년수</span>
               </div>
             </div>
           </div>
-          <div class="col-md-4 d-flex ftco-animate">
-          	<div class="blog-entry justify-content-end">
-              <div class="text text-center">
-              	<a href="blog-single.html" class="block-20 img" style="background-image: url('images/image_9.jpg');">
-	              </a>
-	              <div class="meta text-center mb-2 d-flex align-items-center justify-content-center">
-                	<div>
-                		<span class="day">18</span>
-                		<span class="mos">April</span>
-                		<span class="yr">2020</span>
-                	</div>
-                </div>
-                <h3 class="heading mb-3"><a href="#">Social Media Risks To Mental Health</a mb-3></h3>
-								<p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>              
-							</div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-4 mb-4">
+              <div class="text align-items-center">
+                <strong class="number" data-number="200">0</strong>
+                <span>Our Qualified Counselor</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 py-4 mb-4">
+              <div class="text align-items-center">
+                <strong class="number" data-number="40">0</strong>
+                <span>Services Points</span>
+              </div>
             </div>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col text-center">
-            <div class="block-27">
-              <ul>
-                <li><a href="#">&lt;</a></li>
-                <li class="active"><span>1</span></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-                <li><a href="#">&gt;</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>	
-
-    <footer class="ftco-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><a href="#">Counselor</a></h2>
-              <p>Far far away, behind the word mountains, far from the countries.</p>
-              <ul class="ftco-footer-social list-unstyled mt-2">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Explore</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>What We Do</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Plans &amp; Pricing</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Legal</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Company</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid px-0 py-5 bg-black">
+    	</div>
+    </section>
+   <footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
+      <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">
 	          <div class="col-md-12">
