@@ -95,7 +95,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="${cpath}/About.do">
+                        <a class="" href="${cpath}/manage.do">
                             	관리 등록
                             <i class=""></i>
                         </a>

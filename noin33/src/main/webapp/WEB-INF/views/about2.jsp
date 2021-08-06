@@ -96,7 +96,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="${cpath}/About.do">
+                        <a class="" href="${cpath}/manage.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
@@ -166,7 +166,7 @@
     		<div class="row">
     			<div class="col-md-6 half ftco-animate">
     				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
-    				<form action="${cpath}/About.do" class="appointment">
+    				<form action="#" class="appointment">
     					<div class="row">
 								<div class="col-md-6">
 									<div class="form-group">

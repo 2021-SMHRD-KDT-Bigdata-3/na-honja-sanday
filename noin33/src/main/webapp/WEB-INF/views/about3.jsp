@@ -36,7 +36,7 @@
      </style>
   </head>
   <body>
-
+	<c:set var="session" value="${vore}"/> 
   	<div class="wrap">
 			<div class="container">
 				<div class="row">
@@ -95,7 +95,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="${cpath}/About.do">
+                        <a class="" href="${cpath}/manage.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
@@ -126,7 +126,7 @@
 							<th>삭제</th>
 							
 						</tr>
-					<c:forEach var="vo" items="${list1}">
+					<c:forEach var="vo" items="${list}">
 						<tr>
 							<td>${vo.idx}</td>
 							<td>${vo.name}</td>
@@ -136,6 +136,7 @@
 							<td>${vo.uniqueness}</td>
 							<td>${vo.aplication_date}</td>
 							<td><a href = "${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a></td>
+							<td> <button class='.camOn'>On</button> </td>
 						</tr>
 					</c:forEach>						
 					</table>	  
@@ -302,6 +303,15 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
+  <script type="text/javascript" src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
+  <script type="text/javascript">
+	  function camOn(){
+		  alert('camon')
+	  }
+	  
+	  $('.camOn').on('click', camOn);
+  
+  </script>
     
   </body>
 </html>

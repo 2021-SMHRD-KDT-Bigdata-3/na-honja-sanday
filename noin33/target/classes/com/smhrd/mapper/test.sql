@@ -87,6 +87,7 @@ insert into request(seperator,name,age,regi_number,adress,phone,uniqueness) valu
 
 -- 신청테이블 정보 보여주기.
 select * from request;
+select * from senior;
 
 --해당 idx를 가진 행 보여주기.
 select * from request where idx = 2;
