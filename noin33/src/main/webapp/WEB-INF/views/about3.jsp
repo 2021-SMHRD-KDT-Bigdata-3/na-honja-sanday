@@ -40,7 +40,7 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
 				</div>
 			</div>
 		</div>
@@ -121,7 +121,7 @@
 							<td>${vo.uniqueness}</td>
 							<td>${vo.aplication_date}</td>
 							<td><a href = "${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a></td>
-							<td> <button class='.camOn'>On</button> </td>
+							<td> <button class='camOn'>On</button> </td>
 						</tr>
 					</c:forEach>						
 					</table>	  
@@ -288,13 +288,26 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
-  <script type="text/javascript" src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
   <script type="text/javascript">
-	  function camOn(){
-		  alert('camon')
-	  }
-	  
-	  $('.camOn').on('click', camOn);
+  function camOn(){
+	  $.ajax({
+			url : " http://211.105.165.117:9000/posedetection",
+			type : 'POST',
+			data : {
+				'email' : 'anansi7543@gmail.com',
+				'content' : 'content'
+			},
+			success(){
+				alert('Cam On!');
+			},
+			error(){
+				alert('error;;;')
+			}
+		})
+  }
+  
+  $(".camOn").on('click', camOn);
   
   </script>
     

@@ -10,5 +10,5 @@ public class welfare_workerVO {
 	private String phone;
 	private String seperator;
 	private String intro;
-	private String ceti;
+	private String certi;
 }

@@ -34,7 +34,7 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
 				</div>
 			</div>
 		</div>
@@ -312,6 +312,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
+  <script type="text/javascript">
+  </script>
     
   </body>
 </html>
