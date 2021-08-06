@@ -24,8 +24,15 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     <style>
-     body{
+    body{
     	font-family: 'NEXON Lv1 Gothic OTF';
+    }
+    #fo{
+    	font-size : 1.5em;
+    }
+    
+    #tit{
+    	font-family: 'TmonMonsori';
     }
     </style>
   </head>
@@ -34,30 +41,26 @@
      <div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
+					<a href="#" style="color:white;"></a>&emsp;
+					<a href="#" style="color:white;"></a>
 				</div>
 			</div>
-		</div>
+	</div> 
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-       <div class="container">
-         <a class="navbar-brand" href="/nahonsan/firstpage.do">나혼자산데이</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="oi oi-menu"></span> 메뉴
-         </button>
-
-        
-       </div>
-     </nav>
+	    <div class="container">
+	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+		</div>
+	  </nav>
     <!-- END nav -->
         
              <div class="text w-100" align="center" >
                <br><br>
-               <h1 style="font-size:100px;">신청 완료 !</h1> <br><br>
+               <h1 id="tit"style="font-size:100px;">신청 완료 !</h1> <br><br>
                <h2 style="font-size:40px; color:green;">심사를 거쳐서 승인이 이뤄집니다.</h2>
                
                <c:if test="${vore eq null}">
-              		<button onclick="location.href='/nahonsan/firstpage.do'" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
+              		<button id="fo" onclick="location.href='/nahonsan/firstpage.do'" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
            		</c:if>
            		<c:if test="${vore ne null}">
               		<button onclick="location.href='/nahonsan/main.do'" class="btn btn-success" style="width:300px; height:100px">메인으로</button>

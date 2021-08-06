@@ -93,7 +93,7 @@
       	</tr>
       	<tr>
       		<td class="col1">비밀번호</td>
-      		<td class="col2"><input type="text" name="password" id="" placeholder="password를 입력하세요"></td>
+      		<td class="col2"><input type="password" name="password" id="" placeholder="password를 입력하세요"></td>
       	</tr>
       	<tr>
       		<td class="col1">이름</td>      	
