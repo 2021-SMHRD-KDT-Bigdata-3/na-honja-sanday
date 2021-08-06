@@ -56,7 +56,13 @@
                <h1 style="font-size:100px;">신청 완료 !</h1> <br><br>
                <h2 style="font-size:40px; color:green;">심사를 거쳐서 승인이 이뤄집니다.</h2>
                
-               <button onclick="location.href='/nahonsan/firstpage.do'" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
+               <c:if test="${vore eq null}">
+              		<button onclick="location.href='/nahonsan/firstpage.do'" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
+           		</c:if>
+           		<c:if test="${vore ne null}">
+              		<button onclick="location.href='/nahonsan/main.do" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
+           		</c:if>
+           		
             </div>
        
 			    

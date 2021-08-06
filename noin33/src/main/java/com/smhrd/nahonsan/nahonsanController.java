@@ -55,7 +55,6 @@ public class nahonsanController {
    public String login(memberVO vo, HttpServletRequest request){
 	   HttpSession session = request.getSession();
 	   memberVO vore = naMapper.login(vo);
-	   session.setAttribute("vore", vore);
 	   
 	   if(vore == null) { 
 	    	  System.out.println("실패");
@@ -63,9 +62,11 @@ public class nahonsanController {
 	      }else {
 	    	  if(vore.seperator == "1") {
 	    		  System.out.println("seperator가 1일때 :" + vore.getId());
+	    		  session.setAttribute("vore", vore);
 	    		  return "noin_main";
 	    	  }else {
 	    		  System.out.println("seperator가 1이 아닐때 :" +vore.getId());
+	    		  session.setAttribute("noin", vore);
 	    		  return "main";
 	    	  }
 	      }
@@ -117,7 +118,7 @@ public class nahonsanController {
    @RequestMapping(value = "/noinsert.do")
    public String main_guard(requestVO vo) {
      naMapper.addnoin(vo);
-      return "redirect:/about.do";
+      return "redirect:/help_success.do";
    }
    
    @RequestMapping("/realnoin.do")
