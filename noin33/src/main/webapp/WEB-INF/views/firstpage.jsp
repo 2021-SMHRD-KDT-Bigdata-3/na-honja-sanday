@@ -25,11 +25,11 @@
     
     
     <style>
-    #footbg{
-    	 background: #ffffff;
-    }
     body{
     	font-family: 'NEXON Lv1 Gothic OTF';
+    }
+    #footbg{
+    	 background: #ffffff;
     }
     #big{
     	font-family: 'NEXON Lv1 Gothic OTF Bold';

@@ -5,23 +5,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>나혼자산DAY - 신청 현황</title>
+    <head>
+    <title>나혼자산DAY - 독거노인 낙상 감지 서비스</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <link rel="shortcut icon" type="image/x-icon" href="${cpath}/resources/images/logo.jpg">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/animate.css">
-    <link rel="shortcut icon" type="image/x-icon" href="${cpath}/resources/images/logo.jpg">
+    
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
+    
+    <style>
+     body{
+    	font-family: 'NEXON Lv1 Gothic OTF';
+    }
+    </style>
   </head>
   <body>
 
