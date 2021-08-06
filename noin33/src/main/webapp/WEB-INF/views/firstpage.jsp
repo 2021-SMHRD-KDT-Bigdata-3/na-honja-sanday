@@ -25,16 +25,17 @@
     
     
     <style>
-    #footbg{
-    	 background: #ffffff;
-    }
     body{
     	font-family: 'NEXON Lv1 Gothic OTF';
+    }
+    #footbg{
+    	 background: #ffffff;
     }
     #big{
     	font-family: 'NEXON Lv1 Gothic OTF Bold';
     	font-weight: 800;
     }
+    
     </style>
   </head>
   <body>
@@ -42,18 +43,18 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a href="gologin.do" style="color:white;">로그인</a>&emsp;
-					<a href="goJoin.do" style="color:white;">회원가입</a>
+					<a class="hov" href="gologin.do" style="color:white;">로그인</a>&emsp;
+					<a class="hov" href="goJoin.do" style="color:white;">회원가입</a>
 				</div>
 			</div>
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      <a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	  	  <div style="font-size:30px">
-	  	  <a href="counselor.do" style="color:black; font-size:24px;">서비스소개</a>&emsp;
-	  	  <a href="counselor.do" style="color:black; font-size:24px;">복지사소개</a>
+	  	  <a class="hov" href="counselor.do" style="color:black; font-size:24px;">서비스소개</a>&emsp;
+	  	  <a class="hov" href="counselor.do" style="color:black; font-size:24px;">복지사소개</a>
 	  	  </div>
 	    </div>
 	  </nav>
@@ -67,7 +68,7 @@
           	<div class="text w-100">
 	            <h1 class="mb-4" id="big" >노인 돌봄 서비스</h1>
 	            <p class="mb-4">일상생활 영위가 어려운 취약노인에게 적절한 돌봄서비스를 제공하여<br>안정적인 노후생활 보장, 노인의 기능·건강 유지 및 악화 예방을 지원합니다.</p>
-	            <p><a href="sinchung.do" class="btn btn-primary py-3 px-4">지금 신청하기!</a> <a href="status.do" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
+	            <p><a href="sinchung.do" class="btn btn-primary py-3 px-4 hov">지금 신청하기!</a> <a href="status.do" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
 	           
 					             
             </div>
