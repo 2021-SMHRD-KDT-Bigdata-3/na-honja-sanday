@@ -36,7 +36,7 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
 				</div>
 			</div>
 		</div>

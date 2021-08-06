@@ -34,7 +34,7 @@
      <div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
 				</div>
 			</div>
 		</div>
@@ -60,7 +60,7 @@
               		<button onclick="location.href='/nahonsan/firstpage.do'" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
            		</c:if>
            		<c:if test="${vore ne null}">
-              		<button onclick="location.href='/nahonsan/main.do" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
+              		<button onclick="location.href='/nahonsan/main.do'" class="btn btn-success" style="width:300px; height:100px">메인으로</button>
            		</c:if>
            		
             </div>
