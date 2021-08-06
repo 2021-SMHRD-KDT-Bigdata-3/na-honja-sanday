@@ -206,7 +206,7 @@
   }
   
   function isChecked(res){
-	  
+	  console.log(res)
 	  if (res.length == 0){
 		  $('#modal_name').html($('input[name="name"]').val() + '님은');
 		  $('#modal_status').html('신청 내역이 없습니다.');
@@ -233,10 +233,6 @@
   $('.modal_close').on('click', offClick);
 
   }
-  
-
-  
-
 
   </script>
 
