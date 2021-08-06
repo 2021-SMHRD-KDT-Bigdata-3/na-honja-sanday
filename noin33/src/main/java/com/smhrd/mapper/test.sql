@@ -15,6 +15,7 @@ constraint guard_email primary key(email))
 
 select * from guardian;
 select * from member;
+delete from guardian where email='admin';
 
 --복지사 테이블 --
 create table welfare_worker(
@@ -96,10 +97,10 @@ seperator varchar(20) not null,
 name varchar(50) not null,
 age int not null,
 regi_number varchar(50) not null,
-adress varchar(100) not null,
+address varchar(100) not null,
 phone varchar(50) not null,
 uniqueness varchar(100),
-aplication_date datetime default now(),
+application_date datetime default now(),
 primary key(idx));
 
 select * from request;
@@ -131,4 +132,5 @@ show variables like 'c%';
 
 select * from member;
 
+delete from member;
 -- 노인의 호출 서비스 보여주는 테이블--

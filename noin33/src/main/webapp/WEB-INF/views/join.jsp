@@ -89,11 +89,12 @@
       	</tr>
       	<tr>
       		<td class="col1">이메일</td>
-      		<td class="col2"><input type="text" name="email" id="" placeholder="Email을 입력하세요"></td>
+      		<td class="col2"><input style="width:60%;"type="text" name="email" id="" placeholder="Email을 입력하세요">
+      		<button type='button' id="btn1" style="width:30%;" class="btn btn-success">중복 확인</button></td>
       	</tr>
       	<tr>
       		<td class="col1">비밀번호</td>
-      		<td class="col2"><input type="text" name="password" id="" placeholder="password를 입력하세요"></td>
+      		<td class="col2"><input type="password" name="password" id="" placeholder="password를 입력하세요"></td>
       	</tr>
       	<tr>
       		<td class="col1">이름</td>      	
@@ -156,6 +157,28 @@
   <script type="text/javascript">
         $('#selector').on('change', function(){
            $('#form').attr('action', $('#selector').val())
+        })
+        
+        
+        //test
+        $('#btn1').on('click',function(){
+        	$.ajax({
+        		url : "idCheck.do",
+        		type : 'POST',
+        		data : {
+        			'id' : $('input[name="email"]').val()
+        		},
+        		success(res){
+        			if(res){
+        				alert("중복된 아이디 입니다.")
+        			}else{
+        				alert("사용가능한 아이디 입니다.")
+        			}
+        		},
+        		error(){
+        			console.log("연결 실패")
+        		}
+        	})
         })
   </script>
   </body>
