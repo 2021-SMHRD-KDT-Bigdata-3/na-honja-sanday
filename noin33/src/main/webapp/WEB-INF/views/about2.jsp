@@ -42,10 +42,10 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a href="#" style="color:white;"></a>&emsp;
-					<a href="#" style="color:white;"></a>
+					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
 				</div>
 			</div>
+		</div>
 	</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
