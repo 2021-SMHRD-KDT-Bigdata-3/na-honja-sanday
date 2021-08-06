@@ -83,6 +83,7 @@
                      <div class="text pt-3 px-3 pb-4 text-center">
                         <h3> ${vo.name}</h3>
                         <span class="position mb-2">노인생활관리사</span>
+                        <span class="position mb-2"> ${vo.certi}</span>
                         <div class="faded">
                            <p> ${vo.intro}</p>
                            <ul class="ftco-social text-center">
