@@ -90,7 +90,7 @@
       	<tr>
       		<td class="col1">이메일</td>
       		<td class="col2"><input style="width:60%;"type="text" name="email" id="" placeholder="Email을 입력하세요">
-      		<button type='button' id="btn1" style="width:30%;" class="btn btn-success">중복 확인</button></td>
+      		<button type='button' id="btn1" style="width:30%;" class="">중복 확인</button></td>
       	</tr>
       	<tr>
       		<td class="col1">비밀번호</td>
