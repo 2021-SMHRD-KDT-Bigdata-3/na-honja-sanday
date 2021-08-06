@@ -32,17 +32,16 @@
   </head>
   <body>
 
-     <div class="wrap">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 d-flex align-items-center">
-						<p class="mb-0 phone pl-md-2">
-							<a class="mr-2">&nbsp;</a> 
-						</p>
-					</div>
+     <div class="wrap" >
+			<div class="container" >
+				<div align="right">
+					<a href="#" style="color:white;"></a>&emsp;
+					<a href="#" style="color:white;"></a>
 				</div>
 			</div>
-		</div>
+	</div>
+		
+		
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
