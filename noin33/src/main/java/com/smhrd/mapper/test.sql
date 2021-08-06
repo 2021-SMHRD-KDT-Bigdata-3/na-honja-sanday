@@ -21,9 +21,12 @@ create table welfare_worker(
 email varchar(100),
 name varchar(30) not null,
 phone varchar(50) not null,
-seperator varchar(10) not null,   
+seperator varchar(10) not null,
 constraint wel_email primary key(email))
 
+alter table welfare_worker add intro varchar(100);
+alter table welfare_worker add certi varchar(100);
+update welfare_worker set  intro= '내 가족을 만나는 것처럼 성실하고 꼼꼼하게 보살펴 드립니다' where name='최재웅';
 select * from welfare_worker;
 
 -- 노인 테이블 --
