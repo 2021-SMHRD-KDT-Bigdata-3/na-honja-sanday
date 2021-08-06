@@ -96,8 +96,8 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Services</span>
-            <h2 style="font-family: 'TmonMonsori';">주요 기능</h2>
+          	<br>
+            <h2  style="font-family: 'NEXON Lv1 Gothic OTF Bold'; color:#589172;">Services</h2>
           </div>
         </div>
     		<div class="row justify-content-center">
