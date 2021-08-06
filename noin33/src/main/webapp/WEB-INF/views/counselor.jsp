@@ -51,9 +51,9 @@
          <div class="collapse navbar-collapse" id="ftco-nav">
            <ul class="navbar-nav ml-auto">
              <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
-             <li class="nav-item"><a href="main_guard.do" class="nav-link">복지사 소개</a></li>
-             <li class="nav-item"><a href="About.do" class="nav-link">관리</a></li>
-             <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
+             <li class="nav-item"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
+             <li class="nav-item"><a href="manage.do" class="nav-link">관리</a></li>
+             <li class="nav-item"><a href="" class="nav-link">위험분석</a></li>
 
            </ul>
          </div>
