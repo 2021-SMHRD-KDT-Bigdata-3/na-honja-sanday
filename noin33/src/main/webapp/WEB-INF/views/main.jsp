@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
     
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
@@ -37,7 +38,7 @@
     .week{
     	font-family: 'TmonMonsori';
     	color:#000000;
-    	-webkit-text-stroke-width: 2px;
+    	-webkit-text-stroke-width: 1px;
 		-webkit-text-stroke-color: white;
     	font-size:45px;
     }
@@ -67,7 +68,7 @@
 	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
-	          <li class="nav-item hov"><a href="counselor.html" class="nav-link">복지사 소개</a></li>
+	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
 	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
 	        </ul>
 	      </div>
@@ -141,8 +142,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">Testimonial</span>
-            <h2 class="mb-3">복지사 소개</h2>
+            <h2 class="mb-3"></h2>
           </div>
         </div>
         <div class="row ftco-animate">
