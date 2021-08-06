@@ -172,7 +172,7 @@ public class nahonsanController {
 	}
 	//노인이 신청했는지 알아보고 조회 후 arraylist에 담아 res 라는 이름으로 ajax에 송출.
 	@RequestMapping(value = "/checkStatus.do")
-	public  @ResponseBody List<requestVO> noinselect(requestVO vo){
+	public @ResponseBody List<requestVO> noinselect(requestVO vo){
 		
 		List<requestVO> res =  naMapper.noinselect(vo);
 		
@@ -220,6 +220,17 @@ public class nahonsanController {
    @RequestMapping("/sevices.do")
    public String sevices() {
 	   return "service";
+   }
+   
+   @RequestMapping("/idCheck.do")
+   public @ResponseBody boolean idCheck(memberVO vo) {
+	   memberVO result = naMapper.idCheck(vo);
+	   
+	   if(result == null) {
+		   return false;
+	   }else {
+		   return true;
+	   }
    }
    
 }
