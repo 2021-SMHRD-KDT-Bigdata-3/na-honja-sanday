@@ -165,8 +165,8 @@
 	       		  	</tr>
 	       		  </table><br>
 					<div align="center">
-						<button type="submit" class="btn btn-primary py-3 px-4 joinbtn">등록</button>
-				
+						<button type="submit" class="btn btn-primary py-3 px-4 joinbtn" disabled="disabled">등록</button>
+						<button type="button" class="btn btn-primary py-3 px-4 checknbtn" id="contentCheck">검사</button>
 					</div>  
 			 	  </form>
 				</div>
@@ -284,6 +284,30 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
+  <script type="text/javascript">
+  	function nullCheck(){
+  		let cnt = 0;
+  		array = $('input[type="text"]');
+  		for(let i =0; i < array.length; i++){
+  			if($(array[i]).val() == ""){
+  				alert($(array[i]).attr('name') + '는 비워둘 수 없습니다.');
+  				$('.joinbtn').attr('disabled', true);
+  				cnt++;
+  				break;
+  			}
+  				
+  		}
+  		if (cnt == 0){
+  			alert('신청 가능합니다.')  			
+  			$('.joinbtn').attr('disabled', false);
+  		}
+  		
+  	}
+  	
+  	$('#contentCheck').on('click', nullCheck);
+  
+  </script>
     
   </body>
 </html>
