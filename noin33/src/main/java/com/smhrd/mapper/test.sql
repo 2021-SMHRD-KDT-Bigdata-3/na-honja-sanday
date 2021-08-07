@@ -152,7 +152,6 @@ select * from welfare_worker;
 
 commit;
 
-show variables like 'c%';
 
 select * from member;
 
