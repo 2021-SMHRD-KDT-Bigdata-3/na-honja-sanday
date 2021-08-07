@@ -316,11 +316,12 @@
   <script src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
   <script type="text/javascript">
   function camOn(){
+	  console.log('${vore.id}')
 	  $.ajax({
 			url : " http://211.105.165.117:9000/posedetection",
 			type : 'POST',
 			data : {
-				'email' : 'anansi7543@gmail.com',
+				'email' : '${vore.id}',
 				'content' : 'content'
 			},
 			success(){
