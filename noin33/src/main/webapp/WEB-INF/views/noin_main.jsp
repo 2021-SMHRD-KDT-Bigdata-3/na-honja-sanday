@@ -44,7 +44,7 @@
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      <a class="navbar-brand" href="/nahonsan/noin_main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	    </div>
 	  </nav>
     <!-- END nav -->
@@ -55,8 +55,8 @@
             </div>
        
    	<div align="center">
-   		<button type=button onclick="location.href='noin_help.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px; border:0; background-color:white;"><img style="border-radius: 12px; width:470px; height:470px;" src="${cpath}/resources/images/hochul.png"></button> &nbsp;&nbsp;&nbsp;
-   		<button type=button onclick="location.href='noin_friend.do'" style="WIDTH: 350pt; HEIGHT: 350pt; border-radius:12px; font-size:70px; border:0; background-color:white;"><img style="border-radius: 12px; width:470px; height:470px;" src="${cpath}/resources/images/friends.png"></button>
+   		<span><button type=button onclick="location.href='noin_help.do'" style="border:0; background-color:white;"><img style="border-radius: 12px; width:470px;" src="${cpath}/resources/images/hochul.png"></button></span>
+   		<span><button type=button onclick="location.href='noin_friend.do'" style=" border:0; background-color:white;"><img style="border-radius: 12px; width:470px;" src="${cpath}/resources/images/friends.png"></button></span>
    	</div>
     
     <br><br>

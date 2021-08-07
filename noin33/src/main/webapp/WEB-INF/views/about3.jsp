@@ -21,6 +21,7 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -31,8 +32,37 @@
      		width : 100%;
      		
      	}
-     	td, th{border:1px solid; padding 10px 5px;}
+    th{border-bottom:1px solid; padding 10px 5px;}
      	
+    body{
+    	font-family: 'NEXON Lv1 Gothic OTF';
+    	color:#000000;
+    }
+    h1{
+    	font-family: 'NEXON Lv1 Gothic OTF Bold';
+    }
+    table{
+    	text-align:center;
+    	width:600px; 
+    	margin-left:auto; 
+    	margin-right:auto;
+    	border-top:3px solid black;
+    	border-bottom:3px solid black;
+    }
+    
+    td{
+    	border-bottom:1px dotted black;
+    }
+    ul{
+    	list-style:none;
+    }
+    ul a{
+    	text-decoration:none;
+    	color:black;
+    }
+    ul a:hover{
+    	color:#589167;
+    }
      </style>
   </head>
   <body>
@@ -48,7 +78,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="index.do">나혼자산데이</a>
+	      <a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 메뉴
 	      </button>
@@ -74,7 +104,7 @@
     <section class="ftco-section ftco-no-pb ftco-no-pt" >
 			<div class="container">
 				<div class="row" >
-					<div style="width:25%; margin-top:50px;">
+					<div style="width:20%; margin-top:50px;">
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
@@ -100,19 +130,21 @@
 					
 			<div class="" style="width:75%">
 	          <div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
+	          	<span class="subheading">메인<i class="fa fa-chevron-right"></i></span>
+	          	<span class="subheading">관리<i class="fa fa-chevron-right"></i></span>
 	            <h2 class="mb-4">관리 목록</h2>
 				<div class="heading-section py-md-5">
 					<table id="tlscjd" style="max-width:100%;">
 						<tr>
-							<th width="10%">대기번호</th>
-							<th width="%">이름</th>
-							<th>나이</th>
+							<th width="8%">대기번호</th>
+							<th width="8%">이름</th>
+							<th width="8%">나이</th>
 							<th>주소</th>
-							<th>전화번호</th>
+							<th width="20%">전화번호</th>
 							<th>특이사항</th>
-							<th>신청일</th>
-							<th>삭제</th>
+							<th width="10%">신청일 </th>
+							<th width="15%">삭제</th>
+							<th width="8%">카메라</th>
 							
 						</tr>
 					<c:forEach var="vo" items="${list}">
@@ -144,58 +176,7 @@
   
 
 		
-		<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_2.jpg);">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6 half ftco-animate">
-    				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
-    				<form action="${cpath}/About.do" class="appointment">
-    					<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Your Name">
-			            </div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Email">
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			    					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Services</option>
-	                        <option value="">Relation Problem</option>
-	                        <option value="">Couple Counseling</option>
-	                        <option value="">Depression Treatment</option>
-	                        <option value="">Family Problem</option>
-	                        <option value="">Personal Problem</option>
-	                        <option value="">Business Problem</option>
-	                      </select>
-	                    </div>
-			              </div>
-			    				</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
-			            </div>
-								</div>
-    					</div>
-	          </form>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+
 
     <footer class="ftco-footer">
       <div class="container">
@@ -295,11 +276,12 @@
   <script src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
   <script type="text/javascript">
   function camOn(){
+	  console.log('${vore.id}')
 	  $.ajax({
 			url : " http://211.105.165.117:9000/posedetection",
 			type : 'POST',
 			data : {
-				'email' : 'anansi7543@gmail.com',
+				'email' : '${vore.id}',
 				'content' : 'content'
 			},
 			success(){

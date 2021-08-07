@@ -64,7 +64,7 @@ public class nahonsanController {
 //	   System.out.println(vore.getId());
 	   
 	   if(vore == null) { 
-    	  System.out.println("실패");
+    	  System.out.println("로그인실패");
          return "login"; 
        }else {
     	   if(vore.seperator == "1") {
@@ -231,6 +231,12 @@ public class nahonsanController {
 	   }else {
 		   return true;
 	   }
+   }
+   
+   @RequestMapping("/delrequest.do")
+   public String delrequest(int idx) {
+	   naMapper.delrequest(idx);
+	   return "redirect:/manage.do";
    }
    
 }

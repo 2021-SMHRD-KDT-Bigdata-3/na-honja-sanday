@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 
 public interface nahonsanMapper {
 
-	//로그인 임시
+	//로그인
 	public memberVO login(memberVO vo);
 	
 	//회원가입
@@ -35,10 +35,13 @@ public interface nahonsanMapper {
 	public List<seniorVO> showlist();
 	@Delete("delete from senior where idx = #{idx}")
 	public void delnoin(int idx);
+	@Delete("delete from request where idx = #{idx}")
+	public void delrequest(int idx);
 	@Select("select * from request where name = #{name} and regi_number = #{regi_number}")
 	public List<requestVO> noinselect(requestVO vo);
 	@Select("select * from member where id=#{id}")
 	public memberVO idCheck(memberVO vo);
+
 
 }
 
