@@ -91,7 +91,7 @@
          <div class="container">
             <div class="row">
              <c:forEach var="vo" items="${welfareList}" >
-             <c:set var="imgName" value="${fn:split(vo.email,'\\\@')}"></c:set>
+             <c:set var="imgName" value="${fn:split(vo.email,'///@')}"></c:set>
                <div class="col-md-6 col-lg-3 ftco-animate">
                   <div class="staff">
                      <div class="img-wrap d-flex align-items-stretch">

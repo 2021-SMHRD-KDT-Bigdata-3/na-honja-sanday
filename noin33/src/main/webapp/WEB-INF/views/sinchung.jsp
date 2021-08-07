@@ -107,7 +107,12 @@
 	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" disabled="disabled">신청하기</button></span>
 	<span><button type="button" class="btn btn-primary py-3 px-4 checkbtn" id='contentCheck'>검사하기</button></span>
 	</form>
+	<c:if test="${vore eq null}">
 	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/firstpage.do'">메인으로</button></span>
+	</c:if> 
+	<c:if test="${vore ne null}">
+	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/main.do'">메인으로</button></span>
+	</c:if> 
 	 </div> <br><br><br><br><br><br><br><br>
   
   

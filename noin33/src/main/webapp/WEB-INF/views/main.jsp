@@ -74,6 +74,9 @@
 	          <c:if test="${vore.seperator eq 3}">
 	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
 	          </c:if>
+	          <c:if test="${vore.seperator eq 2}">
+	          <li class="nav-item hov"><a href="sinchung.do" class="nav-link">신청</a></li>
+	          </c:if>
 	          </c:if>
 	        </ul>
 	      </div>
