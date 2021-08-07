@@ -51,6 +51,16 @@
     h1{
     	font-family: 'NEXON Lv1 Gothic OTF Bold';
     }
+    ul{
+    	list-style:none;
+    }
+    ul a{
+    	text-decoration:none;
+    	color:black;
+    }
+    ul a:hover{
+    	color:#589167;
+    }
      </style>
   </head>
   <body>
@@ -93,7 +103,7 @@
 			<div class="container">
 			
 				<div class="row" >
-					<div style="width:25%; margin-top:50px;">
+					<div style="width:20%; margin-top:50px;">
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">

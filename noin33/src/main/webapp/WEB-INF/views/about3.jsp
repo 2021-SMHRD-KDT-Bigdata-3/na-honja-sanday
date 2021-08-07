@@ -53,6 +53,16 @@
     td{
     	border-bottom:1px dotted black;
     }
+    ul{
+    	list-style:none;
+    }
+    ul a{
+    	text-decoration:none;
+    	color:black;
+    }
+    ul a:hover{
+    	color:#589167;
+    }
      </style>
   </head>
   <body>
@@ -94,7 +104,7 @@
     <section class="ftco-section ftco-no-pb ftco-no-pt" >
 			<div class="container">
 				<div class="row" >
-					<div style="width:25%; margin-top:50px;">
+					<div style="width:20%; margin-top:50px;">
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
@@ -126,14 +136,15 @@
 				<div class="heading-section py-md-5">
 					<table id="tlscjd" style="max-width:100%;">
 						<tr>
-							<th width="10%">대기번호</th>
-							<th width="10%">이름</th>
-							<th width="10%">나이</th>
+							<th width="8%">대기번호</th>
+							<th width="8%">이름</th>
+							<th width="8%">나이</th>
 							<th>주소</th>
 							<th width="20%">전화번호</th>
 							<th>특이사항</th>
-							<th>신청일</th>
-							<th width="10%">삭제</th>
+							<th width="10%">신청일 </th>
+							<th width="15%">삭제</th>
+							<th width="8%">카메라</th>
 							
 						</tr>
 					<c:forEach var="vo" items="${list}">
@@ -165,58 +176,7 @@
   
 
 		
-		<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_2.jpg);">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6 half ftco-animate">
-    				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
-    				<form action="${cpath}/About.do" class="appointment">
-    					<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Your Name">
-			            </div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Email">
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			    					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Services</option>
-	                        <option value="">Relation Problem</option>
-	                        <option value="">Couple Counseling</option>
-	                        <option value="">Depression Treatment</option>
-	                        <option value="">Family Problem</option>
-	                        <option value="">Personal Problem</option>
-	                        <option value="">Business Problem</option>
-	                      </select>
-	                    </div>
-			              </div>
-			    				</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
-			            </div>
-								</div>
-    					</div>
-	          </form>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+
 
     <footer class="ftco-footer">
       <div class="container">

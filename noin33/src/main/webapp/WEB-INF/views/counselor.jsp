@@ -21,13 +21,21 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
     
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     <style>
-     body{
+    body{
     	font-family: 'NEXON Lv1 Gothic OTF';
+    }
+    h3, .position{
+    	font-family: 'NEXON Lv1 Gothic OTF' !important;
+    }
+    h1{
+    	font-family: 'NEXON Lv1 Gothic OTF Bold';
+    	color:#000000;
     }
     </style>
   </head>
@@ -42,35 +50,36 @@
 			</div>
 		</div>
     
-     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-       <div class="container">
-         <a class="navbar-brand" href="index.do">나혼자산데이</a>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-           <span class="oi oi-menu"></span> 메뉴
-         </button>
+	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> 메뉴
+	      </button>
 
-         <div class="collapse navbar-collapse" id="ftco-nav">
-           <ul class="navbar-nav ml-auto">
+	      <div class="collapse navbar-collapse" id="ftco-nav" style="font-size:30px">
+	        <ul class="navbar-nav ml-auto">
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
-             <li class="nav-item"><a href="" class="nav-link">위험분석</a></li>
 	          <c:if test="${vore ne null}">
 	          <c:if test="${vore.seperator eq 3}">
 	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
 	          </c:if>
 	          </c:if>
 	        </ul>
-         </div>
-       </div>
-     </nav>
+	      </div>
+	    </div>
+	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap hero-wrap-2" style="background-image: url('${cpath}/resources/images/bg_5.jpg');" data-stellar-background-ratio="0.5">
+    <section class="hero-wrap hero-wrap-2" data-stellar-background-ratio="0.5" style="height:200px !important;">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-end justify-content-center">
           <div class="col-md-9 ftco-animate mb-5 text-center">
+          	<p class="breadcrumbs mb-0"><span class="mr-2"><a href="firstpage.do">메인 <i class="fa fa-chevron-right"></i></a></span> </p>
             <h1 class="mb-0 bread">복지사 소개</h1>
           </div>
         </div>

@@ -41,7 +41,7 @@
     }
     table{
     	text-align:center;
-    	width:600px; 
+    	width:100%; 
     	margin-left:auto; 
     	margin-right:auto;
     	border-top:3px solid black;
@@ -51,7 +51,16 @@
     td{
     	border-bottom:1px dotted black;
     }
-     	
+    ul{
+    	list-style:none;
+    }
+    ul a{
+    	text-decoration:none;
+    	color:black;
+    }
+    ul a:hover{
+    	color:#589167;
+    }
      </style>
   </head>
   <body>
@@ -93,7 +102,7 @@
     <section class="ftco-section ftco-no-pb ftco-no-pt" >
 			<div class="container">
 				<div class="row" >
-					<div style="width:25%; margin-top:50px;">
+					<div style="width:20%; margin-top:50px;">
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
@@ -126,14 +135,15 @@
 				<div class="heading-section py-md-5">
 					<table id="tlscjd" style="max-width:100%;">
 						<tr>
-							<th width="10%">대기번호</th>
-							<th width="10%">이름</th>
-							<th width="10%">나이</th>
+							<th width="8%">대기번호</th>
+							<th width="8%">이름</th>
+							<th width="8%">나이</th>
 							<th>주소</th>
 							<th width="20%">전화번호</th>
 							<th>특이사항</th>
-							<th>신청일</th>
-							<th width="10%">등록</th>
+							<th width="15%">신청일 </th>
+							<th width="8%">등록</th>
+							<th width="10%">거절</th>
 						</tr>
 					<c:forEach var="vo" items="${list}">
 						<tr>
@@ -145,14 +155,11 @@
 							<td>${vo.uniqueness}</td>
 							<td>${vo.aplication_date}</td>
 							<td><a href = "${cpath}/realnoin.do?idx=${vo.idx}">등록</a></td>
+							<td><a href = "#">거절</a></td>
 						</tr>
 					</c:forEach>						
 					</table>	  
 				</div>
-					<div align="right">
-						<button>거절</button>
-						<button>승인</button>
-					</div>          
 			  </div>
 
 			</div>

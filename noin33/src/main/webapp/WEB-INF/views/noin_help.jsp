@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
-    
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
@@ -41,18 +41,17 @@
 		</div>
     
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
-       <div class="container">
-         <a class="navbar-brand" href="index.do">나혼자산데이</a>
+	    <div class="container">
+	      <a class="navbar-brand title" href="/nahonsan/noin_main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
            <span class="oi oi-menu"></span> 메뉴
          </button>
 
          <div class="collapse navbar-collapse" id="ftco-nav">
            <ul class="navbar-nav ml-auto">
-             <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
-             <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
-             <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
-             <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
+             <li class="nav-item hov"><a href="noin_main.do" class="nav-link">홈</a></li>
+             <li class="nav-item hov"><a href="noin_help.do" class="nav-link">복지사 호출</a></li>
+             <li class="nav-item hov"><a href="noin_friend.do" class="nav-link">친구 찾기</a></li>
            </ul>
          </div>
        </div>
