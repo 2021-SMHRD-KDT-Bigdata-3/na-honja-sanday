@@ -18,23 +18,49 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
-    
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     
     <style>
-    body{
+    #tlscjd{
+    	border:2px solid; border-collapse:collapse; text-align;center;
+    	width : 100%;
+    		
+    }
+    
+     body, textarea{
     	font-family: 'NEXON Lv1 Gothic OTF';
     }
-     	#tlscjd{
-     		border:2px solid; border-collapse:collapse; text-align;center;
-     		width : 100%;
-     		
-     	}
-     	td, th{border:1px solid; padding 10px 5px;}
-     	
+    table{
+    	width:800px; 
+    	height:500px;
+    	margin-left:auto; 
+    	margin-right:auto;
+    	border-top:3px solid black;
+    	border-bottom:3px solid black;
+    }
+    td{
+    	border-bottom:1px dotted black;
+    }
+    input{
+    	width:698.25px;
+    }
+    h1{
+    	font-family: 'NEXON Lv1 Gothic OTF Bold';
+    }
+    ul{
+    	list-style:none;
+    }
+    ul a{
+    	text-decoration:none;
+    	color:black;
+    }
+    ul a:hover{
+    	color:#589167;
+    }
      </style>
   </head>
   <body>
@@ -47,11 +73,10 @@
 				</div>
 			</div>
 		</div>
-	</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/nahonsan/main.do">나혼자산데이</a>
+	      <a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 메뉴
 	      </button>
@@ -78,7 +103,7 @@
 			<div class="container">
 			
 				<div class="row" >
-					<div style="width:25%; margin-top:50px;">
+					<div style="width:20%; margin-top:50px;">
 						<h1 class="">관리</h1>
                 <ul class="">
                     <li class="">
@@ -104,33 +129,43 @@
 			<!--  신청 -->		
 			<div class="" style="width:75%">
 	          <div class="heading-section py-md-5" >
-	          	<span class="subheading">Welcome to Counselor</span>
+	          	<span class="subheading">메인<i class="fa fa-chevron-right"></i></span>
+	          	<span class="subheading">관리<i class="fa fa-chevron-right"></i></span>
 	            <h2 class="mb-4">관리 신청</h2>
 	            
 				<div class="heading-section py-md-5" >
-					
+				
 	       		  <form action = "${cpath}/noinsert.do" method="post">
-					<div >
-						이름 : 
-						<input type="text" name ="name">
-						<br>
-						나이 : 
-						<input type="text" name = "age">
-						<br>
-						주민등록번호 : 
-						<input type="text" name = "regi_number">
-						<br>
-						주소 : 
-						<input type="text" name = "adress">
-						<br>
-						연락처 : 
-						<input type="text" name = "phone">
-						<br>
-						특이사항 : 
-						<input type="text" name = "uniqueness">
-					</div>  
-					<div align="right">
-						<button type="submit" class="btn btn-primary btn-sm">등록</button>
+	       		  <table>
+	       		  	<tr>
+						<td>이름</td>
+						<td><input type="text" name ="name"></td>	       		  	
+	       		  	</tr>
+	       		  	<tr>
+						<td>나이</td>
+						<td><input type="text" name = "age"></td>	       		  	
+	       		  	</tr>
+	       		  	<tr>
+						<td>주민등록번호</td>
+						<td><input type="text" name = "regi_number"></td>
+	       		  	</tr>
+	       		  	<tr>
+						<td>주소</td>
+						<td><input type="text" name = "adress"></td>	       		  	
+	       		  	</tr>
+	       		  	<tr>
+						<td>연락처</td>
+						<td><input type="text" name = "phone"></td>	       		  	
+	       		  	</tr>
+	       		  	<tr>
+	       		  	<td>특이사항</td>
+	       		  	<td >
+	       		  		<textarea name="uniqueness" class="form-control"  cols="30" rows="6" ></textarea>
+	       		  	</td>
+	       		  	</tr>
+	       		  </table><br>
+					<div align="center">
+						<button type="submit" class="btn btn-primary py-3 px-4 joinbtn">등록</button>
 				
 					</div>  
 			 	  </form>
@@ -152,58 +187,7 @@
   
 
 		
-		<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_2.jpg);">
-			<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-6 half ftco-animate">
-    				<h2 class="mb-4">Send a Message &amp; Get in touch!</h2>
-    				<form action="#" class="appointment">
-    					<div class="row">
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Your Name">
-			            </div>
-								</div>
-								<div class="col-md-6">
-									<div class="form-group">
-			              <input type="text" class="form-control" placeholder="Email">
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			    					<div class="form-field">
-	          					<div class="select-wrap">
-	                      <div class="icon"><span class="fa fa-chevron-down"></span></div>
-	                      <select name="" id="" class="form-control">
-	                      	<option value="">Services</option>
-	                        <option value="">Relation Problem</option>
-	                        <option value="">Couple Counseling</option>
-	                        <option value="">Depression Treatment</option>
-	                        <option value="">Family Problem</option>
-	                        <option value="">Personal Problem</option>
-	                        <option value="">Business Problem</option>
-	                      </select>
-	                    </div>
-			              </div>
-			    				</div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-			            </div>
-								</div>
-								<div class="col-md-12">
-									<div class="form-group">
-			              <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
-			            </div>
-								</div>
-    					</div>
-	          </form>
-    			</div>
-    		</div>
-    	</div>
-    </section>
+		
 
     <footer class="ftco-footer">
       <div class="container">

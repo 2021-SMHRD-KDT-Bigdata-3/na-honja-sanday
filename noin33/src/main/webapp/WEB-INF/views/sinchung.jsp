@@ -105,6 +105,8 @@
 	</table>
 	<br><br>
 	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" id="inputck" >신청하기</button></span>
+	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" disabled="disabled">신청하기</button></span>
+	<span><button type="button" class="btn btn-primary py-3 px-4 checkbtn" id='contentCheck'>검사하기</button></span>
 	</form>
 	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/firstpage.do'">메인으로</button></span>
 	 </div> <br><br><br><br><br><br><br><br>
@@ -187,17 +189,31 @@
       	</div>
       </div>
     </footer>
- <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- <script>
- 	$('#inputck').on('click',function(){
- 		if($(name) == null){
- 			alert('빈칸을 모두 채워주세요');
- 		}
- 	})
- 
- 
- 
- </script>
+    
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
+  <script type="text/javascript">
+  	function nullCheck(){
+  		let cnt = 0;
+  		array = $('input[type="text"]');
+  		for(let i =0; i < array.length; i++){
+  			if($(array[i]).val() == ""){
+  				alert($(array[i]).attr('name') + '는 비워둘 수 없습니다.');
+  				cnt = 0;
+  				break;
+  				cnt++;
+  			}
+  				
+  		}
+  		if (cnt == 0){
+  			console.log(cnt)
+  			$('.joinbtn').attr('disabled', false);
+  		}
+  		
+  	}
+  	
+  	$('#contentCheck').on('click', nullCheck);
+  
+  </script>
+
 </body>
 </html>
