@@ -112,7 +112,14 @@
     		<div class="row justify-content-center">
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
     				<div class="services-2 text-center ">
-    					<a href="/nahonsan/about2.do">
+    					<c:if test="${vore ne null}">
+				        <c:if test="${vore.seperator eq 3}">
+				        <a href="/nahonsan/about2.do">
+				        </c:if>
+				        <c:if test="${vore.seperator eq 2}">
+				        <a href="/nahonsan/sinchung.do">
+				        </c:if>
+				        </c:if>
     					<div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
 	    					<div class="icon d-flex align-items-center justify-content-center">
