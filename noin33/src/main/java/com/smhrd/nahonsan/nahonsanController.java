@@ -64,7 +64,7 @@ public class nahonsanController {
 //	   System.out.println(vore.getId());
 	   
 	   if(vore == null) { 
-    	  System.out.println("실패");
+    	  System.out.println("로그인실패");
          return "login"; 
        }else {
     	   if(vore.seperator == "1") {

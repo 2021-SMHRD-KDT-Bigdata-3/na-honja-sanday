@@ -69,11 +69,12 @@
 	 <!--  
 	 <form action="" method="get" id="loginForm">
 	 -->
- 	<form action="${cpath}/noinsert.do" method = "post">
+ 	<form action="${cpath}/noinsert.do" method = "post" >
 	 <table>
 	<tr>
 		<td class="col2">
 			<input type="text" name=name  placeholder="이름">
+			<c:if test="${name eq null}"></c:if>
 		</td>
 	</tr>
 	<tr>
@@ -88,7 +89,7 @@
 	</tr>
 	<tr>
 		<td class="col2">
-			<input type="text" name=adress  placeholder="주소">
+			<input type="text" name=address  placeholder="주소">
 		</td>
 	</tr>
 	<tr>
