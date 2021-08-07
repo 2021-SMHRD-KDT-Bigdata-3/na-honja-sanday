@@ -125,6 +125,9 @@ application_date datetime default now(),
 primary key(idx));
 
 select * from request;
+alter table request CHANGE adress address varchar(100) not null;
+
+select * from senior;
 
 --신청테이블에서 신청등록하기.
 insert into request(seperator,name,age,regi_number,adress,phone,uniqueness) values(

@@ -32,9 +32,11 @@
     	</insert>
     
     	<!-- 관리 승인하면 노인테이블에선 신청테이블의 번호를가진 행 복사해서 넣고, 신청테이블에선 삭제하기. -->
-		<insert id="add_del" parameterType="int">
+		<insert id="add_del" parameterType="com.smhrd.mapper.requestVO">
 		    INSERT INTO senior SELECT * FROM request WHERE idx = #{idx};
 			delete from request where idx= #{idx};
+			INSERT INTO member(id, password,seperator)
+		    values(#{name},#{regi_number},1);
 		</insert>
 
 </mapper>
