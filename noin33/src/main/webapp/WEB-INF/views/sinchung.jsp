@@ -198,14 +198,14 @@
   		for(let i =0; i < array.length; i++){
   			if($(array[i]).val() == ""){
   				alert($(array[i]).attr('name') + '는 비워둘 수 없습니다.');
-  				cnt = 0;
-  				break;
+  				$('.joinbtn').attr('disabled', true);
   				cnt++;
+  				break;
   			}
   				
   		}
   		if (cnt == 0){
-  			console.log(cnt)
+  			alert('신청 가능합니다.')
   			$('.joinbtn').attr('disabled', false);
   		}
   		
