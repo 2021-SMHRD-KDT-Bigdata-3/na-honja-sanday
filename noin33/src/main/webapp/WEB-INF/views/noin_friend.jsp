@@ -398,6 +398,7 @@ var array = [['지산 1동','광주광역시 동구 지산1동','062-228-1741','
 var array2 = [];
 for(var i =0;i<16;i++){
 var co = array[i][0];
+var pr = array[i][3];
 	var content = '<div class="wrap">' + 
 '    <div class="info">' + 
 '        <div class="title">' + 
@@ -406,7 +407,7 @@ var co = array[i][0];
 '        <div class="body">' + 
 '           </div>' + 
 '            <div>' + 
-'                <div ">'+'주소 : '+array[i][1] + '<br>'+'연락처: '+array[i][2]+'<br>'+'진행중인 행사 : '+array[i][3]+'  이용비: '+array[i][4]+'<br>'+'수용인원 : '+array[i][5]+'       '+'<button type="submit" class="btn-friend" onclick="sendemail(\''+co+'\')">'+
+'                <div ">'+'주소 : '+array[i][1] + '<br>'+'연락처: '+array[i][2]+'<br>'+'진행중인 행사 : '+array[i][3]+'  이용비: '+array[i][4]+'<br>'+'수용인원 : '+array[i][5]+'       '+'<button type="submit" class="btn-friend" onclick="sendemail(\''+co+'\''+","+'\''+pr+'\')">'+
 '신청</button>'+'</div>'
 
 '            </div>' +
@@ -493,15 +494,15 @@ function makeOverListener(infowindow) {
         infowindow.setMap(map);
     };
 }
-function sendemail(co2){
+function sendemail(co2,pr){
 	console.log(co2);
-	console.log(co);
+	console.log(pr);
 	  $.ajax({
 			url : "http://211.105.165.117:9000/email",
 			type : "post",
 			data : {"email" : "wodnd1593@naver.com",
-				"title" : $.{noin},   
-				"content" : +co2},
+				"title" : "${noin.id}"+"님이 보낸 메세지",   
+				"content" : "${noin.id}님이 "+co2+"에서 \n"+pr+" 를  신청하셨습니다."},
 			success : (res) =>{
 				alert("성공");
 			},
