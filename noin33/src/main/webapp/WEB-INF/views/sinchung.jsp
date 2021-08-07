@@ -69,11 +69,12 @@
 	 <!--  
 	 <form action="" method="get" id="loginForm">
 	 -->
- 	<form action="${cpath}/noinsert.do" method = "post">
+ 	<form action="${cpath}/noinsert.do" method = "post" >
 	 <table>
 	<tr>
-		<td class="col2">
+		<td class="col2" id="inputck">
 			<input type="text" name=name  placeholder="이름">
+			<c:if test="${name ne null}"></c:if>
 		</td>
 	</tr>
 	<tr>
@@ -88,7 +89,7 @@
 	</tr>
 	<tr>
 		<td class="col2">
-			<input type="text" name=adress  placeholder="주소">
+			<input type="text" name=address  placeholder="주소">
 		</td>
 	</tr>
 	<tr>
@@ -186,6 +187,10 @@
       	</div>
       </div>
     </footer>
-
+ <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script>
+ 	
+ </script>
 </body>
 </html>

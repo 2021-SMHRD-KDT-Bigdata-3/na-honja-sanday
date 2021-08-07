@@ -40,6 +40,7 @@ public interface nahonsanMapper {
 	@Select("select * from member where id=#{id}")
 	public memberVO idCheck(memberVO vo);
 
+
 }
 
 

@@ -160,7 +160,7 @@
         })
         
         
-        //test
+        //이메일 중복확인
         $('#btn1').on('click',function(){
         	$.ajax({
         		url : "idCheck.do",
