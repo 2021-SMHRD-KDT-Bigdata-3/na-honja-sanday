@@ -150,12 +150,12 @@
 							<td>${vo.idx}</td>
 							<td>${vo.name}</td>
 							<td>${vo.age}</td>
-							<td>${vo.adress}</td>
+							<td>${vo.address}</td>
 							<td>${vo.phone}</td>
 							<td>${vo.uniqueness}</td>
-							<td>${vo.aplication_date}</td>
+							<td>${vo.application_date}</td>
 							<td><a href = "${cpath}/realnoin.do?idx=${vo.idx}">등록</a></td>
-							<td><a href = "#">거절</a></td>
+							<td><a href = "${cpath}/delrequest.do?idx=${vo.idx}">거절</a></td>
 						</tr>
 					</c:forEach>						
 					</table>	  

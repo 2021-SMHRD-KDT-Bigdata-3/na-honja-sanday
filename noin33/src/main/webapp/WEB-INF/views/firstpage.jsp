@@ -43,8 +43,9 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="gologin.do" style="color:white;">로그인</a>
-					<a class="hov" href="goJoin.do" style="color:white;">회원가입</a>
+					<c:if test="${vore eq null }"><a class="hov" href="gologin.do" style="color:white;">로그인</a></c:if>
+					<c:if test="${vore ne null }"><a class="hov" href="logout.do" style="color:white;">로그아웃</a></c:if>
+					<c:if test="${vore eq null }"><a class="hov" href="goJoin.do" style="color:white;">회원가입</a></c:if>
 				</div>
 			</div>
 		</div>

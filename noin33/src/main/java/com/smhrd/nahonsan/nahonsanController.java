@@ -26,6 +26,9 @@ import com.smhrd.mapper.loginVO;
 import com.smhrd.mapper.memberVO;
 import com.smhrd.mapper.nahonsanMapper;
 import com.smhrd.mapper.welfare_workerVO;
+
+import jdk.nashorn.internal.runtime.FindProperty;
+
 import com.smhrd.mapper.requestVO;
 import com.smhrd.mapper.seniorVO;
 
@@ -64,10 +67,10 @@ public class nahonsanController {
 //	   System.out.println(vore.getId());
 	   
 	   if(vore == null) { 
-    	  System.out.println("실패");
+    	  System.out.println("로그인실패");
          return "login"; 
        }else {
-    	   if(vore.seperator == "1") {
+    	   if(vore.seperator.equals("1")) {
     		   System.out.println("seperator가 1일때 :" + vore.getId());
     		   session.setAttribute("noin", vore);
     		   return "noin_main";
@@ -130,7 +133,8 @@ public class nahonsanController {
    
    @RequestMapping("/realnoin.do")
    public String realnoin(int idx) {
-	   naMapper.add_del(idx);
+	   requestVO vo = naMapper.findRequest(idx);
+	   naMapper.add_del(vo);
 	   return "redirect:/about3.do";
    }
    
@@ -231,6 +235,12 @@ public class nahonsanController {
 	   }else {
 		   return true;
 	   }
+   }
+   
+   @RequestMapping("/delrequest.do")
+   public String delrequest(int idx) {
+	   naMapper.delrequest(idx);
+	   return "redirect:/manage.do";
    }
    
 }

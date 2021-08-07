@@ -69,11 +69,12 @@
 	 <!--  
 	 <form action="" method="get" id="loginForm">
 	 -->
- 	<form action="${cpath}/noinsert.do" method = "post">
+ 	<form action="${cpath}/noinsert.do" method = "post" >
 	 <table>
 	<tr>
 		<td class="col2">
 			<input type="text" name=name  placeholder="이름">
+			<c:if test="${name eq null}"></c:if>
 		</td>
 	</tr>
 	<tr>
@@ -88,7 +89,7 @@
 	</tr>
 	<tr>
 		<td class="col2">
-			<input type="text" name=adress  placeholder="주소">
+			<input type="text" name=address  placeholder="주소">
 		</td>
 	</tr>
 	<tr>
@@ -103,9 +104,15 @@
 	</tr>
 	</table>
 	<br><br>
-	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn">신청하기</button></span>
+	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" disabled="disabled">신청하기</button></span>
+	<span><button type="button" class="btn btn-primary py-3 px-4 checkbtn" id='contentCheck'>검사하기</button></span>
 	</form>
+	<c:if test="${vore eq null}">
 	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/firstpage.do'">메인으로</button></span>
+	</c:if> 
+	<c:if test="${vore ne null}">
+	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/main.do'">메인으로</button></span>
+	</c:if> 
 	 </div> <br><br><br><br><br><br><br><br>
   
   
@@ -186,6 +193,31 @@
       	</div>
       </div>
     </footer>
+    
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
+  <script type="text/javascript">
+  	function nullCheck(){
+  		let cnt = 0;
+  		array = $('input[type="text"]');
+  		for(let i =0; i < array.length; i++){
+  			if($(array[i]).val() == ""){
+  				alert($(array[i]).attr('name') + '는 비워둘 수 없습니다.');
+  				$('.joinbtn').attr('disabled', true);
+  				cnt++;
+  				break;
+  			}
+  				
+  		}
+  		if (cnt == 0){
+  			alert('신청 가능합니다.')
+  			$('.joinbtn').attr('disabled', false);
+  		}
+  		
+  	}
+  	
+  	$('#contentCheck').on('click', nullCheck);
+  
+  </script>
 
 </body>
 </html>
