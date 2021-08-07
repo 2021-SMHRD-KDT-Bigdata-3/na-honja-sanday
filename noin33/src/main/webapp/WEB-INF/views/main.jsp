@@ -19,6 +19,7 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
     
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
@@ -27,6 +28,20 @@
      body{
     	font-family: 'NEXON Lv1 Gothic OTF';
     }
+    .str{
+    	font-family: 'TmonMonsori';
+    	font-size:80px;
+    	color:#589172;
+    	-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: white;
+    }
+    .week{
+    	font-family: 'TmonMonsori';
+    	color:#000000;
+    	-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: white;
+    	font-size:45px;
+    }
     </style>
   </head>
   <body>
@@ -34,40 +49,46 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<c:if test="${vore ne null}"><a class="hov" href="logout.do" style="color:white;">로그아웃</a></c:if> 
+					<c:if test="${vore eq null}"><a class="hov" href="gologin.do" style="color:white;">로그인</a></c:if> 
 				</div>
 			</div>
 		</div>
-    
+		
+		
+		
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/nahonsan/main.do">나혼자산데이</a>
+	      <a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> 메뉴
+	        <span class="oi oi-menu"></span> Menu
 	      </button>
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
+	      <div class="collapse navbar-collapse" id="ftco-nav" style="font-size:30px">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="/nahonsan/main.do" class="nav-link">홈</a></li>
-	          <li class="nav-item"><a href="/nahonsan/counselor.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item"><a href="/nahonsan/about2.do" class="nav-link">관리</a></li>
-	          <!-- 위험분석은 아직  -->
-	          <li class="nav-item"><a href="#" class="nav-link">위험분석</a></li>
-
+	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
+	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
+	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
+	          <c:if test="${vore ne null}">
+	          <c:if test="${vore.seperator eq 3}">
+	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
+	          </c:if>
+	          </c:if>
 	        </ul>
 	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
-    
-    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/bg_1.jpg'); height: 500px; position: relative;" data-stellar-background-ratio="0.5">
+     
+    <div class="hero-wrap" style="background-image: url('${cpath}/resources/images/ban.png'); height: 500px; position: relative; max-width:100%;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
-        <div style="height: 500px; position: relative;" class="row no-gutters slider-text align-items-center">
-          <div class="col-md-6 ftco-animate d-flex align-items-end">
-          	<div class="text w-100">
-	            <h1 class="mb-4">Counseling For Your Better Life</h1>
-	            <p class="mb-4">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+        <div class="row no-gutters slider-text align-items-center">
+          <div style="width:100%;" class="col-md-6 ftco-animate d-flex align-items-end ">
+          	<div class="text w-100" >
+	            <span class="mb-4 str">어르신</span><span class="week">들의</span><br><span class="str">행복한</span><span class="week">삶을 응원합니다</span>
+	            <p class="mb-4" style="background-image: url('${cpath}/resources/images/ban3.png'); height:70px; position:relative; background-repeat:no-repeat;"></p>
             </div>
           </div>
           
@@ -81,8 +102,8 @@
     	<div class="container">
     		<div class="row justify-content-center pb-5">
           <div class="col-md-7 heading-section text-center ftco-animate">
-          	<span class="subheading">Services</span>
-            <h2>How It Works</h2>
+          	<br>
+            <h2  style="font-family: 'NEXON Lv1 Gothic OTF Bold'; color:#589172;">Services</h2>
           </div>
         </div>
     		<div class="row justify-content-center">
@@ -121,13 +142,12 @@
 
 		  
     <section class="ftco-section testimony-section">
-    	<div class="img img-bg border" style="background-image: url(${cpath}/resources/images/bg_4.jpg);"></div>
+    	<div class="img img-bg border" style="background-image: url(${cpath}/resources/images/gmdp.png);"></div>
     	<div class="overlay"></div>
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-          	<span class="subheading">Testimonial</span>
-            <h2 class="mb-3">복지사 소개</h2>
+            <h2 class="mb-3"></h2>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -217,68 +237,8 @@
 
 		
 
-    <footer class="ftco-footer">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2 logo"><a href="#">Counselor</a></h2>
-              <p>Far far away, behind the word mountains, far from the countries.</p>
-              <ul class="ftco-footer-social list-unstyled mt-2">
-                <li class="ftco-animate"><a href="#"><span class="fa fa-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Explore</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>What We Do</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Plans &amp; Pricing</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Legal</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Join us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Privacy &amp; Policy</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Term &amp; Conditions</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Company</h2>
-              <ul class="list-unstyled">
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>About Us</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Blog</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Contact</a></li>
-                <li><a href="#"><span class="fa fa-chevron-right mr-2"></span>Careers</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md">
-            <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Questions?</h2>
-            	<div class="block-23 mb-3">
-	              <ul>
-	                <li><span class="icon fa fa-map marker"></span><span class="text">203 Fake St. Mountain View, San Francisco, California, USA</span></li>
-	                <li><a href="#"><span class="icon fa fa-phone"></span><span class="text">+2 392 3929 210</span></a></li>
-	                <li><a href="#"><span class="icon fa fa-paper-plane pr-4"></span><span class="text">info@yourdomain.com</span></a></li>
-	              </ul>
-	            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid px-0 py-5 bg-black">
+    <footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
+      <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">
 	          <div class="col-md-12">
@@ -312,6 +272,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
+  <script type="text/javascript">
+  </script>
     
   </body>
 </html>

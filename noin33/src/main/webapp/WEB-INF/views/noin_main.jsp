@@ -35,7 +35,7 @@
      <div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
 				</div>
 			</div>
 		</div>
@@ -45,7 +45,6 @@
      <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
 	      <a class="navbar-brand" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
-	  	  <div style="font-size:30px"><a href="firstpage.do" >로그아웃</a></div>
 	    </div>
 	  </nav>
     <!-- END nav -->

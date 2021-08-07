@@ -37,7 +37,8 @@ public interface nahonsanMapper {
 	public void delnoin(int idx);
 	@Select("select * from request where name = #{name} and regi_number = #{regi_number}")
 	public List<requestVO> noinselect(requestVO vo);
-
+	@Select("select * from member where id=#{id}")
+	public memberVO idCheck(memberVO vo);
 
 }
 

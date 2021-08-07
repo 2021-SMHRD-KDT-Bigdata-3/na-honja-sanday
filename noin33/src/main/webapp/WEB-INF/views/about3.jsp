@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>나혼자산DAY - 독거노인 낙상 감지 서비스</title>
+    <title>Counselor - Free Bootstrap 4 Template by Colorlib</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="shortcut icon" type="image/x-icon" href="${cpath}/resources/images/logo.jpg">
@@ -21,15 +21,11 @@
     
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
-    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      
      <style>
-     body{
-    	font-family: 'NEXON Lv1 Gothic OTF';
-    }
      	#tlscjd{
      		border:2px solid; border-collapse:collapse; text-align;center;
      		width : 100%;
@@ -40,11 +36,12 @@
      </style>
   </head>
   <body>
-
+	<c:set var="session" value="${vore}"/> 
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<c:if test="${vore ne null}"><a class="hov" href="logout.do" style="color:white;">로그아웃</a></c:if> 
+					<c:if test="${vore eq null}"><a class="hov" href="gologin.do" style="color:white;">로그인</a></c:if> 
 				</div>
 			</div>
 		</div>
@@ -58,11 +55,14 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item active"><a href="main.do" class="nav-link">홈</a></li>
-	          <li class="nav-item"><a href="About.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item"><a href="counselor.do" class="nav-link">관리</a></li>
-	          <li class="nav-item"><a href="services.do" class="nav-link">위험분석</a></li>
-
+	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
+	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
+	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
+	          <c:if test="${vore ne null}">
+	          <c:if test="${vore.seperator eq 3}">
+	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
+	          </c:if>
+	          </c:if>
 	        </ul>
 	      </div>
 	    </div>
@@ -84,7 +84,7 @@
                         </a>
                     </li>
                     <li class="">
-                        <a class="" href="${cpath}/About.do">
+                        <a class="" href="${cpath}/manage.do">
                             	관리 등록
                             <i class=""></i>
                         </a>
@@ -115,7 +115,7 @@
 							<th>삭제</th>
 							
 						</tr>
-					<c:forEach var="vo" items="${list1}">
+					<c:forEach var="vo" items="${list}">
 						<tr>
 							<td>${vo.idx}</td>
 							<td>${vo.name}</td>
@@ -125,6 +125,7 @@
 							<td>${vo.uniqueness}</td>
 							<td>${vo.aplication_date}</td>
 							<td><a href = "${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a></td>
+							<td> <button class='camOn'>On</button> </td>
 						</tr>
 					</c:forEach>						
 					</table>	  
@@ -291,6 +292,28 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
+  <script src="${cpath}/resources/js/jquery-3.6.0.js"> </script>
+  <script type="text/javascript">
+  function camOn(){
+	  $.ajax({
+			url : " http://211.105.165.117:9000/posedetection",
+			type : 'POST',
+			data : {
+				'email' : 'anansi7543@gmail.com',
+				'content' : 'content'
+			},
+			success(){
+				alert('Cam On!');
+			},
+			error(){
+				alert('error;;;')
+			}
+		})
+  }
+  
+  $(".camOn").on('click', camOn);
+  
+  </script>
     
   </body>
 </html>

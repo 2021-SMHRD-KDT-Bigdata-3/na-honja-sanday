@@ -19,13 +19,13 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/owl.theme.default.min.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/magnific-popup.css">
-    
+    <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/flaticon.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     
     <style>
-     body{
+     body, h1{
     	font-family: 'NEXON Lv1 Gothic OTF';
     }
     </style>
@@ -36,18 +36,26 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="firstpage.do" style="color:white;">로그아웃</a>
+					<a class="hov" href="gologin.do" style="color:white;">로그인</a>
+					<a class="hov" href="gojoin.do" style="color:white;">회원가입</a>
 				</div>
 			</div>
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand" href="/nahonsan/firstpage.do">나혼자산DAY</a>
-	     
-
-	  	  <div style="height:30px"><a href="gologin.do" >로그인</a></div>
+	      <a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	      
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> 메뉴
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav" style="font-size:30px">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스소개</a></li>
+	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
+	        </ul>
+	      </div>
 	    </div>
 	  </nav>
     <!-- END nav -->
@@ -58,7 +66,7 @@
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center">
-          <div class="col-md-6 ftco-animate d-flex align-items-end">
+          <div class="col-md-6 ftco-animate d-flex align-items-end" style="position:absolute; top:25%; left:25%;">
           	<div class="text w-100">
 	            	<h1 class="mb-4" style="width:1110px;max-width:100%">이름 : <input style="max-width:100%" class="mb-4" type="text" name = "name"></h1> 
 	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="password" name = "regi_number"> </h1>
@@ -206,7 +214,7 @@
   }
   
   function isChecked(res){
-	  
+	  console.log(res)
 	  if (res.length == 0){
 		  $('#modal_name').html($('input[name="name"]').val() + '님은');
 		  $('#modal_status').html('신청 내역이 없습니다.');
@@ -233,10 +241,6 @@
   $('.modal_close').on('click', offClick);
 
   }
-  
-
-  
-
 
   </script>
 

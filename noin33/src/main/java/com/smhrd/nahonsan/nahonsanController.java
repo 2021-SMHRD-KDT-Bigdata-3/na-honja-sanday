@@ -43,8 +43,14 @@ public class nahonsanController {
    public String first() {
       return "firstpage";
    }
-
    
+   @RequestMapping("/logout.do")
+   public String logout(HttpServletRequest request) {
+	  HttpSession session = request.getSession();
+	  session.invalidate();
+      return "firstpage";
+   }
+
    @RequestMapping("/gologin.do") // 로그인페이지에 바로 들어가려고 만들어논 임시 맵핑
    public String login() {
       return "login";
@@ -55,21 +61,23 @@ public class nahonsanController {
    public String login(memberVO vo, HttpServletRequest request){
 	   HttpSession session = request.getSession();
 	   memberVO vore = naMapper.login(vo);
-	   session.setAttribute("vore", vore);
+//	   System.out.println(vore.getId());
 	   
 	   if(vore == null) { 
-	    	  System.out.println("실패");
-	         return "login"; 
-	      }else {
-	    	  if(vore.seperator == "1") {
-	    		  System.out.println("seperator가 1일때 :" + vore.getId());
-	    		  return "noin_main";
-	    	  }else {
-	    		  System.out.println("seperator가 1이 아닐때 :" +vore.getId());
-	    		  return "main";
-	    	  }
-	      }
-	   } 
+    	  System.out.println("실패");
+         return "login"; 
+       }else {
+    	   if(vore.seperator == "1") {
+    		   System.out.println("seperator가 1일때 :" + vore.getId());
+    		   session.setAttribute("noin", vore);
+    		   return "noin_main";
+    	   }else {
+    	 	   System.out.println("seperator가 1이 아닐때 :" +vore.getId());
+    		   session.setAttribute("vore", vore);
+    		   return "main";
+    	  }
+       }
+   } 
       
       
   
@@ -117,7 +125,7 @@ public class nahonsanController {
    @RequestMapping(value = "/noinsert.do")
    public String main_guard(requestVO vo) {
      naMapper.addnoin(vo);
-      return "redirect:/About.do";
+      return "redirect:/help_success.do";
    }
    
    @RequestMapping("/realnoin.do")
@@ -164,7 +172,7 @@ public class nahonsanController {
 	}
 	//노인이 신청했는지 알아보고 조회 후 arraylist에 담아 res 라는 이름으로 ajax에 송출.
 	@RequestMapping(value = "/checkStatus.do")
-	public  @ResponseBody List<requestVO> noinselect(requestVO vo){
+	public @ResponseBody List<requestVO> noinselect(requestVO vo){
 		
 		List<requestVO> res =  naMapper.noinselect(vo);
 		
@@ -212,6 +220,17 @@ public class nahonsanController {
    @RequestMapping("/sevices.do")
    public String sevices() {
 	   return "service";
+   }
+   
+   @RequestMapping("/idCheck.do")
+   public @ResponseBody boolean idCheck(memberVO vo) {
+	   memberVO result = naMapper.idCheck(vo);
+	   
+	   if(result == null) {
+		   return false;
+	   }else {
+		   return true;
+	   }
    }
    
 }

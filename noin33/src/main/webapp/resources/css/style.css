@@ -6387,7 +6387,7 @@ button.bg-dark:focus {
   width: 75% !important; }
 
 .w-100 {
-  width: 100% !important; }
+  width: 100%; }
 
 .w-auto {
   width: auto !important; }
@@ -8036,7 +8036,7 @@ a {
 h1, h2, h3, h4, h5,
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
-  color: rgba(0, 0, 0, 0.7);
+  color: #000000;
   font-weight: 400; }
 
 .wrap {
@@ -8102,7 +8102,7 @@ h1, h2, h3, h4, h5,
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0;
-        color: #fff; } }
+        color: #000000; } }
   .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
     border: none;
     background: #fff;
@@ -8157,7 +8157,7 @@ h1, h2, h3, h4, h5,
       color: #589167; } }
   .ftco-navbar-light .navbar-toggler {
     border: none;
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: #000000 !important;
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
@@ -8250,11 +8250,11 @@ h1, h2, h3, h4, h5,
   position: relative;
   z-index: 0; }
   .hero-wrap.hero-wrap-2 {
-    height: 400px !important;
+    height: 400px;
     position: relative; }
     .hero-wrap.hero-wrap-2 .overlay {
       width: 100%;
-      height: 400px;
+      height: 200px;
       position: absolute;
       top: 0;
       left: 0;
@@ -8271,7 +8271,7 @@ h1, h2, h3, h4, h5,
       background: linear-gradient(45deg, #589167 0%, rgba(88, 145, 103, 0) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#589167', endColorstr='#589167', GradientType=1 ); }
     .hero-wrap.hero-wrap-2 .slider-text {
-      height: 400px !important; }
+      height: 200px !important; }
 
 .slider-text {
   height: 500px;
