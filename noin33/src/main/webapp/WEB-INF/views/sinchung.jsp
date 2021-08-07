@@ -74,7 +74,7 @@
 	<tr>
 		<td class="col2" id="inputck">
 			<input type="text" name=name  placeholder="이름">
-			<c:if test="${name ne null}"></c:if>
+			<c:if test="${name eq null}"></c:if>
 		</td>
 	</tr>
 	<tr>
@@ -104,7 +104,7 @@
 	</tr>
 	</table>
 	<br><br>
-	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn">신청하기</button></span>
+	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" id="inputck" >신청하기</button></span>
 	</form>
 	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/firstpage.do'">메인으로</button></span>
 	 </div> <br><br><br><br><br><br><br><br>
@@ -190,7 +190,14 @@
  <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
  <script>
- 	
+ 	$('#inputck').on('click',function(){
+ 		if($(name) == null){
+ 			alert('빈칸을 모두 채워주세요');
+ 		}
+ 	})
+ 
+ 
+ 
  </script>
 </body>
 </html>

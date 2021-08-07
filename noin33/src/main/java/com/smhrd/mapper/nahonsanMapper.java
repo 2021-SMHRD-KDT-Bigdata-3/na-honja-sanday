@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Select;
 
 public interface nahonsanMapper {
 
-	//로그인 임시
+	//로그인
 	public memberVO login(memberVO vo);
 	
 	//회원가입

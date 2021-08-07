@@ -232,6 +232,10 @@
   document.querySelector('.modal_close').addEventListener('click', offClick);
 
   };
+  
+  $('#loginform').on('click', function(){
+	  
+  })
   </script>
 </body>
 </html>
