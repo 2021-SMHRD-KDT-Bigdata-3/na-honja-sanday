@@ -104,7 +104,6 @@
 	</tr>
 	</table>
 	<br><br>
-	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" id="inputck" >신청하기</button></span>
 	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" disabled="disabled">신청하기</button></span>
 	<span><button type="button" class="btn btn-primary py-3 px-4 checkbtn" id='contentCheck'>검사하기</button></span>
 	</form>

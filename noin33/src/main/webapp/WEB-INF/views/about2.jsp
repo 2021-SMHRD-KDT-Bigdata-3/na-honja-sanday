@@ -151,7 +151,7 @@
 	       		  	</tr>
 	       		  	<tr>
 						<td>주소</td>
-						<td><input type="text" name = "adress"></td>	       		  	
+						<td><input type="text" name = "address"></td>	       		  	
 	       		  	</tr>
 	       		  	<tr>
 						<td>연락처</td>
