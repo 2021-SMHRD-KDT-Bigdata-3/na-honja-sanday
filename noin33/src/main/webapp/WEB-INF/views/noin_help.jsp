@@ -127,21 +127,21 @@
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
   <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
-  <script type="text/javascript">
+<script type="text/javascript">
   function sendemail(){
-	  $.ajax({
-			url : "http://211.105.165.117:9000/email",
-			type : "post",
-			data : {"email" : "wodnd1593@naver.com",
-				   "content" : $(this).html()},
-			success : (res) =>{
-				console.log(res);
-			},
-			error : () => {
-				alert("fail");
-			}
-		})
-	  
+     $.ajax({
+         url : "http://211.105.165.117:9000/email",
+         type : "post",
+         data : {"email" : "wodnd1593@naver.com",
+               "content" : $(this).html()},
+         success : (res) =>{
+            console.log(res);
+         },
+         error : () => {
+            alert("fail");
+         }
+      })
+     
   }
   $("#btn-together").on("click", sendemail)
   $("#btn-song").on("click", sendemail)
