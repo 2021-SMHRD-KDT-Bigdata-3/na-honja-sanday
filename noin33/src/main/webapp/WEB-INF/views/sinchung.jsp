@@ -72,7 +72,7 @@
  	<form action="${cpath}/noinsert.do" method = "post" >
 	 <table>
 	<tr>
-		<td class="col2" id="inputck">
+		<td class="col2">
 			<input type="text" name=name  placeholder="이름">
 			<c:if test="${name eq null}"></c:if>
 		</td>
