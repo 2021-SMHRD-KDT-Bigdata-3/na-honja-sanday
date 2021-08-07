@@ -233,4 +233,10 @@ public class nahonsanController {
 	   }
    }
    
+   @RequestMapping("/delrequest.do")
+   public String delrequest(int idx) {
+	   naMapper.delrequest(idx);
+	   return "redirect:/manage.do";
+   }
+   
 }
