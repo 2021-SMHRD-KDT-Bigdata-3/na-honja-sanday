@@ -75,6 +75,7 @@
 
          <div class="collapse navbar-collapse" id="ftco-nav">
            <ul class="navbar-nav ml-auto">
+
              <li class="nav-item hov"><a href="noin_main.do" class="nav-link">홈</a></li>
              <li class="nav-item hov"><a href="noin_help.do" class="nav-link">복지사 호출</a></li>
              <li class="nav-item hov"><a href="noin_friend.do" class="nav-link">친구 찾기</a></li>
