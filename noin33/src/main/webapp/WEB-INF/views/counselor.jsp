@@ -52,7 +52,7 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      <a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	      
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 메뉴
@@ -60,7 +60,7 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav" style="font-size:30px">
 	        <ul class="navbar-nav ml-auto">
-	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
+	          <li class="nav-item hov"><a href="firstpage.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
 	          <c:if test="${vore ne null}">
