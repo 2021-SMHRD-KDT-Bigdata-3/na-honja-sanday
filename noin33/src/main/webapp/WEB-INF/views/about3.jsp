@@ -73,7 +73,7 @@
 				<div align="right">
 				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
 					<c:if test="${vore ne null}">
-					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
 					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
 					</c:if> 
 					<c:if test="${vore eq null}">

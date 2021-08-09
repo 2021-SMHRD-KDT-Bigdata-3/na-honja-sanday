@@ -42,7 +42,7 @@
 				<div align="right">
 				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
 					<c:if test="${vore ne null}">
-					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
 					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
 					</c:if> 
 					<c:if test="${vore eq null}">
@@ -72,7 +72,7 @@
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item hov"><a href="about2.do" class="nav-link">신청</a></li>
+	          <li class="nav-item hov"><a href="sinchung.do" class="nav-link">신청</a></li>
 	          </c:if>
 	          <c:if test="${vore.seperator eq 3}">
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
