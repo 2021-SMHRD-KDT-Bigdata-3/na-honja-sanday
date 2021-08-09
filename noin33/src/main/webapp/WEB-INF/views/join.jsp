@@ -83,7 +83,7 @@
       			<select id='selector'>
       			<option>선택</option>
            		<option value='${cpath}/join_welfare.do'>복지사</option>
-        	    <option value='${cpath}/join_gardian.do'>보호자</option>
+        	    <option value='${cpath}/join_guardian.do'>보호자</option>
          		</select>
       		</td>
       	</tr>
