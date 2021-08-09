@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>  
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +39,11 @@
     <div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
+				<c:set var="idName" value="${fn:split(noin.id,'///@')}"></c:set>
+					<c:if test="${noin ne null}">
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>

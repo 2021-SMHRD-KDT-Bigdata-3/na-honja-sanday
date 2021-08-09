@@ -44,8 +44,14 @@
     <div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<c:if test="${vore ne null}"><a class="hov" href="logout.do" style="color:white;">로그아웃</a></c:if> 
-					<c:if test="${vore eq null}"><a class="hov" href="gologin.do" style="color:white;">로그인</a></c:if> 
+				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
+					<c:if test="${vore ne null}">
+					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
+					<c:if test="${vore eq null}">
+					<a class="hov" href="gologin.do" style="color:white;">로그인</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>

@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%> 
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,11 +58,14 @@
     </style>
   </head>
   <body>
-
-     <div class="wrap" >
+		<div style="position: relative;z-index: 0; width: 100%; background: #589167;" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
+				<c:set var="idName" value="${fn:split(noin.id,'///@')}"></c:set>
+					<c:if test="${noin ne null}">
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>
@@ -73,9 +77,8 @@
            <span class="oi oi-menu"></span> 메뉴
          </button>
 
-         <div class="collapse navbar-collapse" id="ftco-nav">
+        <div class="collapse navbar-collapse" id="ftco-nav">
            <ul class="navbar-nav ml-auto">
-
              <li class="nav-item hov"><a href="noin_main.do" class="nav-link">홈</a></li>
              <li class="nav-item hov"><a href="noin_help.do" class="nav-link">복지사 호출</a></li>
              <li class="nav-item hov"><a href="noin_friend.do" class="nav-link">친구 찾기</a></li>

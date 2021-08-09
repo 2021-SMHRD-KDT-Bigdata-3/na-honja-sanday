@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,8 +50,14 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<c:if test="${vore ne null}"><a class="hov" href="logout.do" style="color:white;">로그아웃</a></c:if> 
-					<c:if test="${vore eq null}"><a class="hov" href="gologin.do" style="color:white;">로그인</a></c:if> 
+				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
+					<c:if test="${vore ne null}">
+					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
+					<c:if test="${vore eq null}">
+					<a class="hov" href="gologin.do" style="color:white;">로그인</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>
@@ -115,17 +122,25 @@
     					<c:if test="${vore ne null}">
 				        <c:if test="${vore.seperator eq 3}">
 				        <a href="/nahonsan/about2.do">
+    						<div class="icon-wrap">
+    							<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
+	    						<div class="icon d-flex align-items-center justify-content-center">
+	    							<span class="flaticon-calendar"></span>
+	    						</div>
+    						</div>
+    					</a>
 				        </c:if>
 				        <c:if test="${vore.seperator eq 2}">
 				        <a href="/nahonsan/sinchung.do">
-				        </c:if>
-				        </c:if>
-    					<div class="icon-wrap">
+				        <div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
 	    					<div class="icon d-flex align-items-center justify-content-center">
 	    						<span class="flaticon-calendar"></span>
 	    					</div>
-    					</div></a>
+    					</div>
+    					</a>
+				        </c:if>
+				        </c:if>
     					<h2>관리 신청</h2>
     				</div>
     			</div>
