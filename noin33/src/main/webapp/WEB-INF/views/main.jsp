@@ -244,7 +244,15 @@
       </div>
     </section>
 
-
+	<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_1.jpg);background-size:100%;">
+		<div class="overlay"></div>
+    	<div class="container">
+    		<div class="row">
+    			
+    		</div>
+    	</div>
+    </section>
+	
 		
 
 	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
