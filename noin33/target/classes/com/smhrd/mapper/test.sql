@@ -13,10 +13,6 @@ address varchar(50),
 seperator varchar(10) not null,   
 constraint guard_email primary key(email))
 
-select * from guardian;
-select * from member;
-delete from guardian where email='admin';
-
 --복지사 테이블 --
 create table welfare_worker(
 email varchar(100),
@@ -127,8 +123,6 @@ primary key(idx));
 select * from request;
 alter table request CHANGE adress address varchar(100) not null;
 
-select * from senior;
-
 --신청테이블에서 신청등록하기.
 insert into request(seperator,name,age,regi_number,adress,phone,uniqueness) values(
 '1','김이겸',69,'370111-1552011','광주 동구 산수동 동산로얄 아파트 101동 101호','010-1111-2222','때때로 가슴을 부여잡고 아픔을 호소함.'
@@ -155,5 +149,4 @@ commit;
 
 select * from member;
 
-delete from member;
 -- 노인의 호출 서비스 보여주는 테이블--
