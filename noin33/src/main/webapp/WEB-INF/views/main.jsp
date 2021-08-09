@@ -239,7 +239,7 @@
       </div>
     </section>
 
-	<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/unnamed.jpg);background-size:100%;">
+	<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/unnamed.jpg);background-size:100%; max-width:100%;">
 		<div class="overlay"></div>
     	<div class="container">
     		<div class="row">
