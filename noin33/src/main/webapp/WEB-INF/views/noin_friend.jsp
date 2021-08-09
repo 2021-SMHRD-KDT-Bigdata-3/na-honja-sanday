@@ -457,10 +457,10 @@ function sendemail(co2,pr){
 				"title" : "${noin.id}"+"님이 보낸 메세지",   
 				"content" : "${noin.id}님이 "+co2+"에서 \n"+pr+" 를  신청하셨습니다."},
 			success : (res) =>{
-				alert("성공");
+				alert("신청되셨습니다. 복지사에게 메일이 보내졌습니다.");
 			},
 			error : () => {
-				alert("fail");
+				alert("잘못된 요청입니다. 다시 시도해주세요.");
 			}
 		})
 	  
