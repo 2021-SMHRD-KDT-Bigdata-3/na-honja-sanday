@@ -110,9 +110,9 @@
       	</tr>
       </table>
       <br><br>
-      <span> <button type="submit" class="btn btn-primary py-3 px-4 joinbtn">확인</button> </span>
-      <span> <button class="btn btn-white py-3 px-4 joinbtn" onclick="location.href='firstpage.do'">메인으로</button> </span>
+      <button type="submit" class="btn btn-primary py-3 px-4 joinbtn">확인</button>
       </form>
+       <button class="btn btn-white py-3 px-4 joinbtn" onclick="location.href='firstpage.do'">메인으로</button>
    </div> <br><br>
    
    
