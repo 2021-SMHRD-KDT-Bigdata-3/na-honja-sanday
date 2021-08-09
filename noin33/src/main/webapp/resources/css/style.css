@@ -8643,6 +8643,9 @@ h1, h2, h3, h4, h5,
 textarea.form-control {
   height: inherit !important; }
 
+.ftco-animate {
+  opacity: 1;
+  visibility: visible; }
 
 .bg-primary {
   background: #589167 !important; }
@@ -8864,7 +8867,7 @@ textarea.form-control {
     width: 100%;
     content: '';
     opacity: .5;
-    background: #589167; }
+    background: #fff; }
   .ftco-appointment .half {
     width: 100%; }
     .ftco-appointment .half h2 {

@@ -112,8 +112,8 @@
     	<div class="container-fluid px-0">
     		<div class="row no-gutters" style="max-width:100%">
     			<div class="col-md-6">
-    				<div class="services-wrap d-flex same" >
-    					<div class="img"><img style="width:100%; " src="${cpath}/resources/images/naksang.png"></div>
+    				<div class="services-wrap d-flex same" style="height:320px; background-color:white;" >
+    					<div class="img" style="background-image:url('${cpath}/resources/images/naksang.png');background-size:320px;"></div>
     					<div class="text" style="height:320px">
     						<h2>낙상 감지<br> 서비스</h2>
     						<p>독거노인 어르신분의 집에 cctv를 설치하여, 낙상 상황 발생시 복지사에게 이메일을 통해 알림이 가서 빠른 대처를 도와줍니다.</p>
@@ -121,8 +121,8 @@
     				</div>
     			</div>
     			<div class="col-md-6">
-    				<div class="services-wrap d-flex same">
-    					<div class="img"><img style="width:100%;" src="${cpath}/resources/images/helping.png"></div>
+    				<div class="services-wrap d-flex same" style="height:320px; background-color:white;">
+    					<div class="img" style="background-image:url('${cpath}/resources/images/helping.png');background-size:320px;"></div>
     					<div class="text" style="height:320px">
     						<h2>복지사 호출 <br>서비스</h2>
     						<p>독거노인 어르신분이 필요하신 서비스에 맞게 버튼을 클릭하면 복지사에게 이메일을 통해 알림이 가서 빠른 서비스를 도와줍니다.</p>
@@ -131,8 +131,8 @@
     			</div>
 
     			<div class="col-md-6">
-    				<div class="services-wrap d-flex same">
-    					<div class="img order-md-last"><img style="width:100%; display:inline; margin-top:15%;" src="${cpath}/resources/images/friends.png"></div>
+    				<div class="services-wrap d-flex same" style="height:320px; background-color:white;">
+    					<div class="img order-md-last" style="background-image:url('${cpath}/resources/images/friends.png');background-size:320px;"></div>
     					<div class="text" style="height:320px">
     						<h2>친구만들기<br> 서비스</h2>
     						<p>각 지역에서 시행하는 독거노인 친구만들기 프로그램을 하는 장소를 알려주고, 참여 할 수 있게 도와주는 서비스 입니다.</p>
@@ -140,8 +140,8 @@
     				</div>
     			</div>
     			<div class="col-md-6">
-    				<div class="services-wrap d-flex same">
-    					<div class="img order-md-last"><img style="width:100%; display:inline; margin-top:20%;" src="${cpath}/resources/images/deep.jpg"></div>
+    				<div class="services-wrap d-flex same" style="height:320px; background-color:white;">
+    					<div class="img order-md-last" style="background-image:url('${cpath}/resources/images/deep.jpg');background-size:320px;"></div>
     					<div class="text" style="height:320px">
     						<h2>딥러닝 기반<br> 서비스</h2>
     						<p>독거노인 어르신의 집에 설치된 cctv에서 녹화되는 영상을 초 단위로 추출해 낙상 데이터 모델에 적용하여 낙상을 감지 하는 딥러닝 기반 서비스 입니다.</p>
@@ -151,6 +151,8 @@
     		</div>
     	</div>
     </section>
+   
+   
    
    
 	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">

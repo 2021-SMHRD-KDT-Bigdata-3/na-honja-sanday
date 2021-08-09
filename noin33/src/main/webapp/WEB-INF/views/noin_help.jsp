@@ -98,6 +98,7 @@
                 <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
               </ul>
+
 	        </div>
 	          </div>
 	        </div>
@@ -127,6 +128,7 @@
   <script src="${cpath}/resources/js/google-map.js"></script>
   <script src="${cpath}/resources/js/main.js"></script>
   <script src="${cpath}/resources/js/jquery-3.6.0.js"></script>
+
 <script type="text/javascript">
   function sendemail(){
      $.ajax({
