@@ -50,7 +50,7 @@
            <span class="oi oi-menu"></span> 메뉴
          </button>
 
-         <div class="collapse navbar-collapse" id="ftco-nav">
+        <div class="collapse navbar-collapse" id="ftco-nav">
            <ul class="navbar-nav ml-auto">
              <li class="nav-item hov"><a href="noin_main.do" class="nav-link">홈</a></li>
              <li class="nav-item hov"><a href="noin_help.do" class="nav-link">복지사 호출</a></li>
@@ -137,10 +137,11 @@
          data : {"email" : "wodnd1593@naver.com",
                "content" : $(this).html()},
          success : (res) =>{
+        	 alert("복지사에게 메세지가 전달되었습니다.");
             console.log(res);
          },
          error : () => {
-            alert("fail");
+            alert("메세지 전송실패. 다시 시도해주세요.");
          }
       })
      
