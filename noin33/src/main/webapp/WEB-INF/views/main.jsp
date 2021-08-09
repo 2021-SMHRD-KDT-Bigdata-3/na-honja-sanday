@@ -239,16 +239,25 @@
       </div>
     </section>
 
-	<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_1.jpg);background-size:100%;">
+	<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/unnamed.jpg);background-size:100%;">
 		<div class="overlay"></div>
     	<div class="container">
     		<div class="row">
-    			
+    			<div class="col-md-6 half ftco-animate">
+    				<h2  style="font-family: 'NEXON Lv1 Gothic OTF Bold'; color:#fff;">모션 인식을 활용한 낙상 감지</h2>
+    				<form action="#" class="appointment">
+    					<div class="row">
+		    			<img src="${cpath}/resources/images/last.png" style="height:300px;">
+		    			
+						
+    					</div>
+	          </form>
+    			</div>
     		</div>
     	</div>
     </section>
 	
-		
+	    
 
 	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
