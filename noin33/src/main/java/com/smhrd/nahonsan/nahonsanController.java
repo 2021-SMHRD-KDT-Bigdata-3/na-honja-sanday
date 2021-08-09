@@ -117,14 +117,7 @@ public class nahonsanController {
    public String apply() {
       return "blog";
    }
-   @RequestMapping("/blog-single.do")
-   public String apply_complete() {
-      return "blog-single";
-   }
-   @RequestMapping("/contract.do")
-   public String apply_status() {
-      return "contract";
-   }
+ 
    @RequestMapping(value = "/noinsert.do")
    public String main_guard(requestVO vo) {
      naMapper.addnoin(vo);
@@ -214,16 +207,6 @@ public class nahonsanController {
    @RequestMapping("/main.do") // 복지사,보호자의 메인
    public String main() {
 	   return "main";
-   }
-   
-   @RequestMapping("/pricing.do")
-   public String pricing() {
-	   return "pricing";
-   }
-  
-   @RequestMapping("/sevices.do")
-   public String sevices() {
-	   return "service";
    }
    
    @RequestMapping("/idCheck.do")
