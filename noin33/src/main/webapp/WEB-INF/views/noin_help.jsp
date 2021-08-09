@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>  
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -38,7 +39,11 @@
     <div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
+				<c:set var="idName" value="${fn:split(noin.id,'///@')}"></c:set>
+					<c:if test="${noin ne null}">
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>
@@ -50,7 +55,7 @@
            <span class="oi oi-menu"></span> 메뉴
          </button>
 
-         <div class="collapse navbar-collapse" id="ftco-nav">
+        <div class="collapse navbar-collapse" id="ftco-nav">
            <ul class="navbar-nav ml-auto">
              <li class="nav-item hov"><a href="noin_main.do" class="nav-link">홈</a></li>
              <li class="nav-item hov"><a href="noin_help.do" class="nav-link">복지사 호출</a></li>
@@ -113,7 +118,7 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
-  <script src="${cpath}/resources/js/jquery.min.js"></script>
+ <script src="${cpath}/resources/js/jquery.min.js"></script>
   <script src="${cpath}/resources/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="${cpath}/resources/js/popper.min.js"></script>
   <script src="${cpath}/resources/js/bootstrap.min.js"></script>
@@ -137,10 +142,11 @@
          data : {"email" : "wodnd1593@naver.com",
                "content" : $(this).html()},
          success : (res) =>{
+        	 alert("복지사에게 메세지가 전달되었습니다.");
             console.log(res);
          },
          error : () => {
-            alert("fail");
+            alert("메세지 전송실패. 다시 시도해주세요.");
          }
       })
      

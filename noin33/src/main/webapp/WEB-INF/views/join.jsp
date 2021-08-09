@@ -83,14 +83,14 @@
       			<select id='selector'>
       			<option>선택</option>
            		<option value='${cpath}/join_welfare.do'>복지사</option>
-        	    <option value='${cpath}/join_gardian.do'>보호자</option>
+        	    <option value='${cpath}/join_guardian.do'>보호자</option>
          		</select>
       		</td>
       	</tr>
       	<tr>
       		<td class="col1">이메일</td>
       		<td class="col2"><input style="width:60%;"type="text" name="email" id="" placeholder="Email을 입력하세요">
-      		<button type='button' id="btn1" style="width:30%;" class="">중복 확인</button></td>
+      		<button type='button' id="btn1" style="width:30%; height:36px;" class="btn btn-primary px-4 joinbtn">중복 확인</button></td>
       	</tr>
       	<tr>
       		<td class="col1">비밀번호</td>
@@ -110,9 +110,9 @@
       	</tr>
       </table>
       <br><br>
-      <span> <button type="submit" class="btn btn-primary py-3 px-4 joinbtn">확인</button> </span>
-      <span> <button class="btn btn-white py-3 px-4 joinbtn" onclick="location.href='firstpage.do'">메인으로</button> </span>
+      <button type="submit" class="btn btn-primary py-3 px-4 joinbtn">확인</button>
       </form>
+       <button class="btn btn-white py-3 px-4 joinbtn" onclick="location.href='firstpage.do'">메인으로</button>
    </div> <br><br>
    
    

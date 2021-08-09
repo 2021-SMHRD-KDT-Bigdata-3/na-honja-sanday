@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -49,8 +50,14 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<c:if test="${vore ne null}"><a class="hov" href="logout.do" style="color:white;">로그아웃</a></c:if> 
-					<c:if test="${vore eq null}"><a class="hov" href="gologin.do" style="color:white;">로그인</a></c:if> 
+				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
+					<c:if test="${vore ne null}">
+					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
+					<c:if test="${vore eq null}">
+					<a class="hov" href="gologin.do" style="color:white;">로그인</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>
@@ -115,17 +122,25 @@
     					<c:if test="${vore ne null}">
 				        <c:if test="${vore.seperator eq 3}">
 				        <a href="/nahonsan/about2.do">
+    						<div class="icon-wrap">
+    							<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
+	    						<div class="icon d-flex align-items-center justify-content-center">
+	    							<span class="flaticon-calendar"></span>
+	    						</div>
+    						</div>
+    					</a>
 				        </c:if>
 				        <c:if test="${vore.seperator eq 2}">
 				        <a href="/nahonsan/sinchung.do">
-				        </c:if>
-				        </c:if>
-    					<div class="icon-wrap">
+				        <div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
 	    					<div class="icon d-flex align-items-center justify-content-center">
 	    						<span class="flaticon-calendar"></span>
 	    					</div>
-    					</div></a>
+    					</div>
+    					</a>
+				        </c:if>
+				        </c:if>
     					<h2>관리 신청</h2>
     				</div>
     			</div>
@@ -139,7 +154,7 @@
 	    						<span class="flaticon-qa"></span>
 	    					</div>
     					</div></a>
-    					<h2>위험 분석</h2>
+    					<h2>위험 분석(예정)</h2>
     				</div>
     			</div>
     			
@@ -157,7 +172,7 @@
       <div class="container">
         <div class="row justify-content-center mb-5">
           <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-            <h2 class="mb-3"></h2>
+            <h2 class="mb-3">자주 찾는 질문</h2>
           </div>
         </div>
         <div class="row ftco-animate">
@@ -166,13 +181,12 @@
               <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
+                  <div class="text" style="height:300px;">
+		                    <p class="name">Q. 운영인력은 어떻게 되나요?</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_1.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
+                    	<p class="mb-4">  </p>
+		                    <span class="position">A. 사회복지사, 간호조무사, 요양보호사 등 자격을 갖춘 분들이 상시 근무 중입니다.</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -181,13 +195,12 @@
               <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
+                  <div class="text" style="height:300px;">
+		                    <p class="name">Q. 기초생활수급자도 관리를 받을 수 있나요?</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_2.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
+                    	<p class="mb-4">  </p>
+		                    <span class="position">A. 가능합니다. 자세한 사항은 지역 관할센터에 문의 바랍니다.</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -196,13 +209,12 @@
               <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
+                  <div class="text" style="height:300px;">
+		                    <p class="name">Q. 어떤 서비스를 제공해 주나요?</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_3.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
+                    	<p class="mb-4">  </p>
+		                    <span class="position">A. 보호대상의 동의하에 AI가 형체만 인식가능한 카메라를 통해 위험상황을 감지합니다. 만약 위험하다고 생각되는 상황이 발생하면, 복지사와 보호자에게 알림이 가고 복지사는 그 즉시 카메라를 통해 상황을 판단할 수 있도록 합니다. </span>
 		                  </div>
 	                  </div>
                   </div>
@@ -211,13 +223,12 @@
               <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
+                  <div class="text" style="height:300px;">
+		                    <p class="name">Q. 해당 서비스는 왜 만들었나요?</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_1.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
+                    	<p class="mb-4">  </p>
+		                    <span class="position">A. 우리나라는 2021년 올해 기준 전체인구 대비 고령인구비율이 16.5%로 고령사회입니다. 이에따라 국가에서 노인 돌봄 복지서비스를 제공하나 실상 아쉬운 부분이 많은 것이 사실입니다. 이러한 아쉬움을 조금이나마 채워보기 위해 노약자에게 가장 취약한 위험상황에 대한 대처를 보다 빠르게 하기 위해 착안해낸 아이디어 입니다.</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -226,13 +237,12 @@
               <div class="item">
                 <div class="testimony-wrap py-4">
                 	<div class="icon d-flex align-items-center justify-content-center"><span class="fa fa-quote-left"></div>
-                  <div class="text">
-                    <p class="mb-4">간단한 소개?</p>
+                 <div class="text" style="height:300px;">
+		                    <p class="name">Q. 운영인력은 어떻게 되나요?</p>
                     <div class="d-flex align-items-center">
-                    	<div class="user-img" style="background-image: url(${cpath}/resources/images/person_2.jpg)"></div>
                     	<div class="pl-3">
-		                    <p class="name">이름</p>
-		                    <span class="position">뭐 쓸지 고민중</span>
+                    	<p class="mb-4">  </p>
+		                    <span class="position">A. 사회복지사, 간호조무사, 요양보호사 등 자격을 갖춘 분들이 상시 근무 중입니다.</span>
 		                  </div>
 	                  </div>
                   </div>
@@ -244,16 +254,23 @@
       </div>
     </section>
 
-	<section class="ftco-appointment ftco-section img" style="background-image: url(${cpath}/resources/images/bg_1.jpg);background-size:100%;">
+	<section class="ftco-appointment ftco-section img" >
 		<div class="overlay"></div>
     	<div class="container">
     		<div class="row">
-    			
+    			<div class="half ftco-animate">
+    				<h2  style="font-family: 'NEXON Lv1 Gothic OTF Bold'; color:#fff;">모션 인식을 활용한 낙상 감지</h2>
+    					<div >
+		    			<img src="${cpath}/resources/images/banner123.png" style="max-width:100%;">
+		    			
+						
+    					</div>
+    			</div>
     		</div>
     	</div>
     </section>
 	
-		
+	    
 
 	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">

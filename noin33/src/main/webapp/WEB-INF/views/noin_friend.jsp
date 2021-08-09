@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%> 
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,11 +58,14 @@
     </style>
   </head>
   <body>
-
-     <div class="wrap" >
+		<div style="position: relative;z-index: 0; width: 100%; background: #589167;" >
 			<div class="container" >
 				<div align="right">
-					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
+				<c:set var="idName" value="${fn:split(noin.id,'///@')}"></c:set>
+					<c:if test="${noin ne null}">
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>
@@ -73,7 +77,7 @@
            <span class="oi oi-menu"></span> 메뉴
          </button>
 
-         <div class="collapse navbar-collapse" id="ftco-nav">
+        <div class="collapse navbar-collapse" id="ftco-nav">
            <ul class="navbar-nav ml-auto">
              <li class="nav-item hov"><a href="noin_main.do" class="nav-link">홈</a></li>
              <li class="nav-item hov"><a href="noin_help.do" class="nav-link">복지사 호출</a></li>
@@ -457,10 +461,10 @@ function sendemail(co2,pr){
 				"title" : "${noin.id}"+"님이 보낸 메세지",   
 				"content" : "${noin.id}님이 "+co2+"에서 \n"+pr+" 를  신청하셨습니다."},
 			success : (res) =>{
-				alert("성공");
+				alert("신청되셨습니다. 복지사에게 메일이 보내졌습니다.");
 			},
 			error : () => {
-				alert("fail");
+				alert("잘못된 요청입니다. 다시 시도해주세요.");
 			}
 		})
 	  

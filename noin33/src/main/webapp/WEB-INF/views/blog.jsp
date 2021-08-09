@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>   
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,15 +40,21 @@
   	<div class="wrap" >
 			<div class="container" >
 				<div align="right">
-					<c:if test="${vore ne null}"><a class="hov" href="logout.do" style="color:white;">로그아웃</a></c:if> 
-					<c:if test="${vore eq null}"><a class="hov" href="gologin.do" style="color:white;">로그인</a></c:if> 
+				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
+					<c:if test="${vore ne null}">
+					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
+					</c:if> 
+					<c:if test="${vore eq null}">
+					<a class="hov" href="gologin.do" style="color:white;">로그인</a>
+					</c:if> 
 				</div>
 			</div>
 		</div>
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      <a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
 	      
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 메뉴
@@ -55,11 +62,22 @@
 
 	      <div class="collapse navbar-collapse" id="ftco-nav" style="font-size:30px">
 	        <ul class="navbar-nav ml-auto">
+	          <c:if test="${vore eq null}">
+	          <li class="nav-item hov"><a href="firstpage.do" class="nav-link">홈</a></li>
+	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
+	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
+	          </c:if>
+	          <c:if test = "${vore ne null}">
+	          <c:if test="${vore.seperator eq 2}">
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
-	          <c:if test="${vore ne null}">
+	          <li class="nav-item hov"><a href="about2.do" class="nav-link">신청</a></li>
+	          </c:if>
 	          <c:if test="${vore.seperator eq 3}">
+	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
+	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
+	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
 	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
 	          </c:if>
 	          </c:if>
