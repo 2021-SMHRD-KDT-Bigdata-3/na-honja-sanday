@@ -58,7 +58,9 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      <c:if test="${vore.seperator eq 1}"><a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a> </c:if>
+	      <c:if test="${vore.seperator eq 2}"><a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a> </c:if>
+	      <c:if test="${vore.seperator eq 3}"><a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a> </c:if>
 	      
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 메뉴
