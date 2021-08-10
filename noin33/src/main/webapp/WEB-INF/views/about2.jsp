@@ -121,8 +121,8 @@
 			<div class="container">
 			
 				<div class="row" >
-					<div style="width:20%; margin-top:50px;">
-						<h1 class="">관리</h1>
+					<div style="width:20%; margin-top:50px; margin-left:50px;">
+						<h1 >관리</h1>
                 <ul class="">
                     <li class="">
                         <a class="" href="${cpath}/about3.do">
@@ -195,9 +195,9 @@
 			</div>
 			
 			</div>
+			</div>
 					
 					
-		</div>
 		</section>
     
     
