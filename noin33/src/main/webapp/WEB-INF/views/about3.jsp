@@ -108,7 +108,7 @@
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
+	          <li class="nav-item hov"><a href="about3.do" class="nav-link">관리</a></li>
 	          </c:if>
 	          </c:if>
 	        </ul>
@@ -119,12 +119,21 @@
     
     
     
+    
+    
+    
     <section class="ftco-section ftco-no-pb ftco-no-pt" >
 			<div class="container">
 				<div class="row" >
-					<div style="width:20%; margin-top:50px;">
+					<div style="width:20%; margin-top:50px; margin-left:50px;">
 						<h1 class="">관리</h1>
                 <ul class="">
+                    <li class="">
+                        <a class="" href="${cpath}/about3.do">
+                            	관리 목록
+                            <i class=""></i>
+                        </a>
+                    </li>
                     <li class="">
                          <a class="" href="${cpath}/about2.do">
                             	관리 신청
@@ -137,12 +146,6 @@
                             <i class=""></i>
                         </a>
                     </li>
-                    <li class="">
-                        <a class="" href="${cpath}/about3.do">
-                            	관리 목록
-                            <i class=""></i>
-                        </a>
-                    </li>
                 </ul>
 					</div>
 					
@@ -152,33 +155,33 @@
 	          	<span class="subheading">관리<i class="fa fa-chevron-right"></i></span>
 	            <h2 class="mb-4">관리 목록</h2>
 				<div class="heading-section py-md-5">
-					<table id="tlscjd" style="max-width:100%;">
-						<tr>
-							<th width="8%">대기번호</th>
-							<th width="8%">이름</th>
-							<th width="8%">나이</th>
-							<th>주소</th>
-							<th width="20%">전화번호</th>
-							<th>특이사항</th>
-							<th width="10%">신청일 </th>
-							<th width="15%">삭제</th>
-							<th width="8%">카메라</th>
-							
-						</tr>
-					<c:forEach var="vo" items="${list}">
-						<tr>
-							<td>${vo.idx}</td>
-							<td>${vo.name}</td>
-							<td>${vo.age}</td>
-							<td>${vo.adress}</td>
-							<td>${vo.phone}</td>
-							<td>${vo.uniqueness}</td>
-							<td>${vo.aplication_date}</td>
-							<td><a href = "${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a></td>
-							<td> <button class='camOn'>On</button> </td>
-						</tr>
-					</c:forEach>						
-					</table>	  
+				    <section class="ftco-section bg-light">
+         <div class="container">
+            <div class="row">
+					<c:forEach var="vo" items="${list}" >
+             		<c:set var="imgName" value="${vo.regi_number}"></c:set>
+               <div class="col-md-6 col-lg-3 ftco-animate" style="-webkit-box-flex: 0 !important; -ms-flex: 0 0 33% !important; flex: 0 0 33% !important; max-width:33% !important; ">
+                  <div class="staff">
+                     <div class="img-wrap d-flex align-items-stretch">
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/${imgName}.jpg); position:reletive;">
+                     <div style="position:absolute; top:20px; "> <button class="camOn btn btn-primary ">cam on</button> </div></div>
+                     </div>
+                     <div class="pt-3 px-3 pb-4 text-center">
+                        <h3> ${vo.name}</h3>
+                        <span class="position mb-2">${vo.phone}</span>
+                        <br>
+                        <span class="position mb-2"> ${vo.address}</span>
+                        <div class="faded">
+                           <p> <a href="${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a> </p>
+                           
+                 		</div>
+                     </div>
+                  </div>
+               </div>
+               </c:forEach> 
+                </div>
+      </div>
+      </section>
 				</div>
 			  </div>
 			</div>
@@ -247,6 +250,12 @@
   <script type="text/javascript">
   function camOn(){
 	  console.log('${vore.id}')
+	  if($(".camOn").html() == 'cam on'){
+		  $(".camOn").html('cam off')
+	  }else{
+		  $(".camOn").html('cam on')
+	  }
+	  
 	  $.ajax({
 			url : " http://221.156.60.21:9000/posedetection",
 			type : 'POST',
