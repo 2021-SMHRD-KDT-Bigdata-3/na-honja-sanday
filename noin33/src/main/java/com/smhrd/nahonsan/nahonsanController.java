@@ -96,7 +96,7 @@ public class nahonsanController {
    @RequestMapping(value = "/goJoin.do")
    public String join() {
       return "join";
-   }
+   }   
    
    //보호자 회원가입시 member와 guardian테이블에 담기
    @RequestMapping("/join_guardian.do")
