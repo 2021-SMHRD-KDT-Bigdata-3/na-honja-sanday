@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%> 
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
 <c:set var="cpath" value="${pageContext.request.contextPath}"/> 
 <!DOCTYPE html>
 <html lang="en">
@@ -36,11 +35,7 @@
      <div class="wrap" >
 			<div class="container" >
 				<div align="right">
-				<c:set var="idName" value="${fn:split(noin.id,'///@')}"></c:set>
-					<c:if test="${noin ne null}">
-					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
-					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
-					</c:if> 
+					<a class="hov" href="logout.do" style="color:white;">로그아웃</a>
 				</div>
 			</div>
 		</div>
@@ -66,7 +61,7 @@
     
     <br><br>
 
-    <footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
+	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">
@@ -86,7 +81,6 @@
                 <li class="ftco-animate"><a href="#"><span class="fa fa-facebook"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="fa fa-instagram"></span></a></li>
               </ul>
-
 	        </div>
 	          </div>
 	        </div>

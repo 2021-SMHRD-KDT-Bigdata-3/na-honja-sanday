@@ -141,14 +141,14 @@
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 	<!-- modal -->
-			<div class="black_bg"></div>
-					<div class="modal_wrap" id = "modal_temp">
-    				<div class="modal_close"><a href="#">close</a></div>
-    				<div>
-        				<h1 class="mb-4" id="modal_name">(이름)님은</h1>
-	            		<p class="mb-4" id="modal_status">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
-    				</div>
-					</div>
+         <div class="black_bg"></div>
+               <div class="modal_wrap" id = "modal_temp">
+                <div class="modal_close"><a href="#">close</a></div>
+                <div align="center" style="margin-top:25%;margin-bottom:25%;">
+                    <h1 class="mb-4" id="modal_name" style="font-size:20px;">(이름)님은</h1>
+                     <p class="mb-4" id="modal_status" style="font-size:2.5rem;">(신청중입니다, 거절되었습니다, 등록되었습니다.)</p>
+                </div>
+               </div>
 
 
   <script src="${cpath}/resources/js/jquery.min.js"></script>

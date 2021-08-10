@@ -51,8 +51,8 @@
     }
     #modal_btn3{
     	
-    	background: url('${cpath}/resources/images/qhrwl.png') no-repeat;
-    	border:3px solid #000000 !important;
+    	background: url('${cpath}/resources/images/qhrwltk.png') no-repeat;
+    	border:3px solid #808080 !important;
     	width:256px;
     	height:250px;
     }
@@ -65,8 +65,8 @@
     }
     #modal_btn2{
     	
-    	background: url('${cpath}/resources/images/prot.png') no-repeat;
-    	border:3px solid #000000 !important;
+    	background: url('${cpath}/resources/images/qhghwk.png') no-repeat;
+    	border:3px solid #808080 !important;
     	width:256px;
     	height:250px;
     }
@@ -79,8 +79,8 @@
     }
      #modal_btn1{
     	
-    	background: url('${cpath}/resources/images/noin.png') no-repeat;
-    	border:3px solid #000000 !important;
+    	background: url('${cpath}/resources/images/eotkdwk.png') no-repeat;
+    	border:3px solid #808080 !important;
     	width:256px;
     	height:250px;
     }
@@ -115,7 +115,7 @@
 		</div>
 	  </nav>
 	 <br><br><br>
-	 <div align="center"><h1 style="color:black !important; font-size:70px; font-weight:700;">로그인</h1> <br>
+	 <div align="center"><h1 style="color:#808080 !important; font-size:70px; font-weight:700;">로그인</h1> <br>
 	 </div> 
 	
 	
