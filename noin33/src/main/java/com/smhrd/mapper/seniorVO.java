@@ -10,7 +10,7 @@ public class seniorVO {
 	private String name;
 	private int age;
 	private String regi_number;
-	private String adress;
+	private String address;
 	private String phone;
 	private String uniqueness;
 	private String aplication_date;

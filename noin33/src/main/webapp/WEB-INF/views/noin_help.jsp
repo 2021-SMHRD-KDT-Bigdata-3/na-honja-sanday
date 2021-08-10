@@ -72,12 +72,12 @@
             </div>
        
    	<div align="center">
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-together"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/goout.png"></button> &nbsp;&nbsp;&nbsp;
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-song"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/songyoung.png"></button>
+   		<button value="외출동행  요청" type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-together"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/goout.png"></button> &nbsp;&nbsp;&nbsp;
+   		<button value="송영  요청" type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-song"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/songyoung.png"></button>
    	</div><br>
    	<div align="center">
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-home"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/housekeeping.png"></button> &nbsp;&nbsp;&nbsp;
-   		<button type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-welfare"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/hochul2.png"></button>
+   		<button value="가사서비스  요청" type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-home"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/housekeeping.png"></button> &nbsp;&nbsp;&nbsp;
+   		<button value="복지사 호출  요청" type=submit style="WIDTH: 175pt; HEIGHT: 175pt; border-radius:12px; font-size:30px; background-color:white; border:0" id="btn-welfare"><img style="border-radius: 12px; width:230px; height:230px;" src="${cpath}/resources/images/hochul2.png"></button>
    	</div>
     
 
@@ -140,7 +140,7 @@
          url : "http://211.105.165.117:9000/email",
          type : "post",
          data : {"email" : "wodnd1593@naver.com",
-               "content" : $(this).html()},
+               "content" : $(this).attr('value')},
          success : (res) =>{
         	 alert("복지사에게 메세지가 전달되었습니다.");
             console.log(res);
