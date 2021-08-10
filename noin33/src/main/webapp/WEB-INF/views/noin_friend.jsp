@@ -93,7 +93,7 @@
         	<h1 align="center">친구 만들기 프로그램 찾기</h1> <br>
         </div>
 				<div class="row justify-content-center">
-		    <div id= "message">원하시는 프로그램을 신청하시면 복지사에게 메시지가 갑니다. </div>
+		    <div id= "message"  style = "font-size : 30px">원하시는 프로그램을 신청하시면 복지사에게 메시지가 갑니다. </div>
 		<div id="mapwrap"> 
 		    <!-- 지도가 표시될 div -->
 		    <div id="map" style="width:1000px;height:700px;"></div>
