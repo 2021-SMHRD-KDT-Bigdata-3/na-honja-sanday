@@ -25,9 +25,9 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/style.css">
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/Font.css">
     <style>
-     .wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: 132px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
+     .wrap {position: absolute;left: 0;bottom: 40px;width: 400px;height: 170px;margin-left: -144px;text-align: left;overflow: hidden;font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
     .wrap * {padding: 0;margin: 0;}
-    .wrap .info {width: 286px;height: 120px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
+    .wrap .info {width: 400px;height: 170px;border-radius: 5px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;background: #fff;}
     .wrap .info:nth-child(1) {border: 0;box-shadow: 0px 1px 2px #888;}
     .info .title {padding: 5px 0 0 10px;height: 30px;background: #eee;border-bottom: 1px solid #ddd;font-size: 18px;font-weight: bold;}
     .info .close {position: absolute;top: 10px;right: 10px;color: #888;width: 17px;height: 17px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/overlay_close.png');}
@@ -37,7 +37,7 @@
     .desc .ellipsis {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
     .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;}
     .info .img {position: absolute;top: 6px;left: 5px;width: 73px;height: 71px;border: 1px solid #ddd;color: #888;overflow: hidden;}
-    .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
+    .info:after {content: '';position: absolute;margin-left: -12px;left: 37%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
     .info .link {color: #5085BB;}
 #mapwrap{position:relative;overflow:hidden;}
 .category, .category *{margin:0;padding:0;color:#000;}   
@@ -93,7 +93,7 @@
         	<h1 align="center">친구 만들기 프로그램 찾기</h1> <br>
         </div>
 				<div class="row justify-content-center">
-		    <div id= "message">원하시는 프로그램을 신청하시면 복지사에게 메시지가 갑니다. </div>
+		    <div id= "message"  style = "font-size : 30px">원하시는 프로그램을 신청하시면 복지사에게 메시지가 갑니다. </div>
 		<div id="mapwrap"> 
 		    <!-- 지도가 표시될 div -->
 		    <div id="map" style="width:1000px;height:700px;"></div>
@@ -334,22 +334,22 @@ if (type === 'noin') {
     
 }}
 
-var array = [['지산 1동','광주광역시 동구 지산1동','062-228-1741','나들이','무료','20','0'],
-	['산수2동경로당','광주광역시 동구 산수동','062-263-2710','자조모임','무료','20','1'],
-	['정암경로당','광주광역시 동구 산수1동','062-223-1838','난타교실','무료','10','2'],
-	['만승경로당','광주광역시 동구 계림동','062-223-6366','한지공예','무료','15','3'],
-	['삼성경로당','광주광역시 동구 호남동','062-225-3565','노래교실','무료','20','4'],
-	['양림오거리 경로당','광주광역시 남구 양림동','N/A','화초키우기','무료','10','5'],
-	['양림2휴먼시아경로당','광주광역시 남구 양림동','062-654-9090','요리교실','무료','15','6'],
-	['숙실 경로당','광주광역시 동구 학동','062-227-4632','문화체험','무료','20','7'],
-	['석천경로당','광주광역시 동구 소태동 512-11','062-226-4564','건강체조','무료','20','8'],
-	['봉선모아1단지2차경로당','광주광역시 남구 봉선동 984','062-653-1616','피아노교실','무료','10','9'],
-	['남관경로당','광주광역시 남구 백운동 614-19','062-232-0339','국안반','무료','15','10'],
-	['라인하이츠경로당','광주광역시 남구 봉선동 988','062 -654-7177','한글반','무료','20','11'],
-	['주월동명지맨션경로당','광주광역시 남구 주월동 700','062-363-9346','미술치료','무료','10','12'],
-	['남구거점경로당','광주광역시 남구 주월동 472','062-672-5080','원예치료','무료','15','13'],
-	['신천경로당','광주광역시 남구 주월동 1240-1','062-654-8333','화초키우기','무료','20','14'],
-	['광진경로당','광주광역시 남구 진월동 320-3','062-651-6114','나들이','무료','15','15']
+var array = [['지산 1동','광주광역시 동구 지산1동','062-228-1741','나들이','무료','20',false],
+	['산수2동경로당','광주광역시 동구 산수동','062-263-2710','자조모임','무료','20',false],
+	['정암경로당','광주광역시 동구 산수1동','062-223-1838','난타교실','무료','10',false],
+	['만승경로당','광주광역시 동구 계림동','062-223-6366','한지공예','무료','15',false],
+	['삼성경로당','광주광역시 동구 호남동','062-225-3565','노래교실','무료','20',false],
+	['양림오거리 경로당','광주광역시 남구 양림동','N/A','화초키우기','무료','10',false],
+	['양림2휴먼시아경로당','광주광역시 남구 양림동','062-654-9090','요리교실','무료','15',false],
+	['숙실 경로당','광주광역시 동구 학동','062-227-4632','문화체험','무료','20',false],
+	['석천경로당','광주광역시 동구 소태동 512-11','062-226-4564','건강체조','무료','20',false],
+	['봉선모아1단지2차경로당','광주광역시 남구 봉선동 984','062-653-1616','피아노교실','무료','10',false],
+	['남관경로당','광주광역시 남구 백운동 614-19','062-232-0339','국안반','무료','15',false],
+	['라인하이츠경로당','광주광역시 남구 봉선동 988','062 -654-7177','한글반','무료','20',false],
+	['주월동명지맨션경로당','광주광역시 남구 주월동 700','062-363-9346','미술치료','무료','10',false],
+	['남구거점경로당','광주광역시 남구 주월동 472','062-672-5080','원예치료','무료','15',false],
+	['신천경로당','광주광역시 남구 주월동 1240-1','062-654-8333','화초키우기','무료','20',false],
+	['광진경로당','광주광역시 남구 진월동 320-3','062-651-6114','나들이','무료','15',false]
 	]
 	
 var array2 = [];
@@ -358,13 +358,13 @@ var co = array[i][0];
 var pr = array[i][3];
 	var content = '<div class="wrap">' + 
 '    <div class="info">' + 
-'        <div class="title">' + 
+'        <div class="title" style="font-size : 21px">' + 
 '            '+array[i][0]+
 '        </div>' + 
 '        <div class="body">' + 
 '           </div>' + 
 '            <div>' + 
-'                <div ">'+'주소 : '+array[i][1] + '<br>'+'연락처: '+array[i][2]+'<br>'+'진행중인 행사 : '+array[i][3]+'  이용비: '+array[i][4]+'<br>'+'수용인원 : '+array[i][5]+'       '+'<button type="submit" class="btn-friend" onclick="sendemail(\''+co+'\''+","+'\''+pr+'\')">'+
+'                <div style="font-size : 20px">'+'주소 : '+array[i][1] + '<br>'+'연락처: '+array[i][2]+'<br>'+'진행중인 행사 : '+array[i][3]+'  이용비: '+array[i][4]+'<br>'+'수용인원 : '+array[i][5]+'       '+'<button type="submit" class="btn-friend" onclick="sendemail(\''+co+'\''+","+'\''+pr+'\')">'+
 '신청</button>'+'</div>'
 
 '            </div>' +
@@ -376,7 +376,7 @@ array2.push(content);
 //공원 배열 생성
 var array3 = [['용산생활체육공원','광주광역시 동구 소태동'],
 	['봉산어린이공원','광주광역시 남구 봉선동'],
-	['봉선공원','광주광역시 남구 봉선동 대남대로117번길40'],
+	['봉선공원','광주광역시 남구 봉선동 대남대로117'],
 	['사직전망타워','광주광역시 남구 사직길 49'],
 	['아시아문화광장','광주광역시 동구 광산동 13'],
 	['광주공원','광주광역시 남구 중앙로107번길 15'],
@@ -391,13 +391,13 @@ for(var i =0;i<10;i++){
 
 var content = '<div class="wrap">' + 
 '    <div class="info">' + 
-'        <div class="title">' + 
+'        <div class="title" style="font-size : 21px">' + 
 '            '+array3[i][0]+
 '        </div>' + 
 '        <div class="body">' + 
 '           </div>' + 
 '            <div>' + 
-'                <div>'+'주소 : '+array3[i][1] + 
+'                <div style="font-size : 20px">'+'주소 : '+array3[i][1] + 
 '</div>'+
 
 '            </div>' +
@@ -413,14 +413,15 @@ for(var i = 0;i<noinMarkers.length;i++){
 var overlay = new kakao.maps.CustomOverlay({
 content: array2[i],
 map: null,
-position: noinMarkers[i].getPosition()       
+position: noinMarkers[i].getPosition(),
+toggle : false
 });
+overlay.toggle = false;
 array.push(overlay);
 
 
 
 
-kakao.maps.event.addListener(noinMarkers[i], 'mouseover', makeOverListener(array[i]));
 kakao.maps.event.addListener(noinMarkers[i], 'click', makeOutListener(array[i]));
 }
 
@@ -429,28 +430,32 @@ for(var i = 0;i<storeMarkers.length;i++){
 var overlay = new kakao.maps.CustomOverlay({
 content: array4[i],
 map: null,
-position: storeMarkers[i].getPosition()       
+position: storeMarkers[i].getPosition()
 });
+overlay.toggle = false;
+// console.log(overlay);
 array.push(overlay);
 
 
 
 
-kakao.maps.event.addListener(storeMarkers[i], 'mouseover', makeOverListener(array[i]));
 kakao.maps.event.addListener(storeMarkers[i], 'click', makeOutListener(array[i]));
 }
 
 // 인포윈도우를 닫는 클로저를 만드는 함수입니다 
 function makeOutListener(infowindow) {
-    return function() {
-        infowindow.setMap(null);
-    };
+	return function() {
+		if(infowindow.toggle){
+			infowindow.toggle = false;
+	        infowindow.setMap(null);
+	    }else{
+	    	// console.log(infowindow.toggle);
+	    	infowindow.toggle = true;
+	    	infowindow.setMap(map);
+	    }
+  }
 }
-function makeOverListener(infowindow) {
-    return function() {
-        infowindow.setMap(map);
-    };
-}
+
 function sendemail(co2,pr){
 	console.log(co2);
 	console.log(pr);
