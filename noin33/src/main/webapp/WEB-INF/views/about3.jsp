@@ -108,7 +108,7 @@
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
+	          <li class="nav-item hov"><a href="about3.do" class="nav-link">관리</a></li>
 	          </c:if>
 	          </c:if>
 	        </ul>
@@ -160,19 +160,20 @@
             <div class="row">
 					<c:forEach var="vo" items="${list}" >
              		<c:set var="imgName" value="${vo.regi_number}"></c:set>
-               <div class="col-md-6 col-lg-3 ftco-animate">
+               <div class="col-md-6 col-lg-3 ftco-animate" style="-webkit-box-flex: 0 !important; -ms-flex: 0 0 33% !important; flex: 0 0 33% !important; max-width:33% !important; ">
                   <div class="staff">
                      <div class="img-wrap d-flex align-items-stretch">
-                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/${imgName}.jpg);"></div>
+                        <div class="img align-self-stretch" style="background-image: url(${cpath}/resources/images/${imgName}.jpg); position:reletive;">
+                     <div style="position:absolute; top:20px; "> <button class="camOn btn btn-primary ">cam on</button> </div></div>
                      </div>
-                     <div class="text pt-3 px-3 pb-4 text-center" style="height:270px;">
+                     <div class="pt-3 px-3 pb-4 text-center">
                         <h3> ${vo.name}</h3>
                         <span class="position mb-2">${vo.phone}</span>
                         <br>
                         <span class="position mb-2"> ${vo.address}</span>
                         <div class="faded">
                            <p> <a href="${cpath}/delnoin.do?idx=${vo.idx}">관리 해제</a> </p>
-                           <p> <button class="camOn">cam on</button> </p>
+                           
                  		</div>
                      </div>
                   </div>
@@ -249,6 +250,12 @@
   <script type="text/javascript">
   function camOn(){
 	  console.log('${vore.id}')
+	  if($(".camOn").html() == 'cam on'){
+		  $(".camOn").html('cam off')
+	  }else{
+		  $(".camOn").html('cam on')
+	  }
+	  
 	  $.ajax({
 			url : " http://221.156.60.21:9000/posedetection",
 			type : 'POST',

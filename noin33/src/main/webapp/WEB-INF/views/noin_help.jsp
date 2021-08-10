@@ -136,10 +136,12 @@
 
 <script type="text/javascript">
   function sendemail(){
+	 console.log($(this).attr('value'));
      $.ajax({
          url : "http://221.156.60.21:9000/email",
          type : "post",
          data : {"email" : "wodnd1593@naver.com",
+        	   "title" : "${noin.id}"+"님의 요청사항",  
                "content" : $(this).attr('value')},
          success : (res) =>{
         	 alert("복지사에게 메세지가 전달되었습니다.");
