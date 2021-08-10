@@ -52,7 +52,7 @@
 				<div align="right">
 				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
 					<c:if test="${vore ne null}">
-					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
 					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
 					</c:if> 
 					<c:if test="${vore eq null}">
@@ -119,6 +119,16 @@
     		<div class="row justify-content-center">
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
     				<div class="services-2 text-center ">
+    					<c:if test="${vore eq null}">
+    					<a href="/nahonsan/sinchung.do">
+    						<div class="icon-wrap">
+    							<div class="number d-flex align-items-center justify-content-center"><span>01</span></div>
+	    						<div class="icon d-flex align-items-center justify-content-center">
+	    							<span class="flaticon-calendar"></span>
+	    						</div>
+    						</div>
+    					</a>
+    					</c:if>
     					<c:if test="${vore ne null}">
 				        <c:if test="${vore.seperator eq 3}">
 				        <a href="/nahonsan/about2.do">
@@ -147,6 +157,7 @@
     			<div class="col-md-4 d-flex align-items-stretch ftco-animate">
     				<div class="services-2 text-center">
     				<!-- 위험분석은 아직 -->
+    				<c:if test="${vore eq null || vore.seperator eq 2}">
     				<a href="#">
     					<div class="icon-wrap">
     						<div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
@@ -155,6 +166,18 @@
 	    					</div>
     					</div></a>
     					<h2>위험 분석(예정)</h2>
+    				</c:if>
+    				<c:if test="${vore.seperator eq 3}">
+    				<a href="${cpath}/about3.do">
+    					<div class="icon-wrap">
+    						<div class="number d-flex align-items-center justify-content-center"><span>02</span></div>
+	    					<div class="icon d-flex align-items-center justify-content-center">
+	    						<span class="flaticon-qa"></span>
+	    					</div>
+    					</div></a>
+    					<h2>관리 목록</h2>
+    				</c:if>
+    				
     				</div>
     			</div>
     			

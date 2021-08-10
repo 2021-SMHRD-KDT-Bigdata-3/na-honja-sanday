@@ -46,7 +46,7 @@
 				<div align="right">
 				<c:set var="idName" value="${fn:split(vore.id,'///@')}"></c:set>
 					<c:if test="${vore ne null}">
-					<span> ${idName[0]} 님 안녕하세요~   </span>
+					<span style="color:white;"> ${idName[0]} 님 안녕하세요~   </span>
 					<a class="hov" href="logout.do" style="color:white;"> &emsp;&emsp; 로그아웃</a>
 					</c:if> 
 					<c:if test="${vore eq null}">
@@ -58,7 +58,9 @@
     
 	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	      <a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a>
+	      <c:if test="${vore.seperator eq 1}"><a class="navbar-brand title" href="/nahonsan/firstpage.do"><img height="60px" src="${cpath}/resources/images/title.png"></a> </c:if>
+	      <c:if test="${vore.seperator eq 2}"><a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a> </c:if>
+	      <c:if test="${vore.seperator eq 3}"><a class="navbar-brand title" href="/nahonsan/main.do"><img height="60px" src="${cpath}/resources/images/title.png"></a> </c:if>
 	      
 	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="oi oi-menu"></span> 메뉴
@@ -76,7 +78,7 @@
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item hov"><a href="about2.do" class="nav-link">신청</a></li>
+	          <li class="nav-item hov"><a href="sinchung.do" class="nav-link">신청</a></li>
 	          </c:if>
 	          <c:if test="${vore.seperator eq 3}">
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
