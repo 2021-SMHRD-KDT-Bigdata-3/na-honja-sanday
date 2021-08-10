@@ -250,7 +250,7 @@
   function camOn(){
 	  console.log('${vore.id}')
 	  $.ajax({
-			url : " http://211.105.165.117:9000/posedetection",
+			url : " http://221.156.60.21:9000/posedetection",
 			type : 'POST',
 			data : {
 				'email' : '${vore.id}',
