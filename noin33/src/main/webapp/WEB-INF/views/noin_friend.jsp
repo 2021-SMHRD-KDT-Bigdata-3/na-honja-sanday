@@ -455,7 +455,7 @@ function sendemail(co2,pr){
 	console.log(co2);
 	console.log(pr);
 	  $.ajax({
-			url : "http://211.105.165.117:9000/email",
+			url : "http://221.156.60.21:9000/email",
 			type : "post",
 			data : {"email" : "wodnd1593@naver.com",
 				"title" : "${noin.id}"+"님이 보낸 메세지",   
