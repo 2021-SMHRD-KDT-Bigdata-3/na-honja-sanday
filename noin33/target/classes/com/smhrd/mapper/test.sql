@@ -47,10 +47,10 @@ insert into member(id, password,seperator)
     values('wodnd1593@naver.com', 123,3);
 insert into welfare_worker(email, name, phone,seperator)
     values('wodnd1593@naver.com', '최재웅', '010-1234-4321',3);
-    
+ 
 select * from member;
 select * from welfare_worker;
-delete from member where seperator = 3;
+delete from member where id = "";
 --여기서부터 한줄씩 추가하기--
 alter table welfare_worker add intro varchar(100);
 alter table welfare_worker add certi varchar(100);

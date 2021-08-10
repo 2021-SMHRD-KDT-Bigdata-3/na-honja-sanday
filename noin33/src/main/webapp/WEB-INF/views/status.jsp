@@ -95,8 +95,8 @@
 	            	<h1 class="mb-4" style="width:1110px;max-width:100%">이름 : <input style="max-width:100%" class="mb-4" type="text" name = "name"></h1> 
 	            	<h1 class="mb-4" style="width:1110px;max-width:100%">주민등록번호 : <input style="max-width:100%" class="mb-4" type="password" name = "regi_number"> </h1>
 	            	<div class="mb-4" style="width:1110px;  max-width:100%" align="right">
-	            	<input type="button" value = "조회" class="btn btn-primary py-3 px-4" id="modal_btn" >
-	            	<button type='button' class="btn  py-3 px-4" onclick="location.href='firstpage.do'">돌아가기</button>
+	            	<input type="button" value = "조회" class="btn btn-primary py-3 px-4" id="modal_btn" style="font-size:25px" >
+	            	<button type='button' class="btn  py-3 px-4" onclick="location.href='firstpage.do'" style="font-size:25px">돌아가기</button>
 	            	</div>
             </div>
           </div>

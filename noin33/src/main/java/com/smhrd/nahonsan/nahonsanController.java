@@ -20,6 +20,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.smhrd.mapper.guardianVO;
 import com.smhrd.mapper.loginVO;
@@ -70,15 +71,26 @@ public class nahonsanController {
     	  System.out.println("로그인실패");
          return "login"; 
        }else {
-    	   if(vore.seperator.equals("1")) {
-    		   System.out.println("seperator가 1일때 :" + vore.getId());
-    		   session.setAttribute("noin", vore);
-    		   return "noin_main";
-    	   }else {
-    	 	   System.out.println("seperator가 1이 아닐때 :" +vore.getId());
-    		   session.setAttribute("vore", vore);
-    		   return "main";
-    	  }
+    	 
+	 	   System.out.println("seperator가 1이 아닐때 :" +vore.getId());
+		   session.setAttribute("vore", vore);
+		   return "main";
+    	  
+       }
+   } 
+   @RequestMapping(value = "/loginNoin.do") 
+   public String loginNoin(memberVO vo, HttpServletRequest request){
+	   HttpSession session = request.getSession();
+	   System.out.println("**");
+	   memberVO vore = naMapper.login(vo);
+//	   System.out.println(vore.getId());
+	   
+	   if(vore == null) { 
+    	  System.out.println("로그인실패");
+         return "login"; 
+       }else {
+    	 session.setAttribute("noin", vore);
+    	 return "noin_main";
        }
    } 
       

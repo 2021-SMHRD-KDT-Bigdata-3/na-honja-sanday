@@ -65,12 +65,12 @@
 		</div>
 	  </nav>
 	 <br><br><br>
-	 <div align="center"><h1 style="color:#000000; " style="font-size:70px;">관리 신청</h1> <br>
+	 <div align="center" ><h1 style="color:#000000; font-size:70px;" >관리 신청</h1> <br>
 	 <!--  
 	 <form action="" method="get" id="loginForm">
 	 -->
  	<form action="${cpath}/noinsert.do" method = "post" >
-	 <table>
+	 <table style="font-size:40px;">
 	<tr>
 		<td class="col2">
 			<input type="text" name=name  placeholder="이름">
@@ -99,19 +99,19 @@
 	</tr>	
 	<tr>	
 		<td class="col2">
-			<textarea name="uniqueness" class="form-control"  cols="30" rows="4" placeholder="특이사항"></textarea>
+			<textarea name="uniqueness" class="form-control"  cols="30" rows="4" placeholder="특이사항" style="font-size:40px;"></textarea>
 		</td>
 	</tr>
 	</table>
 	<br><br>
-	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" disabled="disabled">신청하기</button></span>
-	<span><button type="button" class="btn btn-primary py-3 px-4 checkbtn" id='contentCheck'>검사하기</button></span>
+	<span><button type="submit" class="btn btn-primary py-3 px-4 joinbtn" disabled="disabled" style="font-size:25px;">신청하기</button></span>
+	<span><button type="button" class="btn btn-primary py-3 px-4 checkbtn" id='contentCheck' style="font-size:25px;">검사하기</button></span>
 	</form>
 	<c:if test="${vore eq null}">
-	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/firstpage.do'">메인으로</button></span>
+	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/firstpage.do'" style="font-size:25px;">메인으로</button></span>
 	</c:if> 
 	<c:if test="${vore ne null}">
-	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/main.do'">메인으로</button></span>
+	<span><button class="btn btn-white py-3 px-4 joinbtn"  onclick="location.href='/nahonsan/main.do'" style="font-size:25px;">메인으로</button></span>
 	</c:if> 
 	 </div> <br><br><br><br><br><br><br><br>
   

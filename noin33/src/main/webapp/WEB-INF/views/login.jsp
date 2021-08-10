@@ -25,6 +25,20 @@
     <link rel="stylesheet" type="text/css" href="${cpath}/resources/css/button1.css">
  	
  <style>
+ 	.modal_close2{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+	}
+	.modal_close2> a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+    text-indent: -9999px;
+	}
  	.modal_wrap1{
         display: none;
         position: absolute;
@@ -35,6 +49,18 @@
         background:#eee;
         width: 400px;
         height: 160px;
+        
+    }
+ 	.modal_wrap2{
+        display: none;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        margin: -160px 0 0 -400px;
+        z-index: 2;
+        background:#eee;
+        width: 800px;
+        height: 320px;
         
     }
     #footbg{
@@ -145,13 +171,13 @@
 		
 		
   
-  	<!-- modal -->
+  	<!-- modal 1 -->
 			<div class="black_bg"></div>
 					<div class="modal_wrap1" id = "modal_temp">
     				<div class="modal_close"><a href="#">close</a></div>
     				<div align="center">
     				<%-- ${cpath} : 기본 경로 --%>
-    		<form action="login.do" method="post" id="loginForm">
+    		<form action="login.do" method="post" id="loginForm" name="Login">
     					 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
 								이런식으로 주고
 								Controller에 가보면
@@ -178,7 +204,6 @@
 			</form>
     				</div>
 					</div>
-  
   
 	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
@@ -237,17 +262,36 @@
       document.querySelector('.black_bg').style.display ='none';
   }
 
+  function onClick2() {
+	  
+	  let pref = '<div class="modal_close2"><a href="#">close</a></div>'+'<div align="center">'+'<form action="loginNoin.do" method="post" name="noinLogin">';
+	  let html = '<form action="loginNoin.do" id="loginForm" method="post" name="noinLogin">'+ '<br>'+ '<table>'+'<tr>'+ '<td>'+ '<input type="text" name="id" id=id size="30" placeholder="이름" style="font-size:40px;">'+
+		'</td>'+ '</tr>'+ '<tr>'+ '<td>' + '<input type="password" name="password" id=pw size="30" placeholder="생년월일" style="font-size:40px;">'+
+		'</td>'+ '</tr>' + '</table>' + '<br>' + '<button class="btn btn-success" id="noin_login" style="width : 250px; font-size:40px;" type="submit">로그인</button>'+ '</form>';
+	  
+	  let fix =  '</div>'
+	  
+	  
+      document.querySelector('#modal_temp').innerHTML = pref + html + fix;
+	  document.querySelector('#modal_temp').className = 'modal_wrap2';
+	  document.querySelector('.modal_close2').addEventListener('click', offClick2);
+	  
+      document.querySelector('.modal_wrap2').style.display ='block';
+      document.querySelector('.black_bg').style.display ='block';
+  }   
+  function offClick2() {
+      document.querySelector('.modal_wrap2').style.display ='none';
+      document.querySelector('.black_bg').style.display ='none';
+  }
+
   
-  document.getElementById('modal_btn1').addEventListener('click', onClick);
+  document.getElementById('modal_btn1').addEventListener('click', onClick2);
   document.getElementById('modal_btn2').addEventListener('click', onClick);
   document.getElementById('modal_btn3').addEventListener('click', onClick);
   document.querySelector('.modal_close').addEventListener('click', offClick);
-
-  };
   
-  $('#loginform').on('click', function(){
-	  
-  })
+  
+  };
   </script>
 </body>
 </html>
