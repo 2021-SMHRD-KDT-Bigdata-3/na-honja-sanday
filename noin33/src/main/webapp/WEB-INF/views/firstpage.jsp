@@ -91,9 +91,9 @@
         <div class="row no-gutters slider-text align-items-center" style="height:800px">
           <div class="col-md-6 ftco-animate d-flex align-items-end">
           	<div class="text w-100">
-	            <h1 class="mb-4" id="big" >노인 돌봄 서비스</h1>
-	            <p class="mb-4">일상생활 영위가 어려운 취약노인에게 적절한 돌봄서비스를 제공하여<br>안정적인 노후생활 보장, 노인의 기능·건강 유지 및 악화 예방을 지원합니다.</p>
-	            <p><a href="sinchung.do" class="btn btn-primary py-3 px-4 hov">지금 신청하기!</a> <a href="status.do" class="btn btn-white py-3 px-4">신청현황 보기</a></p>
+	            <h1 class="mb-4" id="big" style="font-size:70px;">노인 돌봄 서비스</h1>
+	            <p class="mb-4" style="font-size:28px;">일상생활 영위가 어려운 취약노인에게 적절한 돌봄서비스를 제공하여<br>안정적인 노후생활 보장, 노인의 기능·건강 유지 및 악화 예방을 지원합니다.</p>
+	            <p><a href="sinchung.do" class="btn btn-primary py-3 px-4 hov" style="font-size:30px;">지금 신청하기!</a> <a href="status.do" class="btn btn-white py-3 px-4" style="font-size:30px;">신청현황 보기</a></p>
 	           
 					             
             </div>

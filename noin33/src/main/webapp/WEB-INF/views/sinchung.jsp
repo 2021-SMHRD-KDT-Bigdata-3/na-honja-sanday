@@ -26,7 +26,7 @@
     
     <style>
     h1{
-    	font-family: 'TmonMonsori';
+    	font-family: 'NEXON Lv1 Gothic OTF Bold';
     } 
     
      body, textarea{
@@ -65,7 +65,7 @@
 		</div>
 	  </nav>
 	 <br><br><br>
-	 <div align="center"><h1 style="color:#000000; ">관리 신청</h1> <br>
+	 <div align="center"><h1 style="color:#000000; " style="font-size:70px;">관리 신청</h1> <br>
 	 <!--  
 	 <form action="" method="get" id="loginForm">
 	 -->
