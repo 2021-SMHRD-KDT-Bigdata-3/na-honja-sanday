@@ -106,7 +106,7 @@
 	          <li class="nav-item hov"><a href="main.do" class="nav-link">홈</a></li>
 	          <li class="nav-item hov"><a href="blog.do" class="nav-link">서비스 소개</a></li>
 	          <li class="nav-item hov"><a href="counselor.do" class="nav-link">복지사 소개</a></li>
-	          <li class="nav-item hov"><a href="manage.do" class="nav-link">관리</a></li>
+	          <li class="nav-item hov"><a href="about3.do" class="nav-link">관리</a></li>
 	          </c:if>
 	          </c:if>
 	        </ul>
@@ -121,9 +121,15 @@
 			<div class="container">
 			
 				<div class="row" >
-					<div style="width:20%; margin-top:50px;">
-						<h1 class="">관리</h1>
+					<div style="width:20%; margin-top:50px; margin-left:50px;">
+						<h1 >관리</h1>
                 <ul class="">
+                    <li class="">
+                        <a class="" href="${cpath}/about3.do">
+                            	관리 목록
+                            <i class=""></i>
+                        </a>
+                    </li>
                     <li class="">
                         <a class="" href="${cpath}/about2.do">
                             	관리 신청
@@ -133,12 +139,6 @@
                     <li class="">
                         <a class="" href="${cpath}/manage.do">
                             	관리 등록
-                            <i class=""></i>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a class="" href="${cpath}/about3.do">
-                            	관리 목록
                             <i class=""></i>
                         </a>
                     </li>
@@ -195,9 +195,9 @@
 			</div>
 			
 			</div>
+			</div>
 					
 					
-		</div>
 		</section>
     
     
