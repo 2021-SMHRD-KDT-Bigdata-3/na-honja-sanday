@@ -28,6 +28,19 @@
      body{
     	font-family: 'NEXON Lv1 Gothic OTF';
     }
+    .footer {
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: 0;
+
+    width: 100%;
+
+ 
+
+}
     </style>
   </head>
   <body>
@@ -61,7 +74,7 @@
     
     <br><br>
 
-	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
+	<footer class="ftco-footer footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
       	<div class="container">
       		<div class="row">

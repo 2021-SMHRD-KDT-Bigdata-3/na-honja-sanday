@@ -108,7 +108,7 @@ recipient varchar(50) not null,
 contents varchar(4000) not null,
 send_date datetime default now(),
 primary key(idx))
-
+select * from member;
 
 --노인 신청 테이블--
 create table request(

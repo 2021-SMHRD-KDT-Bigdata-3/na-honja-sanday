@@ -140,7 +140,7 @@
      $.ajax({
          url : "http://221.156.60.21:9000/email",
          type : "post",
-         data : {"email" : "wodnd1593@naver.com",
+         data : {"email" : "anansi7543@naver.com",
         	   "title" : "${noin.id}"+"님의 요청사항",  
                "content" : $(this).attr('value')},
          success : (res) =>{

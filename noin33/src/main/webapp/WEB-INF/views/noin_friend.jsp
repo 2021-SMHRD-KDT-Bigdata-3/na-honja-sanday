@@ -462,9 +462,9 @@ function sendemail(co2,pr){
 	  $.ajax({
 			url : "http://221.156.60.21:9000/email",
 			type : "post",
-			data : {"email" : "wodnd1593@naver.com",
+			data : {"email" : "anansi7543@naver.com",
 				"title" : "${noin.id}"+"님이 보낸 메세지",   
-				"content" : "${noin.id}님이 "+co2+"에서 \n"+pr+" 를  신청하셨습니다."},
+				"content" : "${noin.id}님이 "+co2+"에서 진행하는 \n"+pr+"프로그램을(를)  신청하셨습니다."},
 			success : (res) =>{
 				alert("신청되셨습니다. 복지사에게 메일이 보내졌습니다.");
 			},
