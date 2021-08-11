@@ -204,6 +204,40 @@
 			</form>
     				</div>
 					</div>
+	<!-- Noin modal 1 -->
+			<div class="black_bg"></div>
+					<div class="modal_wrap2" id = "modal_temp">
+    				<div class="modal_close2"><a href="#">close</a></div>
+    				<div align="center">
+    				<%-- ${cpath} : 기본 경로 --%>
+    		<form action="loginNoin.do" method="post" id="noinloginForm" name="Login">
+    					 <%-- form 태그 경로 줄때는 예를들어 index라는 컨트롤러를 쓸거다 하면 index.do
+								이런식으로 주고
+								Controller에 가보면
+								RequestMapping() <-- 이거 있잖아
+								여기 안에가다 "index.do" 이런식으로 맵핑해주면 돼
+								파일 경로를 적는게 아니라
+								저렇게			
+						--%>
+						<br>
+        				 <table>
+					<tr>
+						<td>
+							<input type="text" name="id" id=id size="30" placeholder="이름" style="font-size : 40px;">
+						</td>
+					</tr>
+					<tr>	
+						<td>
+							<input type="password" name="password" id=pw size="30" placeholder="주민등록번호 앞자리" style="font-size : 40px;">
+						</td>
+					</tr>
+					</table>
+					<!-- 여기는 수정해야댈듯 일단 보류 -->
+					<br>
+					<button class="btn btn-success" style="width : 250px; font-size : 40px;" type="submit" form="noinloginForm">로그인</button>
+			</form>
+    				</div>
+					</div>
   
 	<footer class="ftco-footer" id="footbg" style="width:100%; spadding: 6em 0 0 0;">
       <div class="container-fluid px-0 py-5 bg-black" style="background:#589167;">
@@ -263,19 +297,6 @@
   }
 
   function onClick2() {
-	  
-	  let pref = '<div class="modal_close2"><a href="#">close</a></div>'+'<div align="center">'+'<form action="loginNoin.do" method="post" name="noinLogin">';
-	  let html = '<form action="loginNoin.do" id="loginForm" method="post" name="noinLogin">'+ '<br>'+ '<table>'+'<tr>'+ '<td>'+ '<input type="text" name="id" id=id size="30" placeholder="이름" style="font-size:40px;">'+
-		'</td>'+ '</tr>'+ '<tr>'+ '<td>' + '<input type="password" name="password" id=pw size="30" placeholder="생년월일" style="font-size:40px;">'+
-		'</td>'+ '</tr>' + '</table>' + '<br>' + '<button class="btn btn-success" id="noin_login" style="width : 250px; font-size:40px;" type="submit">로그인</button>'+ '</form>';
-	  
-	  let fix =  '</div>'
-	  
-	  
-      document.querySelector('#modal_temp').innerHTML = pref + html + fix;
-	  document.querySelector('#modal_temp').className = 'modal_wrap2';
-	  document.querySelector('.modal_close2').addEventListener('click', offClick2);
-	  
       document.querySelector('.modal_wrap2').style.display ='block';
       document.querySelector('.black_bg').style.display ='block';
   }   
@@ -289,6 +310,7 @@
   document.getElementById('modal_btn2').addEventListener('click', onClick);
   document.getElementById('modal_btn3').addEventListener('click', onClick);
   document.querySelector('.modal_close').addEventListener('click', offClick);
+	  document.querySelector('.modal_close2').addEventListener('click', offClick2);
   
   
   };

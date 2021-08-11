@@ -358,13 +358,13 @@ var co = array[i][0];
 var pr = array[i][3];
 	var content = '<div class="wrap">' + 
 '    <div class="info">' + 
-'        <div class="title" style="font-size : 21px">' + 
+'        <div class="title" style="font-size : 21px;">' + 
 '            '+array[i][0]+
 '        </div>' + 
 '        <div class="body">' + 
 '           </div>' + 
 '            <div>' + 
-'                <div style="font-size : 20px">'+'주소 : '+array[i][1] + '<br>'+'연락처: '+array[i][2]+'<br>'+'진행중인 행사 : '+array[i][3]+'  이용비: '+array[i][4]+'<br>'+'수용인원 : '+array[i][5]+'       '+'<button type="submit" class="btn-friend" onclick="sendemail(\''+co+'\''+","+'\''+pr+'\')">'+
+'                <div style="font-size : 20px;">'+'주소 : '+array[i][1] + '<br>'+'연락처: '+array[i][2]+'<br>'+'진행중인 행사 : '+array[i][3]+'  이용비: '+array[i][4]+'<br>'+'수용인원 : '+array[i][5]+'       '+ '<button type="submit" style="width:100px; font-size:25px;" class="btn btn-success btn-friend" onclick="sendemail(\''+co+'\''+","+'\''+pr+'\')">'+
 '신청</button>'+'</div>'
 
 '            </div>' +
